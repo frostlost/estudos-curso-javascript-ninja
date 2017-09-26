@@ -35,15 +35,10 @@ Quando eu preciso utilizar um objeto global ou algo que está
 fora do meu alcance local, que não está dentro da minha 
 estrutura local (IIFE acima), eu posso passá-lo como parâmetro 
 para a minha IIFE. Da mesma forma que eu executo a IIFE 
-utilizando os parânteses no final dela, 
-
-```javascript
-();
-```
-eu posso passar parâmetros para a IIFE que são globais na minha 
-aplicação, para acessá-los de forma local, dentro da IIFE. Já 
-vimos que, em Javascript, o escopo é a função em que o código 
-está inserido.
+utilizando os parânteses no final dela, `();` eu posso passar 
+parâmetros para a IIFE que são globais na minha aplicação, para 
+acessá-los de forma local, dentro da IIFE. Já vimos que, em 
+Javascript, o escopo é a função em que o código está inserido.
 
 Sempre eu crio uma variável fora de uma função, é possível 
 acessá-la dentro de qualquer função que esteja no mesmo escopo. 
