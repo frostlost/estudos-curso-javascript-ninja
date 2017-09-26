@@ -109,7 +109,7 @@ Para que o usuário coloque uma entrada de dado.
 Para que uma mensagem seja mostrada para o usuário apenas como botão ok.
 
 ## window.document
-Relembrando: O windows representa a janela do browser em si. 
+Relembrando: O window representa a janela do browser em si. 
 
 O objeto/propriedade document representa o meu documento, meu html:
 
