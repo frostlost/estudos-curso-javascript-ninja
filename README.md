@@ -9,15 +9,15 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### IIFE - Passando parâmetros
 * ##### if / while / for com uma linha não precisam das chaves
 * ##### Métodos do Objeto window
-* ###### window.alert
-* ###### window.prompt
+  - ###### window.alert
+  - ###### window.prompt
 
 2. #### [JS no browser - parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-20/js-no-browser-02.md)
 * ##### Revisando o método prompt
-* ###### Como posso pegar a resposta do usuário
+  - ###### Como pegar a resposta do usuário
 * ##### window.confirm 
 * ##### window.document 
 * ##### DOM - Document Object Model 
-* ###### Nós do DOM
+  - ###### Nós do DOM
 * ##### Como interagir com os elementos do DOM
-* ###### document.getElementById()
+  - ###### document.getElementById()
