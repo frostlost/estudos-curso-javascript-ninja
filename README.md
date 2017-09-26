@@ -1,5 +1,7 @@
+[![Curso Ninja JavaScript - Da2k](https://cloud.githubusercontent.com/assets/487669/6239059/58b94ab0-b6e7-11e4-8e5d-a5f2740870fd.png)](https://www.udemy.com/curso-javascript-ninja/?couponCode=JSNINJA)
+
 # Estudos do curso Javascript Ninja
-Documentação dos estudos das aulas do curso JavaScript Ninja, do professor Fernando Daciuk.
+Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www.udemy.com/curso-javascript-ninja/?couponCode=JSNINJA), do professor [**Fernando Daciuk**](https://github.com/fdaciuk).
 
 ### Aula 20
 
