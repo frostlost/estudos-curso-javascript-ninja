@@ -3,7 +3,7 @@
 # Estudos do curso Javascript Ninja
 Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www.udemy.com/curso-javascript-ninja/?couponCode=JSNINJA), do professor [**Fernando Daciuk**](https://github.com/fdaciuk).
 
-### Aula 20
+## Aula 20
 
 1. #### [JS no browser - Selecionar elementos do DOM](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-20/js-no-browser-01.md)
 * ##### IIFE - Passando parâmetros
@@ -11,6 +11,8 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Métodos do Objeto window
   - ###### window.alert
   - ###### window.prompt
+  
+---
 
 2. #### [JS no browser - parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-20/js-no-browser-02.md)
 * ##### Revisando o método prompt
