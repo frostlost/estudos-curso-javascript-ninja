@@ -9,7 +9,6 @@ Documentação dos estudos das aulas do curso JavaScript Ninja, do professor Fer
 * ##### Métodos do Objeto window
 * ###### window.alert
 * ###### window.prompt
-* ###### window.prompt
 
 
-2. [JS no browser - Parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-20/js-no-browser-02.md)
+2. #### [JS no browser - Parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-20/js-no-browser-02.md)
