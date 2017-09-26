@@ -38,7 +38,7 @@ em branco e irá cair no else do prompt:
 
 ```
 
-#### Como posso pegar a resposta do usuário?
+#### Como posso pegar a resposta do usuário
 Eu posso criar uma variável que irá receber o prompt e 
 passá-la como parâmetro para o if. Ou seja, se 'name' for 
 true, se a resposta for preenchida, o prompt retorna o 
@@ -70,7 +70,7 @@ variável e perguntar se o 'name' tem valor truthy:
 
 Se o name tiver valor, cairá no if. Caso contrário, cairá no else. 
 
-### window.confirm
+## window.confirm
 
 ```javascript
 (function(win) {
@@ -143,31 +143,31 @@ os elementos e pendura no 'Document'. Podem haver muitas outras tags além das
 mostradas na figura, que é apenas uma representação básica. O DOM, portanto, é esse objeto 
 criado quando eu tenho uma estrutura HTML ou XML. 
 
-### Document 
+#### Document 
 É o objeto, meu documento principal, ou todo o meu arquivo. Ele representa o index.html. 
 
-### Root Element
+#### Root Element
 Dentro do 'Document', tenho o 'Root Element', que é o `<html>`, o elemento principal, é a raiz do 'Document'. 
     
-### head e body
+#### head e body
 Dentro do 'Root Element' `<html>`, tenho apenas o `<head>` e o `<body>`.
 
-### title
+#### title
 Dentro do `<head>`, tenho o elemento `<title>`.
     
-### text
+#### text
 Dentro do `<title>`, tenho o meu título. No caso acima, 'JS Ninja'. 
 
-### meta
+#### meta
 Tenho tambémm uma `<meta charset="UTF-8">`, que não está na figura. 
 
-### body
+#### body
 No `<body>`, tenho um elemento `<a>`, com o texto 'my link', **que também é um nó**.
     
-### h1
+#### h1
 Elemento que é um título e possui o texto 'My header'.
 
-## Nós do DOM 
+### Nós do DOM 
 Cada um desses elementos ou desses textos ('my link', 'My header') se chama **nó**.
 Eles são um nó do meu documento inteiro. Cada um desses elementos é um nó que está amarrado à 
 minha árvore do DOM. 
