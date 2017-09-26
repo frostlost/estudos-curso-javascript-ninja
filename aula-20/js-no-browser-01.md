@@ -180,3 +180,134 @@ se tornar um problema.
 
 Em breve será falado sobre boas práticas de como aplicar tudo o 
 que estou aprendendo em projetos reais!
+
+## Métodos do Objeto window
+### window.alert
+Este objeto mostra uma mensagem na tela. 
+```javascript
+(function(win) {
+
+    'use strict';
+
+    window.alert('Mensagem');
+
+}(window));
+```
+O alert é a caixinha que aparece mostrando a mensagem. Dificilmente é 
+necessário usar o alert atualmente, devido ao poder do CSS, que me 
+permite usar divs e customizar a mensagem. O alert bloqueia a 
+navegação. Mas é interessante saber que ele existe e entendê-lo mas, 
+não necessáriamente irei utilizá-lo. É o mesmo caso do with, que está 
+sendo removido do JavaScript devido aos seus problemas.
+
+#### window.alert('mensagem') ou apenas alert('mensagem')
+Tudo o que estiver no window pode ser chamado sem eu chamar 'window':
+
+```javascript
+(function(win) {
+
+    'use strict';
+
+    alert('Mensagem');
+
+}(window));
+```
+
+Posso chamar os métodos do window sem especificar que ele é um 
+método  do window, chamando diretamente uma função, que são 
+as funções globais: 
+
+```javascript
+alert('Mensagem');
+```
+
+O código acima funcionará da mesma forma, como se eu estivesse 
+utilizando o window. antes da função. 
+
+O window funciona desta forma por que eu não preciso referenciar 
+os objetos globais. Se eu não referencio, o JavaScript irá 
+entender que eu estou tentando puxar aquela propriedade de 
+window. 
+
+Portanto, não é obrigatório o uso do window antes das 
+propriedades.
+
+### window.prompt
+Esse método faz uma pergunta ao usuário e espera uma resposta. 
+
+```javascript
+
+(function(win) {
+
+    'use strict';
+
+    prompt('Mensagem?');
+
+}(window));
+
+```
+
+Daqui a pouco será visto para onde foi a resposta digitada 
+pelo usuário.
+
+Portanto, a ideia do prompt é que ele lança uma pergunta na tela 
+que eu consiga responder, ou que eu cancele, ou que eu dê "ok".
+
+#### Como posso utilizar essa mensagem? 
+Posso colocá-la em um if, por exemplo, e fazer algo se a 
+resposta for ok ou não: 
+
+```javascript
+
+(function(win) {
+
+    'use strict';
+
+    if(prompt('Pergunta?'))
+        console.log('resposta ok!');
+    else
+        console.log('resposta não ok!');
+
+}(window));
+
+
+```
+
+Se eu der uma resposta e clicar em ok, 'resposta ok!' será 
+logado no console. Se eu clico em cancelar, 'resposta não ok!' 
+será logado no console. Se eu não der nenhuma resposta e 
+clicar em ok, 'resposta não ok!' será logado no console.
+
+Observando que, da mesma forma que eu uso o if de uma linha, 
+posso usar também o else de uma linha, que também não precisa 
+das chaves.
+
+Se eu adicionar um console.log() abaixo do else, ele sempre 
+será mostrado no console, pois ele não está dentro do if nem 
+do else:
+
+```javascript
+
+(function(win) {
+
+    'use strict';
+
+    if(prompt('Pergunta?'))
+        console.log('resposta ok!');
+    else
+        console.log('resposta não ok!');
+    console.log('sempre será mostrado');
+
+}(window));
+
+```
+
+O código acima retorna 'resposta não ok!' e 'sempre será 
+mostrado' pois o if e o else só entendem uma linha 
+quando eu não utilizo as chaves. 
+
+Posso utilizar as chaves por segurança. A ideia é que eu 
+não precise utilizar else, que seja utilizado no máximo 
+um if. Em alguns casos, talvez eu precise do else mas, 
+devo evitá-lo ao máximo. E, caso eu precise utilizar 
+if's, usar no máximo uma única linha.
