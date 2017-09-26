@@ -147,22 +147,22 @@ criado quando eu tenho uma estrutura HTML ou XML.
 É o objeto, meu documento principal, ou todo o meu arquivo. Ele representa o index.html. 
 
 ### Root Element
-Dentro do 'Document', tenho o 'Root Element', que o '<html>', o elemento principal, é a raiz do 'Document'. 
+Dentro do 'Document', tenho o 'Root Element', que é o `<html>`, o elemento principal, é a raiz do 'Document'. 
     
 ### head e body
-Dentro do 'Root Element' '<html>', tenho apenas o '<head>' e o '<body>'.
+Dentro do 'Root Element' `<html>`, tenho apenas o `<head>` e o `<body>`.
 
 ### title
-Dentro do '<head>', tenho o elemento 'title>'.
+Dentro do `<head>`, tenho o elemento `<title>`.
     
 ### text
-Dentro do '<title>', tenho o meu título. No caso acima, 'JS Ninja'. 
+Dentro do `<title>`, tenho o meu título. No caso acima, 'JS Ninja'. 
 
 ### meta
-Tenho tambémm uma '<meta charset="UTF-8">', que não está na figura. 
+Tenho tambémm uma `<meta charset="UTF-8">`, que não está na figura. 
 
 ### body
-No '<body>', tenho um elemento '<a>', com o texto 'my link', **que também é um nó**.
+No `<body>`, tenho um elemento `<a>`, com o texto 'my link', **que também é um nó**.
     
 ### h1
 Elemento que é um título e possui o texto 'My header'.
@@ -200,8 +200,8 @@ elementos:
 ```
 
 Criei uma tag a no body com o texto 'My text' e um id 'my-link'. Então a minha árvore do Dom diz que eu 
-tenho o 'html', o 'head' e o 'body'. Dentro do body tenho o 'a' e tenho o 'script'. Dentro do 'head'tenho 
-o 'meta' e o 'title' 
+tenho o `<html>`, o `<head>` e o `<body>`. Dentro do body tenho o `<a>` e tenho o `<script>`. Dentro do `<head>` tenho 
+o `<meta>` e o `<title>`. 
 
 ## Como interagir com os elementos do DOM 
 O DOM é uma **api** do JS que converte essa árvore (html acima) em objeto. Dessa forma, 
