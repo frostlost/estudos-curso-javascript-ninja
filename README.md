@@ -23,5 +23,9 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
   - ###### Nós do DOM
 * ##### Como interagir com os elementos do DOM
   - ###### document.getElementById()
+  - ###### document.getElementsByClassName()
+  - ###### document.getElementsByTagName()
+* ##### HTMLCollection
+* ##### Relembrando o arguments
 
 ---
