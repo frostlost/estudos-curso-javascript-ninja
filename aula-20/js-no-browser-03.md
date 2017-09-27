@@ -1,6 +1,8 @@
 # JS no browser - parte 3 - Selecionando elementos do DOM
 
 ## document.getElementsByName()
+Com esse método, eu obtenho um elemento à partir do nome dele. É similar ao `getElementsByTagName()`
+
 ```HTML
 <form action="/" method="get">
     <input type="text" name="username">
@@ -8,7 +10,7 @@
     <button type="submit">Enviar</button>
 </form>
 ```
-Com esse método, eu obtenho um elemento à partir do nome dele. É similar ao `getElementsByTagName()`
+
 ```JAVASCRIPT
 (function(win, doc) {
 
@@ -88,7 +90,9 @@ quando eu invocar a `$inputs` novamente, fazendo um `length` nela,
 $inputs.length;
 ```
 
- ela já me trouxe 3 itens. Ou seja, esse valor que os métodos `getElementById()`, `getElementsByClassName()`, `getElementsByTagName()`, `getElementsByName()` me trazem são mutáveis. O valor muda automaticamente a cada vez que eu adiciono um novo `input`. A cada vez que eu adiciono um novo input, ele é colocado na variável `$inputs`. Então essa variável nunca terá um valor estático, sempre dinâmico. Esse valor irá ser modificado conforme os inputs são adicionados na tela. Qualquer campo que for adicionado depois que eu atribuí um valor na variável, ele será adicionado nessa variável. Em alguns momentos isso pode ser interessante mas, em vários ou momentos ou em uma grande aplicação **isso pode ser muito ruim**, por que posso estar adicionando campos dinamicamente e acabar modificando valores de variáveis que eu não queria modificar. O nome disso é **efeito colateral**: eu modifico um valor sem eu saber ou modifico um valor um passo à frente da minha aplicação. Então, eu atribuí um valor à uma variável, aquela variável tem 2 itens e depois aquela variável é alterada automaticamente. Isso é um efeito colateral.
+ ela já me trouxe 3 itens. Ou seja, esse valor que os métodos `getElementById()`, `getElementsByClassName()`, `getElementsByTagName()`, `getElementsByName()` me trazem são mutáveis. O valor muda automaticamente a cada vez que eu adiciono um novo `input`. Cada vez que eu adiciono um novo input, ele é colocado na variável `$inputs`. Então essa variável nunca terá um valor estático, sempre será dinâmico. Esse valor irá ser modificado conforme os inputs são adicionados na tela. Qualquer campo que for adicionado depois que eu atribuí um valor na variável, será adicionado nessa variável. 
+ 
+Em alguns momentos isso pode ser interessante mas, em vários momentos ou em uma grande aplicação **isso pode ser muito ruim**, por que posso estar adicionando campos dinamicamente e acabar modificando valores de variáveis que eu não queria modificar. O nome disso é **efeito colateral**: eu modifico um valor sem eu saber ou modifico um valor um passo à frente da minha aplicação. Então, eu atribuí um valor à uma variável, aquela variável tem 2 itens e depois aquela variável é alterada automaticamente. Isso é um efeito colateral.
 
 Se eu remover 1 input, a variável também será atualizada.
 
