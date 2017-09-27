@@ -1,7 +1,7 @@
 # JS no browser - parte 3 - Selecionando elementos do DOM
 
 ## document.getElementsByName()
-Com esse método, eu obtenho um elemento à partir do nome dele. É similar ao `getElementsByTagName()`
+Com esse método, eu obtenho um elemento à partir do nome dele. Ele é similar ao `getElementsByTagName()`
 
 ```HTML
 <form action="/" method="get">
