@@ -223,3 +223,80 @@ Assim, posso chamar o 'document' de 'doc', dentro da IIFE.
 
 ### document.getElementById()
 É um método usado quando eu quero selecionar um elemento do DOM à partir de seu id.
+
+```HTML
+<a id="my-link">'My text'</a>
+```
+
+```javascript
+(function(win, doc) {
+
+    'use strict';
+
+    console.log(doc.getElementById('my-link'));
+
+}(window, document));
+```
+
+O `getElementById` significa que eu vou pegar o elemento `<a>` que tem o id `my-link`.
+Estou passando o `my-link` como um parâmetro do `getElementById`. E isso deve me 
+retornar o elemento `<a id="my-link">'My text'</a>`, que, na verdade, é um objeto em JS.
+
+O `getElementById` é uma das formas de selecionar os objetos. Existe também o modo de 
+selecionar pela tag. 
+
+O `getElementById` não possui o `s` no final do `Element` por que consigo pegar apenas um `id`. 
+Ele irá pegar o 1º `id` que ele encontrar.
+
+### document.getElementsByClassName()
+Esse método pega vários elementos com a mesma classe: 
+
+```HTML
+<body>
+
+    <a class="my-link">'My text'</a>
+    <a class="my-link">'My text'</a>
+    <a class="my-link">'My text'</a>
+    <a class="my-link">'My text'</a>
+
+</body>
+```
+
+```javascript
+(function(win, doc) {
+
+    'use strict';
+
+    console.log(doc.getElementsByClassName('my-link'));
+
+}(window, document));
+```
+Isso me retorna uma HTMLCollection com os 4 `<a>` com a classe `my-link`.
+Portanto, quando eu preciso pegar elementos a partir de uma classe, posso 
+utilizar o `getElementsByClassName`.
+
+O objetivo de pegar esses elementos é manipulá-los. Mudar classe, trocar texto, etc.
+
+### document.getElementsByTagName()
+Esse método seleciona elementos a partir da tag. 
+
+```javascript
+(function(win, doc) {
+
+    'use strict';
+
+    console.log(doc.getElementsByTagName('a'));
+
+}(window, document));
+```
+
+Ele me traz uma HTMLCollection com todos os `<a>`.
+
+## HTMLCollection
+Funciona como um array. É semelhante ao arguments. É um array-like.
+Ela não é um array mas, eu consigo iterá-la com o `for`, consigo usar 
+o `length` nela também.
+
+## Relembrando o arguments
+O `arguments` também não é um array, não possui métodos de array mas, 
+consigo iterar por ele.
