@@ -130,7 +130,7 @@ $inputs = document.querySelectorAll('input');
 
 // (3) [input, input, input]
 ```
-A partir de agora, devo utilizar apenas `querySelector()` e `querySelectorAll()` para selecionar elementos, pois eles não irão causar efeito colateral.
+**A partir de agora, devo utilizar apenas `querySelector()` e `querySelectorAll()` para selecionar elementos, pois eles não irão causar efeito colateral.**
 
 Exemplo, quero pegar todos os inputs `type="text"`:
 
