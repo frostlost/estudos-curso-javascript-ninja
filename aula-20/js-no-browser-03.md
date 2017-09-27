@@ -36,7 +36,7 @@ Suponhamos que eu queira pegar todos os inputs do html acima:
 Isso me trouxe os 2 inputs: username e password.
 
 ## $ no início de variáveis
-Quando vou me referir a elementos do DOM, devo iniciar a variável com `$`:
+**A partir de agora, quando eu for me referir a elementos do DOM, devo iniciar a variável com `$`:**
 
 ```JAVASCRIPT
 (function(win, doc) {
