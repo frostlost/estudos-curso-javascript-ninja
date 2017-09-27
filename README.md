@@ -11,15 +11,15 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Métodos do Objeto window
   - ###### window.alert
   - ###### window.prompt
-  
+
 ---
 
 2. #### [JS no browser - parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-20/js-no-browser-02.md)
 * ##### Revisando o método prompt
   - ###### Como pegar a resposta do usuário
-* ##### window.confirm 
-* ##### window.document 
-* ##### DOM - Document Object Model 
+* ##### window.confirm
+* ##### window.document
+* ##### DOM - Document Object Model
   - ###### Nós do DOM
 * ##### Como interagir com os elementos do DOM
   - ###### document.getElementById()
@@ -27,5 +27,14 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
   - ###### document.getElementsByTagName()
 * ##### HTMLCollection
 * ##### Relembrando o arguments
+
+---
+
+3. #### [JS no browser - parte 3 - Selecionando elementos do DOM](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-20/js-no-browser-03.md)
+* ##### document.getElementsByName()
+* ##### '$' no início de variáveis
+* ##### Valores mutáveis nos métodos getElement/s
+* ##### querySelector() e querySelectorAll()
+  - ###### Suporte para querySelector() e querySelectorAll()
 
 ---
