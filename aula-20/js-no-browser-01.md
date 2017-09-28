@@ -152,7 +152,7 @@ testar o seguinte:
 
     if(win !== window)
         console.log('win é uma referência local à window');
-    console.log('Essa mensagem sempre é mostrada');
+        console.log('Essa mensagem sempre é mostrada');
 
 }(window));
 ```
