@@ -98,11 +98,11 @@ Esses parâmetros serão passados em um formato chamado **Query String**. Exempl
 `minhaSenha` O valor do campo.
 
 
-### Introdução à Eventos
-#### .addEventListener()
+## Introdução à Eventos
+### .addEventListener()
 É um método que adiciona eventos às minhas propriedades. Posso colocá-los em qualquer elemento.
 
-##### .addEventListener('click')
+#### .addEventListener('click')
 Primeiro, irei remover o `value` padrão dos inputs pois, quero que eles venham, inicialmente, em branco. Também inseri um id no 'button' (para que só esse button exista na tela):
 
 ```HTML
@@ -162,7 +162,7 @@ Por padrão, as funções de callback de eventos recebem um objeto chamado `even
 
 Quando utilizo o 'click', eu faço alguma ação antes de ele submeter o formulário.
 
-##### Prevenindo o comportamento padrão do button
+#### Prevenindo o comportamento padrão do button
 O comportamento padrão de um botão de envio de formulário é: quando eu clico, ele submete as informações. Ou seja, ele dá um reload na tela e envia as informações dos inputs via query string.
 
 ```JAVASCRIPT
@@ -208,7 +208,7 @@ O que eu fiz acima foi: adicionei um escutador de evento no botão. Esse listene
 
 Portanto, ao clicar no botão, ele não enviou o formulário e mostrou a msg no console.
 
-##### .addEventListener('submit')
+#### .addEventListener('submit')
 O evento submit é quando eu submeto o formulário. Quando ele faz a submissão do formulário.
 
 ```JAVASCRIPT
@@ -235,6 +235,53 @@ Ou seja, quando eu clico no botão enviar, ele faz o envio do formulário. Logo 
 
 O submit funciona depois do envio.
 
-##### Inserindo um addEventListener() em um input
+#### Inserindo um addEventListener() em um input
 
-soon...
+```JAVASCRIPT
+(function(win, doc) {
+
+    'use strict';
+
+    var $inputUserName = doc.querySelector('#username');
+    var $inputPassword = doc.querySelector('#password');
+    var $button = doc.querySelector('#button');
+
+    $button.addEventListener('submit', function(event) {
+
+        event.preventDefault();
+
+        console.log('o botão foi clicado');
+
+    }, false);
+
+    $inputUserName.addEventListener('click', function(event) {
+
+        alert('Clicou no input');
+
+    }, false);
+
+}(window, document));
+```
+
+Ou seja, agora tenho um escutador de eventos no  
+botão e no input. Ao clicar no input, a mensagem  
+de alerta será mostrada no console.
+
+#### Inserindo um addEventListener() no próprio document
+```JAVASCRIPT
+(function(win, doc) {
+
+    'use strict';
+
+    document.addEventListener('click', function(event) {
+
+        alert('Clicou no documento!');
+
+    }, false);
+
+}(window, document));
+
+```
+Todas as vezes em que eu clicar em qualquer lugar do  
+documento (inclusive nos inputs e botão), a mensagem  
+do alert será mostrada.

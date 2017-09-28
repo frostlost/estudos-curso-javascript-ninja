@@ -38,3 +38,18 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
   - ###### Suporte para querySelector() e querySelectorAll()
 
 ---
+
+4. #### [JS no browser - parte 4 - Formulários e Eventos](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-20/js-no-browser-04.md)
+* ##### Formulários
+  - ###### .value
+  - ###### O método get
+  - ###### Query String
+* ##### Introdução à Eventos
+  - ###### .addEventListener()
+  - ###### .addEventListener('click')
+  - ###### Prevenindo o comportamento padrão do button
+  - ###### .addEventListener('submit')
+  - ###### Inserindo um addEventListener() em um input
+  - ###### Inserindo um addEventListener() no próprio document
+
+---
