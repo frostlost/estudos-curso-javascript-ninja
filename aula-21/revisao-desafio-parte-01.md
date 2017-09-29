@@ -1,4 +1,4 @@
-# Revisão do desafio da semana #20 - Parte 1
+# Revisão do desafio da semana #20
 
 >1. Envolva todo o conteúdo desse desafio em uma IIFE.
 >2. Adicione a diretiva 'use strict';
