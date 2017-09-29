@@ -53,3 +53,27 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
   - ###### Inserindo um addEventListener() no próprio document
 
 ---
+
+## Aula 21
+
+1. #### [Revisão do desafio da semana #20 - parte 01](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/revisao-desafio-parte-01.md)
+* ##### Relembrando if's de apenas uma linha
+* ##### Introdução à curto-circuito
+  - ###### Curto-circuito com o `||`
+  - ###### Curto-circuito com o `&&`
+* ##### Pegando inputs através do type
+* ##### Pegar inputs através do type não é uma boa prática
+
+---
+
+2. #### [Revisão do desafio da semana #20 - parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/revisao-desafio-parte-02.md)
+* ##### Preenchendo um input com o valor entrado pelo usuário
+
+---
+
+3. #### [Revisão do desafio da semana #20 - parte 03](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/revisao-desafio-parte-03.md)
+* ##### 'is' e 'has', no início de funções
+* ##### Validando emails com RegExp()
+  - ###### test()
+
+---
