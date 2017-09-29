@@ -427,3 +427,4 @@ function isValidEmail(email) {
 ```
 
 Para não ter que testar manualmente a regex, posso usar o regex101:
+[![regex101.png](https://s26.postimg.org/7c09sr3dl/regex101.png)](https://postimg.org/image/6mhhge2tx/)
