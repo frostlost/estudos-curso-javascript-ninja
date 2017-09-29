@@ -2,7 +2,6 @@
 Nesta aula iremos entender **como é** a natureza Assíncrona do JS, **por quê  
 é** assíncrona e **o que é** Assíncrono.
 
-## Como tudo funciona dentro do JS
 Tenho abaixo o meu index.html, com apenas o `script` do JavaScript incluso  
 no body.
 
