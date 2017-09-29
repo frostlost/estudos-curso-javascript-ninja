@@ -410,7 +410,7 @@ do email:
 ```JAVASCRIPT
 function isValidEmail(email) {
 
-    return /...regexAqui.../.test(email);
+    return /...regexAqui.../g.test(email);
 }
 ```
 
@@ -422,9 +422,149 @@ alguma coisa. Assim, a regex irá especificadamente na string.
 ```JAVASCRIPT
 function isValidEmail(email) {
 
-    return /^$/gi.test(email);
+    return /^$/g.test(email);
 }
 ```
 
 Para não ter que testar manualmente a regex, posso usar o regex101:
 [![regex101.png](https://s26.postimg.org/7c09sr3dl/regex101.png)](https://postimg.org/image/6mhhge2tx/)
+
+Neste caso, não preciso usar o formato global, pois só vou casar com  
+um email por vez.
+
+```JAVASCRIPT
+function isValidEmail(email) {
+
+    return /^[\w.+]+@\w+\.\w{2,}(?:\.\w{1,2})?$/g.test(email);
+}
+```
+
+Com o `^` estou dizendo que a string testada deve começar com os valores  
+da lista (caractere alfanumérico, '+' ou '.').
+
+O `\w` irá pegar os caracteres alfanuméricos, maiúsculos e minúsculos,  
+e o underline. O `.` dentro da lista pega o ponto literal e o `+` também
+pega o '+' literal.
+
+Com o `+` fora da lista, estou dizendo que quero pegar ou um ou outro  
+desses caracteres, quantas vezes for necessário.
+
+Todos esses caracteres acima são seguidos de um `@`.
+
+O domínio, após o @, pode ter quantos caracteres alfanuméricos forem  
+necessários: `\w+`.
+
+Para a extensão (.com, .org, .us, etc), vou precisar de um ponto literal,  
+então, devo escapá-lo: `\.`. E também preciso de, no mínimo, 2 caracteres  
+alfanuméricos: `\w{2,}`.
+
+Para o final do domínio, que é opcional, uso um grupo opcional e sem  
+captura: `(?:\.\w{1,2})?`.
+
+E eu devo dizer que o grupo opcional é o final da minha regex, usando o  
+`$`.
+
+Embora regex sejam complexas, é mais fácil validar strings com elas do  
+que por `split()`, por exemplo.
+
+```JAVASCRIPT
+$button.addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    if(!$inputUsername.value)
+        return alert('Preencha o nome do usuário!');
+    if(!$inputEmail.value)
+        return alert('Preencha o e-mail!');
+    if(!$message)
+        return alert('Preencha a mensagem!');
+    if(!isValidEmail($inputEmail.value))
+        return alert('Entre com um e-mail válido!');
+    if(!confirm('Tem certeza que deseja enviar o formulário?'))
+        return alert('Não enviado.');
+
+    alert('Enviado com sucesso!');
+
+}, false);
+```
+
+Após validar o email, o código acima ainda não está validando a  
+mensagem. O browser está me dando a opção de enviar o formulário  
+com a mensagem vazia.
+
+Ele não validou a mensagem por que o código acima está perguntando  
+se o input message é falso. Ou seja, o messagem existe, ele está  
+no DOM, dentro do formulário:
+
+```HTML
+<textarea cols="30" rows="10"></textarea>
+```
+
+```JAVASCRIPT
+var $message = doc.querySelector('textarea');
+```
+
+Ou seja, ele não esntou no `if(!$message)` por que na verdade eu  
+tenho que testar pelo value.
+
+```JAVASCRIPT
+$button.addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    if(!$inputUsername.value)
+        return alert('Preencha o nome do usuário!');
+    if(!$inputEmail.value)
+        return alert('Preencha o e-mail!');
+    if(!$message.value)
+        return alert('Preencha a mensagem!');
+    if(!isValidEmail($inputEmail.value))
+        return alert('Entre com um e-mail válido!');
+    if(!confirm('Tem certeza que deseja enviar o formulário?'))
+        return alert('Não enviado.');
+
+    alert('Enviado com sucesso!');
+
+}, false);
+```
+
+Se eu tentar enviar agora com o nome preenchido, um email inválido  
+e com o campo de mensagem em branco, ele irá me retornar o  
+`alert('Preencha a mensagem!');`:
+
+[![preencha_a_msg.jpg](https://s26.postimg.org/xycqhq7kp/preencha_a_msg.jpg)](https://postimg.org/image/ku7651fit/)
+
+Se eu preencher a mensagem e tentar enviar, ele irá me retornar o  
+alert da validação de email `alert('Entre com um e-mail válido!');`:  
+
+[![email.jpg](https://s26.postimg.org/q6w0j63fd/email.jpg)](https://postimg.org/image/59zsei5ed/)
+
+Ou seja, ele mostrou o `alert('Preencha a mensagem!');` primeiro por  
+que o `if(!$message.value)` vem após o `if(!$inputEmail.value)`.
+
+Para melhorar isso, posso colocar a validação da mensagem após a  
+validação do email:
+
+```JAVASCRIPT
+$button.addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    if(!$inputUsername.value)
+        return alert('Preencha o nome do usuário!');
+    if(!$inputEmail.value)
+        return alert('Preencha o e-mail!');
+    if(!isValidEmail($inputEmail.value))
+        return alert('Entre com um e-mail válido!');
+    if(!$message.value)
+        return alert('Preencha a mensagem!');
+    if(!confirm('Tem certeza que deseja enviar o formulário?'))
+        return alert('Não enviado.');
+
+    alert('Enviado com sucesso!');
+
+}, false);
+```
+
+Assim, ele **irá validar a mensagem só depois de garantir que o  
+email é válido**. 
