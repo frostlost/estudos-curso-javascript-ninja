@@ -63,13 +63,13 @@ ver o número 1, depois o número 2, depois o número 3.
 
 Isso acontece por que eu sei que o `console.log` é um comando síncrono.  
 
-O JS trabalha somente com uma **tread**. Isso significa que, por exemplo:  
+O JS trabalha somente com uma **Thread**. Isso significa que, por exemplo:  
 tenho o meu pc com um processador de 4 núcleos e, um desses núcleos está  
-executando a **tread** do navegador com o JavaScript.  
+executando a **Thread** do navegador com o JavaScript.  
 
-Como o JavaScript não roda em mais de uma tread, ele precisa executar os  
+Como o JavaScript não roda em mais de uma Thread, ele precisa executar os  
 comandos um após o outro e, se houver um comando que bloqueie todo o  
-conteúdo ou qualquer tipo de ação nessa tread, essa tread ficará completamente  
+conteúdo ou qualquer tipo de ação nessa Thread, essa Thread ficará completamente  
 bloqueada.  
 
 Um exemplo disso é:
@@ -175,10 +175,78 @@ não irei conseguir selecionar o texto enquanto o JS não terminar as `10000`
 iterações do `for`.  
 
 Isso acontece por que o for é um método síncrono no JavaScript. Ele bloqueia  
-as ações enquanto estiver fazendo as iterações. Ele não libera a tread  
+as ações enquanto estiver fazendo as iterações. Ele não libera a Thread  
 enquanto estiver fazendo as iterações.
 
 ## Async
 A maior parte dos comandos em JS funciona de forma **assíncrona**. Eventos são  
 um exemplo de assincronismo. Ou seja, eu preciso aguardar uma ação do usuário.  
 Um temporizador na tela também é um exemplo de um comando assíncrono.  
+
+### Event Loop  
+O JavaScript tem algo chamado event loop.
+
+[![event_loop.png](https://s25.postimg.org/hm3euqe6n/event_loop.png)](https://postimg.org/image/prlgsw2ff/)
+
+Posso imaginar o **event loop** é um círculo que fica rodando em uma Thread separada  
+e, no lado direito (retângulo) tenho a Thread principal (**Thread Pool**). A thread  
+principal está executando meus arquivos, meu site, tem o formulário para o  
+usuário preencher... tudo na thread principal.  
+
+Quando eu crio um processo síncrono, ele fica sendo executado na thread  
+principal e, automaticamente, se esse processo síncrono demora muito tempo ele  
+irá, automaticamente, bloquear a thread e não deixar o usuário fazer algo,  
+enquanto o processo síncrono estiver em execução.  
+
+Foi visto que, quando eu crio um listener de evento para algum elemento do DOM  
+o JavaScript simplesmente pega aquele listener, coloca em uma fila (**Event  
+Queue**) e essa fila fica no **event loop**. Ou seja, essa fila fica girando  
+dentro do **event loop** e os items da fila ficam girando no event loop na  
+ordem em que eles foram adicionados. Eles ficam girando nessa **segunda thread**  
+e a **thread principal** fica liberada. Se isso não acontecesse, ou seja, se ao  
+adicionar um novo evento em um elemento ele não fosse assíncrono, a thread iria  
+ficar bloqueada, a tela iria ficar bloqueada, até que o usuário fizesse alguma  
+ação.
+
+```JAVASCRIPT
+(function() {
+
+    'use strict';
+
+    console.log('início');
+
+    document.addEventListener('click', function() {
+
+        console.log('clicou no documento');
+
+    }, false);
+
+    console.log('fim');
+
+})();
+```
+
+Se eu fizer isso e, executar a página, o JavaScript executa os  
+`console.log('início');` e `console.log('fim');` mas, não executa o  
+`console.log('clicou no documento');` por que, quando adicionei o listener de  
+evento no document, esse evento foi para o **event loop**. Ou seja, **ele está em  
+uma segunda thread**, separada da thread principal que está sendo executada no  
+browser. E quando eu clico no documento, aí sim ele executa o  
+`console.log('clicou no documento');`. Isso é a natureza assíncrona do  
+JavaScript.
+
+Ou seja, esse evento foi jogado em uma fila do event loop e o event loop fica  
+ouvindo esse evento. Quando eu faço a ação naquele evento (click no document),  
+o event loop joga a função de callback para a minha thread principal e a  
+executa.  
+
+Ou seja, quando eu coloco o listener de evento, ele cai nessa **segunda thread**  
+(event loop) e fica rodando nele até que eu faça a ação do evento.  
+
+Isso acontece com qualquer evento assíncrono que eu criar.  
+
+Em breve, será visto algumas formas melhores de trabalhar com o assincronismo  
+no JavaScript, para que a thread não fique bloqueada quando eu tiver muita  
+informação para tratar e eu não tratar diretamente na thread principal. Será  
+mostrado como eu posso tratar essa informação aos poucos e como eu faço para  
+utilizar melhor o event loop do JavaScript.

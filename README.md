@@ -56,7 +56,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ## Aula 21
 
-1. #### [Revisão do desafio da semana #20 - parte 01](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/revisao-desafio-parte-01.md)
+1. #### [Revisão do desafio da semana #20 - parte 01](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/01-revisao-desafio-parte-01.md)
 * ##### Relembrando if's de apenas uma linha
 * ##### Introdução à curto-circuito
   - ###### Curto-circuito com o `||`
@@ -66,12 +66,12 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
-2. #### [Revisão do desafio da semana #20 - parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/revisao-desafio-parte-02.md)
+2. #### [Revisão do desafio da semana #20 - parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/02-revisao-desafio-parte-02.md)
 * ##### Preenchendo um input com o valor entrado pelo usuário
 
 ---
 
-3. #### [Revisão do desafio da semana #20 - parte 03](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/revisao-desafio-parte-03.md)
+3. #### [Revisão do desafio da semana #20 - parte 03](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/03-revisao-desafio-parte-03.md)
 * ##### 'is' e 'has', no início de funções
 * ##### Validando emails com RegExp()
   - ###### test()
