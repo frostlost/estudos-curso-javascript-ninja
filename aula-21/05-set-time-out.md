@@ -9,7 +9,7 @@ também a fazer alguns eventos assíncronos, sendo utilizado como temporizador.
 
 Tenho meu index.html apenas com o script no body:  
 
-```HMTL 
+```HTML 
 <!DOCTYPE html>
 <html lang="pt-br">
 
