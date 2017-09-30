@@ -77,3 +77,28 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
   - ###### test()
 
 ---
+
+4. #### [Sync vs. Async](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/04-sync-vs-async.md)
+* ##### sync
+* ##### Async
+  - ###### Event Loop
+
+---
+
+5. #### [setTimeout()](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/05-set-time-out.md)
+* ##### setTimeout() + Revisando o event loop
+* ##### setInterval()
+* ##### setTimeout() sendo executado várias vezes repetidas
+  - ###### Pausando uma função recursiva dentro do temporizador `setTimeout`
+
+---
+
+6. #### [setTimeout vs. setInterval](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/06-settimeout-vs-setinterval.md)
+* ##### setTimeout
+* ##### setInterval
+* ##### O atributo data-js=""
+* ##### Métodos que param ou limpam o intervalo
+  - ###### clearTimeout(id)
+  - ###### clearInterval(id)
+
+---
