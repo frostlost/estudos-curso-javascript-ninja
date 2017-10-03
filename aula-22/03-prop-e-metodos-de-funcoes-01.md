@@ -167,4 +167,100 @@ Se eu chamar com o `new myFunction` como no código acima, ele criou uma funçã
 
 Vou declarar uma variável chamada 'myName' recebendo o `new MyFunction` e  
 passar uma propriedade `.lastName` para ela. O valor dessa propriedade será  
-a string 'Melo'.
+a string 'Melo':
+
+```JAVASCRIPT
+(function() {
+    'use strict';
+
+    function myFunction(a, b, c, d) {
+
+        return this.lastName;
+    }
+
+    var myName = new myFunction();
+
+    myName.lastName = 'Melo';
+
+    console.log(myName);
+
+})();
+```
+[![my_Name.jpg](https://s1.postimg.org/4yekviat2n/my_Name.jpg)](https://postimg.org/image/1wioua9gvf/)
+
+O `myName` foi invocado à partir da `new myFunction()` que na verdade, agora ela  
+é um construtor, porque utilizei o `new`. E agora eu tenho a propriedade  
+`lastName`, que é o `this.lastName;`.  
+
+Suponhamos que eu tenha uma função:
+```JAVASCRIPT
+(function() {
+    'use strict';
+
+    function myFunction(a, b, c, d) {
+
+        console.log(this.lastName);
+    }
+
+})();
+```
+
+E agora, quero invocar o `this.lastName`, por exemplo. Então, vou criar um  
+objeto que terá uma propriedade `lastName` que irá receber o valor 'Melo'.  
+Quando eu chamar `myFunction.call(obj)` passando o objeto como `this` para essa  
+função, eu estou dizendo que o objeto `obj` é o `this` da função `myFunction`:
+
+```JAVASCRIPT
+(function() {
+    'use strict';
+
+    function myFunction(a, b, c, d) {
+
+        console.log(this.lastName);
+    }
+
+    var obj = {
+
+        lastName: 'Melo'
+    };
+
+    myFunction.call(obj);
+
+})();
+```
+[![this_last_Name.jpg](https://s1.postimg.org/1kh2n7m1u7/this_last_Name.jpg)](https://postimg.org/image/3qgh8zdpl7/)
+
+Então, o `call()` serve para invocar a função mas, **eu consigo passar por  
+parâmetro quem será o `this` da função**. O `obj` será o `this` da função. Então  
+quando eu chamo o `this` dentro da função, esse `this` na verdade irá  
+referenciar o objeto. É como se eu chamasse `console.log(obj.lastName);`.  
+
+A diferença é que eu posso chamar qualquer objeto. Por exemplo, posso criar um  
+outro objeto que tenha outro `lastName` e, quando eu passar o `obj2` para o  
+`myFunction.call(obj2)`, o `this` está representando o `obj2`:
+
+```JAVASCRIPT
+(function() {
+    'use strict';
+
+    function myFunction(a, b, c, d) {
+
+        console.log(this.lastName);
+    }
+
+    var obj = {
+
+        lastName: 'Melo'
+    };
+
+    var obj2 = {
+
+        lastName: 'Silva'
+    };
+
+    myFunction.call(obj2);
+
+})();
+```
+
+[![silva.jpg](https://s1.postimg.org/1ccuj2izvz/silva.jpg)](https://postimg.org/image/1xmi5ddg6j/)
