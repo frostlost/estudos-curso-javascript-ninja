@@ -120,7 +120,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Crie um arquivo index.html e adicione esse script a ele
 * ##### Crie um campo `input` do tipo `text`, e inicie-o com um valor 0 (zero). Ele será o nosso cronômetro
 * ##### Crie 3 botões para as ações do cronômetro: Start, Stop e Reset
-* ##### Atributo data-js para nomear o campo e os botões
+* ##### Atributo `data-js` para nomear o campo e os botões
 * ##### Ao clicar em Start, o valor do campo deve ser incrementado de 1 em 1, a cada segundo
 
 ---
@@ -132,41 +132,40 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Ao clicar em Stop, o cronômetro deve parar de contar
 * ##### Ao clicar em Reset, o cronômetro deve zerar e parar de contar
 * ##### Duplicação de código e o uso de funções
-* ##### Duplicação de código e o uso de funções
 
 ---
 
 3. #### [Propriedades e métodos de funções - parte 01](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-22/03-prop-e-metodos-de-funcoes-01.md)
 
-* ##### .name
-* ##### .length
-* ##### .toString()
-* ##### .call()
-* ##### .call(this)
+* ##### `.name`
+* ##### `.length`
+* ##### `.toString()`
+* ##### `.call()`
+* ##### `.call(this)`
 
 ---
 
 4. #### [Propriedades e métodos de funções - parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-22/04-prop-e-metodos-de-funcoes-02.md)
 
-* ##### .call(this, arg1, arg2, ..., argN)
-* ##### .apply()
-* ##### .apply(this)
-* ##### .apply(this, [arg1, arg2, ..., argN])
+* ##### `.call(this, arg1, arg2, ..., argN)`
+* ##### `.apply()`
+* ##### `.apply(this)`
+* ##### `.apply(this, [arg1, arg2, ..., argN])`
 
 ---
 
 5. #### [Prototype](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-22/05-prototype.md)
 
-* ##### .call(this, arg1, arg2, ..., argN)
+* ##### `.call(this, arg1, arg2, ..., argN)`
 * ##### Prototype em funções
 * ##### Criando propriedades depois de instanciar o objeto
-* ##### Sobrescrevendo o .prototype
+* ##### Sobrescrevendo o `.prototype`
 
 ---
 
 6. #### [Array-like e editorconfig](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-22/06-array-like-editor-config.md)
 
-* ##### Array.prototype
+* ##### `Array.prototype`
 * ##### Iterando um array-like
 * ##### Especificando um segundo parâmetro para o `forEach`
 * ##### Iterando o `arguments`

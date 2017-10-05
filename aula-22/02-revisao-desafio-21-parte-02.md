@@ -369,7 +369,7 @@ da `function stopTimer()` e da `function resetTimer()`.
 e essa alteração ter que ser feita em 2 lugares diferentes, significa que o meu  
 código já está escrito errado.
 
-O `stopTimer` da `function resetTimer()` precisa fazer exatamente a mesma ação  [
+O `stopTimer` da `function resetTimer()` precisa fazer exatamente a mesma ação  
 de parar. Portanto, eu posso chamá-lo dentro da função.  
 
 ```JAVASCRIPT
@@ -412,4 +412,4 @@ Mais a frente, será abordado a modularização de código e como deixá-lo mais
 conciso.  
 
 Já neste código, eu posso perceber que as variáveis, os listeners de evento e as  
-funções foram declaradas todas juntas. 
+funções foram declaradas todas juntas.
