@@ -75,7 +75,7 @@ função criada acima e passar parâmetros para ela:
         console.log(arguments);
     }
 
-    console.log(myFunction(1, 2, 3, 4, 5, 6));
+    myFunction(1, 2, 3, 4, 5, 6);
 
 })();
 ```
@@ -84,8 +84,8 @@ função criada acima e passar parâmetros para ela:
 
 Ou seja, o `arguments` é um `array-like` que possui 6 itens.  
 
-Se eu especificar um `length` no `arguments`, será logado o número de arrays que  
-o arguments possui:  
+Se eu especificar um `length` no `arguments`, será logado o número de argumentos  
+que o array possui:  
 
 ```JAVASCRIPT
 (function() {
@@ -95,7 +95,7 @@ o arguments possui:
         console.log(arguments.length);
     }
 
-    console.log(myFunction(1, 2, 3, 4, 5, 6));
+    myFunction(1, 2, 3, 4, 5, 6);
 
 })();
 ```
@@ -116,15 +116,15 @@ argumentos e mostrar cada argumento no console, será mostrado que
         });
     }
 
-    console.log(myFunction(1, 2, 3, 4, 5, 6));
+    myFunction(1, 2, 3, 4, 5, 6);
 
 })();
 ```
 
 [![for-each-error.jpg](https://s1.postimg.org/5t2oj7acj3/for-each-error.jpg)](https://postimg.org/image/9com90d2az/)
 
-Isso acontece porque o `arguments` não é um `array` de verdade e sim um  
-`array-like`. Ou seja, ele tem o formato de `array` e pode ser utilizado como  
+**Isso acontece porque o `arguments` não é um `array` de verdade e sim um  
+`array-like`**. Ou seja, ele tem o formato de `array` e pode ser utilizado como  
 array, mas não é um array de verdade.  
 
 Alguns exemplos de `array-like`:
@@ -226,7 +226,7 @@ Utilizando um array de verdade, vou passar o `this` como parâmetro do
 O `this`, dentro do `forEach` está como `undefined` porque ele está iterando  
 pelo array `arr`.  
 
-## Especificando um segundo parâmetro para o `forEach`
+## Especificando um segundo parâmetro para `forEach`, `map` e `filter`
 
 Em métodos como o `forEach`, `map` e `filter`, consigo passar um segundo  
 parâmetro para eles. Isso não foi visto anteriormente pois não havia  
@@ -507,4 +507,4 @@ padronizar os meus códigos.
 ## Como utilizar o editorconfig
 Preciso instalar a extensão `.editconfig` no meu editor e, quando eu estiver  
 resolvendo um desafio no meu editor, o próprio editor fará a leitura desse  
-arquivo e irá manter um padrão. 
+arquivo e irá manter um padrão.

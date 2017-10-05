@@ -486,8 +486,8 @@ retornar `20` se eu retirar a propriedade do objeto.
 
 Isso é interessante para quando eu estiver fazendo a minha biblioteca e quiser  
 utilizar valores padrão sem deixar que o usuário sobrescreva esses valores para  
-outros métodos. O que ele quiser sobrescrever, terá estar fora das propriedades  
-que eu especifiquei no objeto.  
+outros métodos. O que ele quiser sobrescrever, terá que estar fora das  
+propriedades que eu especifiquei no objeto.  
 
 Posso então, dar um nome para a minha biblioteca, uma versão, por exemplo, e,  
 se alguém tentar mudá-los com o `.prototype`, essas propriedades não serão  

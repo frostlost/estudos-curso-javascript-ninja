@@ -167,7 +167,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 * ##### `Array.prototype`
 * ##### Iterando um array-like
-* ##### Especificando um segundo parâmetro para o `forEach`
+* ##### Especificando um segundo parâmetro para `forEach`, `map` e `filter`
 * ##### Iterando o `arguments`
 * ##### editorconfig
 * ##### Como utilizar o editorconfig
