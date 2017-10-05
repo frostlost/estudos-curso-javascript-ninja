@@ -6,6 +6,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 ## Aula 20
 
 1. #### [JS no browser - Selecionar elementos do DOM](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-20/js-no-browser-01.md)
+
 * ##### IIFE - Passando parâmetros
 * ##### if / while / for com uma linha não precisam das chaves
 * ##### Métodos do Objeto window
@@ -15,6 +16,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 ---
 
 2. #### [JS no browser - parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-20/js-no-browser-02.md)
+
 * ##### Revisando o método prompt
   - ###### Como pegar a resposta do usuário
 * ##### window.confirm
@@ -31,6 +33,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 ---
 
 3. #### [JS no browser - parte 3 - Selecionando elementos do DOM](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-20/js-no-browser-03.md)
+
 * ##### document.getElementsByName()
 * ##### '$' no início de variáveis
 * ##### Valores mutáveis nos métodos getElement/s
@@ -40,6 +43,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 ---
 
 4. #### [JS no browser - parte 4 - Formulários e Eventos](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-20/js-no-browser-04.md)
+
 * ##### Formulários
   - ###### .value
   - ###### O método get
@@ -57,6 +61,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 ## Aula 21
 
 1. #### [Revisão do desafio da semana #20 - parte 01](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/01-revisao-desafio-parte-01.md)
+
 * ##### Relembrando if's de apenas uma linha
 * ##### Introdução à curto-circuito
   - ###### Curto-circuito com o `||`
@@ -67,11 +72,13 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 ---
 
 2. #### [Revisão do desafio da semana #20 - parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/02-revisao-desafio-parte-02.md)
+
 * ##### Preenchendo um input com o valor entrado pelo usuário
 
 ---
 
 3. #### [Revisão do desafio da semana #20 - parte 03](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/03-revisao-desafio-parte-03.md)
+
 * ##### 'is' e 'has', no início de funções
 * ##### Validando emails com RegExp()
   - ###### test()
@@ -79,6 +86,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 ---
 
 4. #### [Sync vs. Async](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/04-sync-vs-async.md)
+
 * ##### sync
 * ##### Async
   - ###### Event Loop
@@ -86,6 +94,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 ---
 
 5. #### [setTimeout()](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/05-set-time-out.md)
+
 * ##### setTimeout() + Revisando o event loop
 * ##### setInterval()
 * ##### setTimeout() sendo executado várias vezes repetidas
@@ -94,11 +103,74 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 ---
 
 6. #### [setTimeout vs. setInterval](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-21/06-settimeout-vs-setinterval.md)
+
 * ##### setTimeout
 * ##### setInterval
 * ##### O atributo data-js=""
 * ##### Métodos que param ou limpam o intervalo
   - ###### clearTimeout(id)
   - ###### clearInterval(id)
+
+---
+
+## Aula 22
+
+1. #### [Revisão do desafio da semana #21 - Parte 1](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-22/01-revisao-desafio-21-parte-01.md)
+
+* ##### Crie um arquivo index.html e adicione esse script a ele
+* ##### Crie um campo `input` do tipo `text`, e inicie-o com um valor 0 (zero). Ele será o nosso cronômetro
+* ##### Crie 3 botões para as ações do cronômetro: Start, Stop e Reset
+* ##### Atributo data-js para nomear o campo e os botões
+* ##### Ao clicar em Start, o valor do campo deve ser incrementado de 1 em 1, a cada segundo
+
+---
+
+2. #### [Revisão do desafio da semana #21 - Parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-22/02-revisao-desafio-21-parte-02.md)
+
+* ##### O operador `+` utilizado como unário
+* ##### Fazendo com que o valor do input seja incrementado a cada segundo
+* ##### Ao clicar em Stop, o cronômetro deve parar de contar
+* ##### Ao clicar em Reset, o cronômetro deve zerar e parar de contar
+* ##### Duplicação de código e o uso de funções
+* ##### Duplicação de código e o uso de funções
+
+---
+
+3. #### [Propriedades e métodos de funções - parte 01](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-22/03-prop-e-metodos-de-funcoes-01.md)
+
+* ##### .name
+* ##### .length
+* ##### .toString()
+* ##### .call()
+* ##### .call(this)
+
+---
+
+4. #### [Propriedades e métodos de funções - parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-22/04-prop-e-metodos-de-funcoes-02.md)
+
+* ##### .call(this, arg1, arg2, ..., argN)
+* ##### .apply()
+* ##### .apply(this)
+* ##### .apply(this, [arg1, arg2, ..., argN])
+
+---
+
+5. #### [Prototype](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-22/05-prototype.md)
+
+* ##### .call(this, arg1, arg2, ..., argN)
+* ##### Prototype em funções
+* ##### Criando propriedades depois de instanciar o objeto
+* ##### Sobrescrevendo o .prototype
+
+---
+
+6. #### [Array-like e editorconfig](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-22/06-array-like-editor-config.md)
+
+* ##### Array.prototype
+* ##### Iterando um array-like
+* ##### Especificando um segundo parâmetro para o `forEach`
+* ##### Iterando o `arguments`
+* ##### editorconfig
+* ##### Como utilizar o editorconfig
 
 ---
