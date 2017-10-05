@@ -452,16 +452,18 @@ o `index`:
 })();
 ```
 
-E posso mostrar no console o valor acumulado + o valor atual:
+E posso retornar o valor acumulado + o valor atual:
 
 ```JAVASCRIPT
 (function() {
     'use strict';
 
     function myFunction() {
-        Array.prototype.reduce.call(arguments, function(acumulated, actual, index) {
-            console.log(acumulated + actual);
+        var result = Array.prototype.reduce.call(arguments, function(acumulated, actual, index) {
+            return acumulated + actual;
         });
+
+        console.log(result);
     }
 
     myFunction(1, 2, 3, 4, 5, 6, 7, 8);
@@ -469,8 +471,40 @@ E posso mostrar no console o valor acumulado + o valor atual:
 })();
 ```
 
-O esperado é que ele faça a mesma coisa que o reduce, como se eu tivesse:  
+O esperado é que ele faça a mesma coisa que o `reduce`, como se eu tivesse feito:  
 
 ```JAVASCRIPT
+arr.reduce(function(acumulated, actual) {
 
+        return acumulated + actual;
+    });
 ```
+
+[![reduce.jpg](https://s1.postimg.org/3ntovfohqn/reduce.jpg)](https://postimg.org/image/1048l2vgej/)
+
+Uma das vantagens disso é que eu não preciso criar os meus próprios métodos de  
+de `reduce`, `map` e `filter`, para utilizar com o `arguments`. Posso utilizar os  
+métodos do JavaScript simplesmente utilizando o `prototype`, `call` e `apply`.
+
+## editorconfig
+http://editorconfig.org/ é um configurador de editor. Ele irá criar alguns  
+padrões para quando eu for editar os meus arquivos.  
+
+Quando eu tenho esse arquivo `.editorconfig` na raiz do diretório do meu  
+projeto, os arquivos que estão configurados com aquelas configurações que eu  
+passei sempre terão esse padrão.  
+
+`[*.{js,py}]` charset = utf-8 - todos os arquivos com a extensão `js` e `py` (javascript phyton),  
+irão utilizar o `charset utf 8`.
+
+[![space.jpg](https://s1.postimg.org/4zpoyfm4u7/space.jpg)](https://postimg.org/image/1qql1ryn7f/)
+
+Todos os arquivos phyton terão a indentação estilo espaço, com o tamanho de 4.  
+
+O **editorconfig** portanto é uma ferramenta interessante para que eu comece a  
+padronizar os meus códigos.  
+
+## Como utilizar o editorconfig
+Preciso instalar a extensão `.editconfig` no meu editor e, quando eu estiver  
+resolvendo um desafio no meu editor, o próprio editor fará a leitura desse  
+arquivo e irá manter um padrão. 
