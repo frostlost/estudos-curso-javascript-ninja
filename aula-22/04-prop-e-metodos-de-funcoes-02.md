@@ -75,7 +75,7 @@ Posso passar o restante dos parâmetros, normalmente:
 Lembrando: **o primeiro parâmetro quando uso o `call()` é sempre quem é o `this`  
 da função, e os outros parâmetros são os parâmetros normais daquela função**.  
 
-Posso também passar apenas 3 parâmetros, por exemplo  
+Posso também passar apenas 3 argumentos, por exemplo  
 `myFunction.call(obj2, 1, 2, 3);`. Claro que o argumento 4 seria `undefined`.  
 É exatamente como uma invocação de uma função, com a diferença de que eu estou  
 usando o método `call()`. Se eu fosse apenas invocar a função, seria desta  
@@ -141,8 +141,8 @@ um bug:
 })();
 ```
 
-Quando eu estiver chamando e precisar passar `null`, posso passar o nome da  
-própria função, para que ele seja o `this`:
+**Quando eu estiver chamando e precisar passar `null`, posso passar o nome da  
+própria função, para que ele seja o `this`**:
 
 ```JAVASCRIPT
 (function() {
@@ -169,7 +169,7 @@ própria função, para que ele seja o `this`:
 ```
 
 Então, **é interessante que, quando eu for invocar um `call()` e não precisar  
-passar um `this` específico, eu utilizar a própria função como `this`**, como no  
+passar um `this` específico, utilizar a própria função como `this`**, como no  
 exemplo acima.
 
 Outra coisa interessante é que eu posso mostrar os parâmetros passados de uma  
@@ -228,7 +228,7 @@ Suponhamos que eu acrescente um array de argumentos, nesse código:
 ```
 
 Digamos que eu queira quebrar o `var arr = [1, 2, 3];` para passar seus itens  
-como parâmetros para `myFunction.call(myFunction, 1, 2, 3);`. Não há como fazer  
+como argumentos para `myFunction.call(myFunction, 1, 2, 3);`. Não há como fazer  
 isso. O que eu posso fazer é passar o próprio array como argumento da função:  
 
 ```JAVASCRIPT

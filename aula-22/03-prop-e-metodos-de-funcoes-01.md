@@ -197,7 +197,7 @@ Suponhamos que eu tenha uma função:
 (function() {
     'use strict';
 
-    function myFunction(a, b, c, d) {
+    function myFunction() {
 
         console.log(this.lastName);
     }
@@ -214,7 +214,7 @@ função, eu estou dizendo que o objeto `obj` é o `this` da função `myFunctio
 (function() {
     'use strict';
 
-    function myFunction(a, b, c, d) {
+    function myFunction() {
 
         console.log(this.lastName);
     }
@@ -230,12 +230,12 @@ função, eu estou dizendo que o objeto `obj` é o `this` da função `myFunctio
 ```
 [![this_last_Name.jpg](https://s1.postimg.org/1kh2n7m1u7/this_last_Name.jpg)](https://postimg.org/image/3qgh8zdpl7/)
 
-Então, o `call()` serve para invocar a função mas, **eu consigo passar por  
+Então, **o `call()` serve para invocar a função mas, eu consigo passar por  
 parâmetro quem será o `this` da função**. O `obj` será o `this` da função. Então  
 quando eu chamo o `this` dentro da função, esse `this` na verdade irá  
 referenciar o objeto. É como se eu chamasse `console.log(obj.lastName);`.  
 
-A diferença é que eu posso chamar qualquer objeto. Por exemplo, posso criar um  
+A diferença é que **eu posso chamar qualquer objeto**. Por exemplo, posso criar um  
 outro objeto que tenha outro `lastName` e, quando eu passar o `obj2` para o  
 `myFunction.call(obj2)`, o `this` está representando o `obj2`:
 
