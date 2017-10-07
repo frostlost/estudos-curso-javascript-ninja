@@ -116,7 +116,7 @@ Basicamente, irei utilizar e visualizar os arquivos na aba `sources`:
 
 ## Usando a aba `sources` para debugar o código
 
-## Breakpoint
+### Breakpoint
 Definição: um ponto de parada.  
 
 Ele irá fazer com que, quando o JavaScript estiver fazendo a leitura do meu  
@@ -144,7 +144,7 @@ disponíveis para o `Array.prototype`, por exemplo:
 
 [![methods.jpg](https://s1.postimg.org/7upsxyzzf3/methods.jpg)](https://postimg.org/image/4wdiugrpxn/)
 
-## Painel Call Stack
+### Painel Call Stack
 
 No painel `Call Stack` será mostrado a pilha de execuções que serão feitas ou  
 que estão sendo feitas nesse momento:
@@ -164,7 +164,7 @@ ele já saiu da função, que vai até a linha `9`.
 
 E na linha `13` ele irá finalizar a execução da `IIFE`.  
 
-## Painel Scope
+### Painel Scope
 Neste painel, posso visualizar todas as variáveis que estão no meu escopo no  
 momento em que eu parei o meu `Breakpoint`:
 
