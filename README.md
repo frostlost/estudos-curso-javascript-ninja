@@ -173,3 +173,77 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Como utilizar o editorconfig
 
 ---
+
+## Aula 23
+
+1. #### [Revisão do desafio da semana #22 - Parte 1](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-23/01-revisao-desafio-22-parte-01.md)
+
+* ##### Crie dois objetos, que serão duas pessoas. Cada um deve ter as propriedades `name` e `lastName`, preenchidos com o nome e sobrenome da pessoa.
+
+* ##### Agora crie uma função chamada `getFullName` que retorne as propriedades `name` e `lastName` dos objetos acima, formando um nome completo. A função não deve receber nenhum parâmetro, mas as propriedades `name` e `lastName` devem ser dinâmicas. A mesma função deve servir para as duas pessoas (ou qualquer outra que for criada). Depois disso, invoque essa função, mostrando no console o nome completo das pessoas que foram criadas anteriormente, passando as pessoas acima como contexto da função. Use um console.log por pessoa.
+
+* ##### Crie uma função chamada `sum`. Essa função pode receber uma lista de parâmetros variável, e deverá retornar a soma de todos eles. Não use estruturas de repetição para somar os argumentos. Na primeira linha, dentro da função, deixe um console.log para mostrar todos os parâmetros passados para essa função.
+
+* ##### Como somar os arguments de uma função
+
+* ##### Mostre no console que a função acima funciona, invocando-a em 3 `console.log` diferentes, com quantidades variáveis de parâmetros passados.
+
+---
+
+2. #### [Revisão do desafio da semana #22 - Parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-23/02-revisao-desafio-22-parte-02.md)
+
+* ##### Declare uma variável chamada `userEntry`, que irá receber alguns valores entrados pelo usuário. Mostre para o usuário a seguinte frase: "Entre com alguns números que serão somados:"
+
+* ##### Mostre no console o valor entrado pelo usuário
+
+* ##### Crie uma função chamada `justNumbers`, que recebe por parâmetro uma string e remove tudo o que não for número, retornando um array somente com os números da string. Mostre a representação em string dessa função no console.
+
+* ##### Usando a função acima, faça a limpeza dos valores entrados pelo usuário, atribuindo o resultado à uma variável `numbers`.
+
+* ##### Agora com o array de números, utilize a função `sum` para somar todos os números desse array e mostre o resultado no console.
+
+---
+
+3. #### [Debug - parte 01](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-23/03-debug-parte-01.md)
+
+* ##### Usando a aba `sources` para debugar o código
+
+* ##### Breakpoints
+
+* ##### Painel Call Stack
+
+* ##### Painel Scope
+
+---
+
+4. #### [Debug - parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-23/04-debug-parte-02.md)
+
+* ##### Console no debugger
+
+---
+
+5. #### [Debug - parte 03](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-23/05-debug-parte-03.md)
+
+* ##### Desativando breakpoints
+
+* ##### Acessando funções sem breakpoints específicos
+
+* ##### Debugando com o `console`
+
+* ##### Browsers e suas APIS de console
+
+* ##### `console.`
+
+* ##### `console.clear();`
+
+* ##### `debugger;`
+
+---
+
+6. #### [Debug - parte 04](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-23/06-debug-parte-04.md)
+
+* ##### `console.time()` e `console.timeEnd()`
+
+* ##### `console.table()`
+
+---
