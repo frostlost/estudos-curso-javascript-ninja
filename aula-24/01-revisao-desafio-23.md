@@ -186,7 +186,7 @@ Vou acrescentar então atributos `data-js` no `input`, e nos `buttons`. Lembrand
 que o `data-js` deve ser usado ao invés do `id` e `class`, que podem trazer  
 efeitos colaterais.  
 
-Uma grande sacada é que o button também pode ter um atributo `value`. Isso irá  
+Uma grande sacada é que o `button` também pode ter um atributo `value`. Isso irá  
 me ajudar mais tarde, quando for preciso passar os valores dos botões para o  
 input:
 
@@ -219,11 +219,14 @@ input:
         <button data-js="button-operation" value="-">-</button>
         <button data-js="button-operation" value="x">x</button>
         <button data-js="button-operation" value="÷">÷</button>
-        <button data-js="button-operation">=</button>
-        <button data-js="button-operation">ce</button>
+        <button data-js="button-equal" value="=">=</button>
+        <button data-js="button-ce" value="ce">ce</button>
     </div>
 
     <script src="challenge-23.js"></script>
 </body>
 </html>
 ```
+
+Obs.: Os botões `=` e `ce` não possuem o atributo `data-js="button-operation"`  
+por que não precisam ser mostrados no visor. 

@@ -58,3 +58,32 @@ números foram capturados:
 ```
 
 [![buttons.jpg](https://s1.postimg.org/1rx9rmdmkv/buttons.jpg)](https://postimg.org/image/67fowvq0sr/)
+
+Se eu verificar as propriedades dos botões, vou encontrar o `value` deles:
+
+[![value.jpg](https://s1.postimg.org/4rbu1n01z3/value.jpg)](https://postimg.org/image/74egiudv5n/)
+
+Sabendo que cada `$numberButtons` são um elemento de array, posso atrelar um  
+evento de clique a cada botão.
+
+Essa função do evento, fará a concatenação de todo o valor que o visor já tem  
+mais o valor de cada botão. Lembrando que o `this`, neste caso, é o próprio  
+botão:
+
+```JAVASCRIPT
+(function(win, doc) {
+    'use strict';
+
+    var $visor = doc.querySelector('[data-js="visor"]');
+    var $numberButtons = doc.querySelectorAll('[data-js="button-number"]');
+
+    $numberButtons.forEach(function(button) {
+        button.addEventListener('click', handleClickNumber, false);
+    });
+
+    function handleClickNumber() {
+        $visor.value += this.value;
+    }
+
+})(window, document);
+```
