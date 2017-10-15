@@ -89,4 +89,4 @@ mesmas propriedades, uma tabela será montada:
 [![table.jpg](https://s1.postimg.org/83dlb4jbov/table.jpg)](https://postimg.org/image/2z1wlujegb/)
 
 Ou seja, o índice `0` do array tem um item chamado 'Arroz' e o preço com o valor  
-'R$ 10', e assim por diante. 
+'R$ 10', e assim por diante.
