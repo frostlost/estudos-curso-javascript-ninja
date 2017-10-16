@@ -75,8 +75,10 @@ atual do visor seja concatenado com o valor do botão, que é uma operação:
 Então, antes de adicionar o valor, preciso verificar se o último item é um dos  
 símbolos de operação. Vou criar uma função separada para isso.  
 
-Essa função irá quebrar o valor em um array e retornar `true` or `false` para  
-expressão `lastItem === operator;`:
+Essa função irá quebrar o valor (`number`) em um array e guardar o último item  
+desse array em uma variável. Então, será verificado se algum item do array  
+`operations` é igual a esse último item do array `number`. A função irá retornar  
+`true` or `false`:
 
 ```JAVASCRIPT
 function isLastItemAnOperation(number) {
@@ -95,7 +97,7 @@ fazer isso em uma função separada:
 ```JAVASCRIPT
 function removeLastItemIfItIsAnOperation(number) {
     if(isLastItemAnOperation(number))
-        return number.slice(0, -1);
+        number = number.slice(0, -1);
     return number;
 }
 ```
@@ -114,3 +116,8 @@ function handleClickOperation() {
     $visor.value += this.value;
 }
 ```
+
+### Sobre nomes de funções
+>Cada função deve ter uma responsabilidade única e, seu nome deve ser exatamente  
+o que ela faz. Mesmo que ela apenas englobe outras ações de outras funções, por  
+exemplo. 
