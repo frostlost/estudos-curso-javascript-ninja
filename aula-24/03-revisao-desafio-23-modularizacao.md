@@ -1,4 +1,4 @@
-# Revisão do desafio da semana #23 e Modularização de código
+# Revisão do desafio da semana #23 e Modularização de código - Parte 02
 
 ## Ao pressionar o botão "CE", o input deve ficar zerado
 Então vou pegar o botão `ce` e atribuir um evento a ele, fazendo com que, ao ser  
@@ -120,4 +120,4 @@ function handleClickOperation() {
 ### Sobre nomes de funções
 >Cada função deve ter uma responsabilidade única e, seu nome deve ser exatamente  
 o que ela faz. Mesmo que ela apenas englobe outras ações de outras funções, por  
-exemplo. 
+exemplo.

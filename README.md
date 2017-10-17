@@ -247,3 +247,58 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### `console.table()`
 
 ---
+
+## Aula 24
+
+1. #### [Revisão do desafio da semana #23 (mini-calculadora)](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-24/01-revisao-desafio-23.md)
+
+* ##### HTML básico da calculadora
+  - ###### Deve ter somente 1 input, mas não deve ser possível entrar dados nesse input diretamente
+  - ###### O input deve iniciar com valor zero
+  - ###### Deve haver 10 botões para os números de 0 a 9. Cada botão deve ser um número
+  - ###### Deve haver 4 botões para as operações principais: soma (+), subtração(-), multiplicação(x) e divisão(÷)
+  - ###### Deve haver um botão de "igual" (=) que irá calcular os valores e um botão "CE" que irá limpar o input, deixando-o com valor 0
+
+* ##### Especificando atributos no HTML para acessar seus elementos com JavaScript
+  - ###### A cada número pressionado, o input deve atualizar concatenando cada valor digitado, como em uma calculadora real
+
+---
+
+2. #### [Revisão do desafio da semana #23 e Modularização de código](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-24/02-revisao-desafio-23-modularizacao.md)
+
+* ##### JavaScript da Calculadora
+  - ###### A cada número pressionado, o input deve atualizar concatenando cada valor digitado, como em uma calculadora real
+
+---
+
+3. #### [Revisão do desafio da semana #23 e Modularização de código - Parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-24/03-revisao-desafio-23-modularizacao.md)
+
+* ##### JavaScript da Calculadora (cont.)
+  - ###### Ao pressionar o botão "CE", o input deve ficar zerado
+  - ###### Ao pressionar um botão com uma das 4 operações, deve aparecer o símbolo da operação no input
+  - ###### Se o último caractere no input já for um símbolo de alguma operação, esse caractere deve ser substituído pelo último pressionado
+  - ###### Sobre nomes de funções
+
+---
+
+4. #### [Revisão do desafio da semana #23 e Modularização de código - Parte 03](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-24/04-revisao-desafio-23-modularizacao.md)
+
+* ##### JavaScript da Calculadora (cont.)
+  - ###### Ao pressionar o botão de igual, o resultado do cálculo deve ser mostrado no input
+
+---
+
+5. #### [Revisão do desafio da semana #23 e Modularização de código - Parte 04](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-24/05-revisao-desafio-23-modularizacao.md)
+
+* ##### JavaScript da Calculadora (cont.)
+  - ###### Ao pressionar o botão de igual, o resultado do cálculo deve ser mostrado no input (cont.)
+
+---
+
+6. #### [Revisão do desafio da semana #23 e Modularização de código - Parte 05](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-24/06-revisao-desafio-23-modularizacao.md)
+
+* ##### JavaScript da Calculadora (cont.)
+  - ###### Ao pressionar o botão de igual, o resultado do cálculo deve ser mostrado no input (cont.)
+  - ###### `reduce()`
+
+---
