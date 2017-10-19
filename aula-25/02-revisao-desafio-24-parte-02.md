@@ -170,7 +170,7 @@ function makeOperation(firstValue, operator, lastValue) {
 }
 ```
 
-## Refatorando os operadores 
+## Refatorando os operadores
 A refatoração dos operadores faz com que, caso mais um operador seja incluído,  
 por exemplo, eu não necessite de incluí-lo em mais de um lugar no código.  
 
@@ -208,9 +208,9 @@ function isLastItemAnOperation(number) {
 ```
 
 Ou seja, se o operador `%` for incluído, por exemplo, vou ter que adicioná-lo  
-em `3` lugares diferentes do código.  
+em `3` lugares diferentes no código.  
 
-Mas, já que eu já recebo esses operadores a partir do  
+Mas eu já recebo os operadores a partir dos values do  
 `var $operationButtons = doc.querySelectorAll('[data-js="button-operation"]');`,  
-posso extrair esses operadores para uma função e chamá-los onde eu precisar  
+e posso extrair esses operadores para uma função e chamá-los onde eu precisar  
 utilizá-los.  
