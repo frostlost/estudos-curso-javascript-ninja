@@ -71,7 +71,7 @@
 
     function removeLastItemIfItIsAnOperation(number) {
         if(isLastItemAnOperation(number))
-            number = number.slice(0, -1);
+            return number.slice(0, -1);
         return number;
     }
 

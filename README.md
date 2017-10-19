@@ -312,3 +312,13 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Sobre a quantidade de linhas de uma função
 
 ---
+
+2. #### [Revisão do desafio da semana #24 (modularização da calculadora) - Parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-25/02-revisao-desafio-24-parte-02.md)
+
+* ##### Sobre nomes de funções
+* ##### Refatorando uma função com muitas linhas (`handleClickEqual()`)
+* ##### Sobre acoplamento de funções
+* ##### Evitando a repetição de código dentro de funções
+* ##### Refatorando os operadores
+
+---
