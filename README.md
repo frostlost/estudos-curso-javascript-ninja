@@ -302,3 +302,13 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
   - ###### `reduce()`
 
 ---
+
+## Aula 25
+
+1. #### [Revisão do desafio da semana #24 (modularização da calculadora)](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-25/01-revisao-desafio-24-parte-01.md)
+
+* ##### Organizando o código dentro de funções (initialize)
+* ##### Sobre duplicação de código
+* ##### Sobre a quantidade de linhas de uma função
+
+---
