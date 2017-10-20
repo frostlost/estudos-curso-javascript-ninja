@@ -308,7 +308,6 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 1. #### [Revisão do desafio da semana #24 (modularização da calculadora)](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-25/01-revisao-desafio-24-parte-01.md)
 
 * ##### Organizando o código dentro de funções (initialize)
-* ##### Sobre duplicação de código
 * ##### Sobre a quantidade de linhas de uma função
 
 ---
@@ -321,4 +320,14 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Evitando a repetição de código dentro de funções
 * ##### Refatorando os operadores
 
+---
+
+3. #### [Revisão do desafio da semana #24 (modularização da calculadora) - Parte 03](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-25/03-revisao-desafio-24-parte-03.md)
+
+* ##### Refatorando os operadores (cont.)
+  - ##### Refatorando uma regex literal
+* ##### Sobre duplicação de código
+* ##### Melhorando a legibilidade de uma regra
+* ##### Sobre números de linhas por arquivo
+* ##### Sobre comentários em código
 ---

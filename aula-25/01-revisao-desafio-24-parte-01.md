@@ -121,10 +121,6 @@ iniciar todos os eventos do código:
 })(window, document);
 ```
 
-## Sobre duplicação de código
-Em alguns momentos, códigos 'duplicados' irão ter ações diferentes que irão ser  
-aplicadas de formas diferentes.
-
 ## Sobre a quantidade de linhas de uma função
 
 ```JAVASCRIPT
