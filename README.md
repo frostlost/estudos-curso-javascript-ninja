@@ -330,6 +330,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Melhorando a legibilidade de uma regra
 * ##### Sobre números de linhas por arquivo
 * ##### Sobre comentários em código
+
 ---
 
 4. #### [Scripts e eventos inline](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-25/04-scripts-e-eventos-inline.md)
@@ -342,4 +343,14 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Lista de Eventos
 * ##### Eventos inline
 * ##### `onclick="boom()"`
+
+---
+
+5. #### [Eventos](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-25/05-eventos.md)
+
+* ##### Refatorando o código que pega o elemento html e atrela um evento à ele
+* ##### Sobre abstração de código
+* ##### Propagação de eventos
+* ##### O parâmetro use capture - `false` ou `true` como terceiro parâmetro em eventos
+
 ---
