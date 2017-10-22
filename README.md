@@ -331,3 +331,15 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Sobre números de linhas por arquivo
 * ##### Sobre comentários em código
 ---
+
+4. #### [Scripts e eventos inline](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-25/04-scripts-e-eventos-inline.md)
+
+* ##### Scripts inline
+* ##### `void(0)`, `void 0` ou `void0`
+* ##### `javascript:` ao invés do `javascript:void(0)`
+* ##### `void(0)` e `javascript:` em códigos legados
+* ##### `event.preventDefault()` em links
+* ##### Lista de Eventos
+* ##### Eventos inline
+* ##### `onclick="boom()"`
+---
