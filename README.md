@@ -354,3 +354,17 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### O parâmetro use capture - `false` ou `true` como terceiro parâmetro em eventos
 
 ---
+
+6. #### [Mais eventos por elemento](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-25/06-mais-eventos-por-elemento.md)
+
+* ##### Acumulando eventos em um mesmo elemento  
+* ##### A desvantagem de atrelar eventos usando atribuições sem o `addEventListener()`
+* ##### Removendo um evento com o `removeEventListener()`
+* ##### A importância de se usar funções nomeadas em eventos
+* ##### Eventos em elementos de formulário
+* ##### O evento `'input'`
+* ##### O evento `'keyup'`
+* ##### O evento `'keydown'`
+* ##### O evento `'change'` 
+
+---
