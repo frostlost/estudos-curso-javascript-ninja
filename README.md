@@ -371,7 +371,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ## Aula 26
 
-1. #### [O que é DOM e como percorrer os elementos da árvore)](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-26/01-percorrendo-dom.md)
+1. #### [O que é DOM e como percorrer os elementos da árvore](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-26/01-percorrendo-dom.md)
 
 * ##### API DOM
 * ##### Percorrendo elementos do DOM
