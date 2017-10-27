@@ -365,6 +365,22 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### O evento `'input'`
 * ##### O evento `'keyup'`
 * ##### O evento `'keydown'`
-* ##### O evento `'change'` 
+* ##### O evento `'change'`
+
+---
+
+## Aula 26
+
+1. #### [O que é DOM e como percorrer os elementos da árvore)](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-26/01-percorrendo-dom.md)
+
+* ##### API DOM
+* ##### Percorrendo elementos do DOM
+  - ###### `.parentNode`
+  - ###### `.childNodes`
+  - ###### `.firstChild`
+  - ###### `.lastChild`
+  - ###### `.nextSibling`
+  - ###### `.previousSibling`
+* ##### Os text Nodes de `.childNodes`, `.firstChild` e `.lastChild`
 
 ---
