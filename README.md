@@ -395,3 +395,19 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Suporte de features nos browsers
 
 ---
+
+3. #### [Percorrendo o DOM - Propriedades - parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-26/03-percorrendo-dom-propriedades-02.md)
+
+* ##### `.children`
+* ##### Diferenças entre `NodeList` e `HTMLCollection`
+* ##### `.firstElementChild`
+* ##### `.lastElementChild`
+* ##### `.nextElementSibling`
+* ##### `.previousElementSibling`
+* ##### `.childElementCount` ou `.children.length`
+* ##### Métodos utilizados para manipular o DOM
+* ##### `.hasAttribute(attributeName)`  
+* ##### `.hasAttributes()`  
+* ##### Boas práticas em nomes de funções  
+
+---
