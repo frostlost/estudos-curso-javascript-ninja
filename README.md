@@ -384,3 +384,14 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Os text Nodes de `.childNodes`, `.firstChild` e `.lastChild`
 
 ---
+
+2. #### [Percorrendo o DOM - Propriedades - parte 1](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-26/02-percorrendo-dom-propriedades-01.md)
+
+* ##### `.nodeType`
+* ##### Tabela com os números dos nodeTypes
+* ##### `.nodeValue`
+* ##### Comentários também são nodes
+* ##### `.nodeName`
+* ##### Suporte de features nos browsers
+
+---
