@@ -411,3 +411,12 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Boas práticas em nomes de funções  
 
 ---
+
+4. #### [Percorrendo o DOM - Métodos - parte 1](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-26/04-percorrendo-dom-metodos-01.md)
+
+* ##### `.appendChild(child)`
+* ##### `.insertBefore(node, beforeWho)`
+* ##### `.cloneNode(boolean)`
+* ##### `.hasChildNodes()`
+
+---
