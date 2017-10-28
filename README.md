@@ -420,3 +420,12 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### `.hasChildNodes()`
 
 ---
+
+5. #### [Percorrendo o DOM - Métodos - parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-26/05-percorrendo-dom-metodos-02.md)
+
+* ##### `removeChild(child)`  
+* ##### `.replaceChild(new, old)`  
+* ##### `document.createTextNode(text)`  
+* ##### `document.createElement(tagName)`  
+
+---
