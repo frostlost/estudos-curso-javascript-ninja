@@ -429,3 +429,15 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### `document.createElement(tagName)`  
 
 ---
+
+6. #### [Percorrendo o DOM - Atributos](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-26/06-percorrendo-dom-atributos.md)
+
+* ##### `element.id`
+* ##### `element.className`
+* ##### Especificando `element.id` ou `element.className` como setter
+* ##### `.getAttribute(attrName)`
+* ##### `parseFloat(value)`
+* ##### `parseInt(value, int)`
+* ##### `setAttribute(attr, value)`
+
+---
