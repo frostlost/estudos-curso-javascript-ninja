@@ -3,6 +3,20 @@
 # :books: Estudos do curso Javascript Ninja
 Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www.udemy.com/curso-javascript-ninja/?couponCode=JSNINJA), do professor [**Fernando Daciuk**](https://github.com/fdaciuk).
 
+## Aula 15
+
+1. #### [O Objeto `this`](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-15/05-this.md)
+
+* ##### O objeto `this`
+* ##### `this` em métodos de objetos  
+* ##### O Objeto global `window`  
+* ##### `this` em funções literais  
+* ##### Funções construtoras
+* ##### `this` referenciando um objeto instanciado  
+* ##### Invocando uma função construtora sem o `new`
+
+---
+
 ## Aula 20
 
 1. #### [JS no browser - Selecionar elementos do DOM](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-20/js-no-browser-01.md)
