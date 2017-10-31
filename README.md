@@ -17,6 +17,22 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
+## Aula 12
+
+3. #### [Criação de Objetos](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-15/03-criacao-de-objetos.md)
+
+* ##### Mutabilidade em objetos  
+  - ###### Modificando o valor de uma propriedade de um objeto
+  - ###### Criando uma nova propriedade para um objeto
+  - ###### Deletando uma propriedade de um objeto com o `delete`
+* ##### Manipulação de objetos por referência
+* ##### Criação de objetos de forma literal
+* ##### Criação de objetos como construtores (`new`)
+* ##### Criação de objetos com o `Object.create()`
+* ##### `Object.prototype`
+
+---
+
 ## Aula 15
 
 5. #### [O Objeto `this`](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-15/05-this.md)

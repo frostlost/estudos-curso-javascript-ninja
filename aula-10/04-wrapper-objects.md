@@ -8,7 +8,7 @@ Os valores primitivos são:
 Todos os outros tipos de valores em javascript são objetos.  
 
 Um valor primitivo não possui propriedades e métodos, ele é um valor apresentado  
-em sua forma final.  
+em sua forma final. Um valor imutável.  
 
 ## Definição de objeto
 Se algo dentro do javascript possui propriedades e métodos, ele é um objeto.  
