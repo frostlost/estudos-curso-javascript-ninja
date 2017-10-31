@@ -5,7 +5,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ## Aula 10
 
-1. #### [Wrapper Objects](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-10/04-wrapper-objects.md)
+4. #### [Wrapper Objects](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-10/04-wrapper-objects.md)
 
 * ##### Valores primitivos não são objetos
 * ##### Definição de objeto
@@ -19,7 +19,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ## Aula 15
 
-1. #### [O Objeto `this`](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-15/05-this.md)
+5. #### [O Objeto `this`](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-15/05-this.md)
 
 * ##### O objeto `this`
 * ##### `this` em métodos de objetos  
