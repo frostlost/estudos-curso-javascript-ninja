@@ -85,3 +85,20 @@ retorna o valor literal da string:
 ```
 
 ## Conversores - Wrapper Objects sem o `new`  
+
+[![conversores.png](https://s1.postimg.org/838zlswien/conversores.png)](https://postimg.org/image/3d3qne4w17/)
+
+Quando usados sem a palavra chave `new`, esses construtores se tornam  
+conversores.  
+
+```JAVASCRIPT
+(function() {
+
+  var myVar = String(10);
+
+  console.log(myVar);
+
+})();
+
+// '10'
+```

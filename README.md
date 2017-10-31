@@ -3,6 +3,20 @@
 # :books: Estudos do curso Javascript Ninja
 Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www.udemy.com/curso-javascript-ninja/?couponCode=JSNINJA), do professor [**Fernando Daciuk**](https://github.com/fdaciuk).
 
+## Aula 10
+
+1. #### [Wrapper Objects](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-10/04-wrapper-objects.md)
+
+* ##### Valores primitivos não são objetos
+* ##### Definição de objeto
+* ##### Se valores primitivos não são objetos, por que eles tem propriedades?  
+* ##### Wrapper Objects / Objetos Construtores  
+* ##### Utilizando a palavra-chave `new`
+* ##### `.valueOf()`  
+* ##### Conversores - Wrapper Objects sem o `new`  
+
+---
+
 ## Aula 15
 
 1. #### [O Objeto `this`](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-15/05-this.md)
