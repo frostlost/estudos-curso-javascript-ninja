@@ -501,3 +501,18 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### O método `off` irá remover o listener de evento de todos os elementos selecionados
 
 ---
+
+3. #### [Revisão da API DOM e DOM fragments](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-27/03-revisao-api-dom-fragments.md)
+
+* ##### API DOM - Relembrando
+  - ###### Lista de propriedades do DOM que incluem nós de texto e comentários
+  - ###### Lista de propriedades do DOM que incluem apenas elementos
+  - ###### Lista de métodos do DOM
+  - ###### Lista de métodos do DOM - document
+  - ###### Lista de propriedades que pegam atributos html válidos
+  - ###### Lista de propriedades que pegam qualquer atributo html
+  - ###### `document.createDocumentFragment()` - Manipulando elementos do DOM com performance
+* ##### Lista de propriedades que pegam qualquer atributo html
+* ##### `document.createDocumentFragment()` - incluindo um fragmento no DOM
+
+---
