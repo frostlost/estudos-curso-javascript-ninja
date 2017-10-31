@@ -83,17 +83,18 @@ Mas eu sei que, eu posso dar um `slice` nesse array.
 })();
 ```
 
-[![array_prototype.jpg](https://s1.postimg.org/5ifl2qmiun/array_prototype.jpg)](https://postimg.org/image/1rqfhhxnmz/)
+[![Array.prototype.jpg](https://s1.postimg.org/16nvfe5f73/Array.prototype.jpg)](https://postimg.org/image/zknjyj9rf/)
 
 O `Array.prototype` possui propriedades que foram atribuídas ao `.prototype`.  
+
+## Estendendo objetos com o `.prototype`
 O `.prototype` é o protótipo dos meus métodos, dos meus construtores e, à partir  
 do protótipo, consigo estender objetos. À partir do `.prototype`, consigo fazer  
-herança no JavaScript.
+herança no JavaScript.  
 
-## Prototype em funções
 `Object`, `Array`, `string`, `number` são objetos que já existem no JavaScript.  
-Vou criar o meu próprio construtor `MyFunction` e passar parâmetros para  
-esse construtor `MyFunction(name, lastName)`:
+Mas posso criar o meu próprio construtor e passar parâmetros para esse  
+construtor:
 
 ```JAVASCRIPT
 (function() {
@@ -126,7 +127,7 @@ irá receber o `name` passado por parâmetro e concatená-lo com `lastName`:
 
 Vou criar um novo objeto chamado 'roger', que irá herdar de `MyFunction` tudo o  
 que o `MyFunction` tem, e vou passar os argumentos dos parâmetros `name` e  
-`lastName`.
+`lastName`.  
 
 ```JAVASCRIPT
 (function() {
@@ -178,10 +179,6 @@ parâmetros para frente:
         this.lastName = lastName;
     }
 
-    var roger = new MyFunction('Roger', 'Melo');
-
-    console.log(roger.fullName);
-
 })();
 ```
 
@@ -215,12 +212,13 @@ concatenação do `this.name` com o `this.lastName`:
 ```
 
 Então, o `MyFunction.prototype.fullName` está fora da função principal  
-`function MyFunction(name, lastName)`.  
+(`function MyFunction(name, lastName)`).  
 
 Na função principal, que é a função construtora, estou usando o `this.name` e  
 passando para ela o parâmetro `name`. Ou seja, o objeto que eu instanciar terá  
 uma propriedade chamada 'name' e uma propriedade chamada 'lastName'. Mas ele não  
-irá ter uma propriedade chamada 'fullName'.  
+irá ter uma propriedade chamada 'fullName'. A propriedade `name` irá retornar  
+'Roger' e a propriedade `lastName` irá retornar 'Melo'.  
 
 A propriedade 'fullName' está sendo criada em:
 
@@ -241,7 +239,7 @@ argumentos o que os parâmetros pediam (name e lastName).
 Quando eu chamo `console.log( roger.fullName() );`, que é o método  
 `MyFunction.prototype.fullName`, ele me retorna o nome completo, como esperado.  
 
-Ou seja, o `this` dentro de
+Ou seja, o `this` dentro de  
 
 ```JAVASCRIPT
 MyFunction.prototype.fullName = function() {
@@ -250,8 +248,8 @@ MyFunction.prototype.fullName = function() {
 }
 ```
 
-representa o mesmo `this` que está sendo instanciado, porque estou utilizando o  
-`.prototype`.  
+representa o mesmo `this` que está sendo instanciado dentro da função principal,  
+porque estou utilizando o `.prototype`.  
 
 Se eu não especificar o `.prototype`:
 
@@ -314,7 +312,7 @@ existente:
 
 Então, quando eu utilizo o `.prototype`, estou estendendo essa função principal  
 (`MyFunction`) e utilizando esse método `fullName`. Quando eu instancio o meu  
-objeto `roger`, tenho acesso à esse método `fullName`:
+objeto `roger`, tenho acesso à esse método `fullName`:  
 
 ```JAVASCRIPT
 (function() {
@@ -342,7 +340,7 @@ objeto `roger`, tenho acesso à esse método `fullName`:
 
 ## Criando propriedades depois de instanciar o objeto
 Vou adicionar `MyFunction.prototype.age = 30;` após o instanciamento do objeto  
-`var roger = new MyFunction('Roger', 'Melo');`:
+`var roger = new MyFunction('Roger', 'Melo');`:  
 
 ```JAVASCRIPT
 (function() {
@@ -402,14 +400,13 @@ Vou tentar acessar, por exemplo, o `age` do objeto instanciado:
 ```
 
 Me retornou o esperado, mesmo depois de ter instanciado o meu objeto. Isso será  
-interessante quando eu estiver escrevendo as minhas próprias bibliotecas e eu  
-quiser deixar outras pessoas estenderem a minha biblioteca e adicionar  
-funcionalidades.  
+interessante quando eu estiver escrevendo as minhas próprias bibliotecas e  
+quiser deixar outras pessoas estenderem a biblioteca e adicionar funcionalidades.  
 
 Ou seja, eu crio as funcionalidades padrão da minha biblioteca e disponibilizo  
 essa biblioteca para ser estendida, utilizando o `.prototype`.  
 
-## Sobrescrevendo o .prototype
+## Sobrescrevendo o `.prototype`
 
 Se eu sobrescrever `age` com o `.prototype`, depois de criar a instância com o  
 objeto, eu consigo sim sobrescrever a ação padrão:
