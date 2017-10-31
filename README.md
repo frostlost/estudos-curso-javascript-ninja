@@ -484,3 +484,20 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### `setAttribute(attr, value)`
 
 ---
+
+## Aula 27
+
+1. #### [Revisão desafio da semana #26 - Parte 1](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-27/01-revisao-desafio-26-parte-01.md)
+
+* ##### O nome da lib deve ser "DOM". Ela deve ser uma função construtora, que receberá uma string por parâmetro. Essa string será o nó do DOM a ser selecionado; No construtor, você deve atribuir à `this.element` todos os elementos do DOM selecionados;
+* ##### Extenda a lib para ter os métodos `on`, `off` e `get`
+
+---
+
+2. #### [Revisão desafio da semana #26 - Parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-27/02-revisao-desafio-26-parte-02.md)
+
+* ##### O método `get` deve retornar os elementos  
+* ##### O método `on` irá adicionar um listener de evento a todos os elementos selecionados
+* ##### O método `off` irá remover o listener de evento de todos os elementos selecionados
+
+---
