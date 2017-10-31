@@ -200,8 +200,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 5. #### [Prototype](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-22/05-prototype.md)
 
-* ##### `.call(this, arg1, arg2, ..., argN)`
-* ##### Prototype em funções
+* ##### Estendendo objetos com o `.prototype`
 * ##### Criando propriedades depois de instanciar o objeto
 * ##### Sobrescrevendo o `.prototype`
 
