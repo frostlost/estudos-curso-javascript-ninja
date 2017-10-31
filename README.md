@@ -19,7 +19,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ## Aula 12
 
-3. #### [Criação de Objetos](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-15/03-criacao-de-objetos.md)
+3. #### [Criação de Objetos](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-12/03-criacao-de-objetos.md)
 
 * ##### Mutabilidade em objetos  
   - ###### Modificando o valor de uma propriedade de um objeto
