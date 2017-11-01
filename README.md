@@ -516,3 +516,13 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### `document.createDocumentFragment()` - incluindo um fragmento no DOM
 
 ---
+
+4. #### [Eventos](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-27/04-eventos.md)
+
+* ##### Posição dos `script` no `html` importa  
+* ##### O evento `DOMContentLoaded`: resolvendo o problema de `scripts` no `head`
+* ##### Por que posicionar `script`'s no fim do `body`
+* ##### Testes com imagens pesadas e o `DOMContentLoaded`
+* ##### O evento `load` 
+
+---
