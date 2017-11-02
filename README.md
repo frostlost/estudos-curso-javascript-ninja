@@ -523,6 +523,24 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### O evento `DOMContentLoaded`: resolvendo o problema de `scripts` no `head`
 * ##### Por que posicionar `script`'s no fim do `body`
 * ##### Testes com imagens pesadas e o `DOMContentLoaded`
-* ##### O evento `load` 
+* ##### O evento `load`
+
+---
+
+5. #### [Técnicas Ninja](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-27/05-tecnicas-ninja.md)
+
+* ##### Copiando um array com o `map()`
+* ##### Copiando um array com o `slice()`
+* ##### Copiando um array-like com o `Array.prototype.slice.call(arrayName)`
+* ##### Manipulando o mesmo array com 2 referências diferentes  
+* ##### Descobrindo o tipo real de um elemento  
+  - ###### `.toString()` em arrays
+  - ###### `.toString()` em objetos literais  
+* ##### `Object.prototype.toString.call(thisObjName)` - Descobrindo o tipo real de um elemento
+  - ###### Descobrindo se um objeto é do tipo `array`
+  - ###### Descobrindo se um objeto é do tipo `function() {}`
+  - ###### Descobrindo se um objeto é do tipo `arguments`
+  - ###### Criando funções que verificam os tipos de objetos
+* ##### Relembrando o `typeof`
 
 ---
