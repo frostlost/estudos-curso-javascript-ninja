@@ -1,6 +1,6 @@
 # Prototype
-Em aulas passadas, foi visto que os objetos principais do JavaScript (`object`,  
-`string`, `array`, `date`, `RegExp`, `number`, ...) possuem uma propriedade  
+Em aulas passadas, foi visto que os objetos principais do JavaScript (`Object`,  
+`String`, `Array`, `Date`, `RegExp`, `Number`, ...) possuem uma propriedade  
 chamada `.prototype`.  
 
 Essa propriedade possui todos os métodos do objeto principal que irão ser  
@@ -19,8 +19,7 @@ dizer que eu tenho um objeto vazio:
 
 })();
 ```
-
-[![obj_vazio.jpg](https://s1.postimg.org/4iy7rr12ov/obj_vazio.jpg)](https://postimg.org/image/1h2bqizqhn/)
+![obj_vazio](https://user-images.githubusercontent.com/29297788/32407482-df875d98-c170-11e7-90c4-dbc078d6850b.jpg)
 
 Mas, na verdade, eu tenho algumas propriedades desse objeto, por exemplo:  
 
@@ -83,7 +82,7 @@ Mas eu sei que, eu posso dar um `slice` nesse array.
 })();
 ```
 
-[![Array.prototype.jpg](https://s1.postimg.org/16nvfe5f73/Array.prototype.jpg)](https://postimg.org/image/zknjyj9rf/)
+![array prototype](https://user-images.githubusercontent.com/29297788/32407493-11a49818-c171-11e7-9f20-01f69f697709.jpg)
 
 O `Array.prototype` possui propriedades que foram atribuídas ao `.prototype`.  
 
@@ -92,7 +91,7 @@ O `.prototype` é o protótipo dos meus métodos, dos meus construtores e, à pa
 do protótipo, consigo estender objetos. À partir do `.prototype`, consigo fazer  
 herança no JavaScript.  
 
-`Object`, `Array`, `string`, `number` são objetos que já existem no JavaScript.  
+`Object`, `Array`, `String`, `Number` são objetos que já existem no JavaScript.  
 Mas posso criar o meu próprio construtor e passar parâmetros para esse  
 construtor:
 
@@ -101,7 +100,6 @@ construtor:
     'use strict';
 
     function MyFunction(name, lastName) {
-
 
     }
 
