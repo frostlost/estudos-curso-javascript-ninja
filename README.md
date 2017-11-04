@@ -544,3 +544,12 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Relembrando o `typeof`
 
 ---
+
+## Aula 28
+
+1. #### [Revisão desafio da semana #27 - Parte 1](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-28/01-revisao-desafio-27.md)
+
+* ##### Aproveitando a lib DOM que fizemos na semana anterior, crie agora para ela métodos semelhantes aos que existem no array, mas que sirvam para os elementos do DOM selecionados. Crie os seguintes métodos: - forEach, map, filter, reduce, reduceRight, every e some.
+* ##### Criando um método forEach para os elementos do DOM selecionados
+
+---
