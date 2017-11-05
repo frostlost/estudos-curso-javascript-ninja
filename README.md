@@ -553,3 +553,15 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Criando um método forEach para os elementos do DOM selecionados
 
 ---
+
+2. #### [Revisão desafio da semana #27 - Parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-28/02-revisao-desafio-27.md)
+
+* ##### (cont...) Aproveitando a lib DOM que fizemos na semana anterior, crie agora para ela métodos semelhantes aos que existem no array, mas que sirvam para os elementos do DOM selecionados. Crie os seguintes métodos: - forEach, map, filter, reduce, reduceRight, every e some. 
+* ##### Testando os métodos de arrays criados 
+  - ###### map()  
+  - ###### reduce() 
+* ##### Crie os seguintes métodos para verificação de tipo: - isArray, isObject, isFunction, isNumber, isString, isBoolean, isNull. 
+* ##### Devidos cuidados ao invocar os métodos de verificação de tipo 
+* ##### Uma observação sobre o undefined 
+* ##### Uma observação sobre o number 
+* ##### Código final
