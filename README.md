@@ -565,3 +565,15 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Uma observação sobre o undefined 
 * ##### Uma observação sobre o number 
 * ##### Código final
+
+---
+
+3. #### [Introdução à AJAX](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-28/03-intro-ajax.md)
+
+* ##### O que é AJAX 
+* ##### Qual é a função do AJAX 
+* ##### O objeto window.XMLHttpRequest() 
+* ##### Os três passos básicos para que uma requisição AJAX funcione 
+* ##### Como funciona uma requisição AJAX 
+
+--- 
