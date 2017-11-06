@@ -586,3 +586,13 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### ajax.status - Verificando os status da requisição 
 
 --- 
+
+5. #### [Ajax - Parte 03](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-28/05-ajax-parte-03.md)
+
+* ##### Manipulando respostas de requisições ajax
+* ##### ajax.responseText
+* ##### JSON.parse(ajax.responseText) - Manipulando dados JSON
+* ##### ajax.responseXML - Manipulando dados XML
+
+--- 
+
