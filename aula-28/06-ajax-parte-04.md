@@ -1,4 +1,4 @@
-# Ajax - Parte 4 
+# Ajax - Parte 04 
 
 ## Tratamento de erros 
 Ao ocorrer um erro em uma aplicação JavaScript, o erro é disparado no console.  
