@@ -144,5 +144,95 @@ de erro. O parâmetro `(e)` no `catch` é o objeto de erro:
 ![image](https://user-images.githubusercontent.com/29297788/32450571-b4db30ce-c2fb-11e7-8171-e31921b6da9f.png)
 
 Ou seja, o `try` executou o código que está dentro dele. Se esse código dispara  
-qualquer tipo de erro, ele manda esse erro como objeto para o parâmetro `(e)` do  
-catch.
+qualquer tipo de erro, ele manda esse objeto de erro para o parâmetro `(e)` do  
+catch, para que o erro não seja disparado no browser (um erro comum pode parar  
+a execução do código e não carregar a página por completo). Então, o `try` /  
+`catch` é usado para não deixar que o código pare.  
+
+Na imagem acima, o que foi disparado, ao invés de um erro, foi uma string, uma  
+mensagem.  
+
+Eu posso então criar uma variável `response` que irá receber o `responseText`  
+dentro do `try`. Ou seja, se por acaso, a variável conseguir pegar o valor de  
+`responseText`, tudo certo. Se não, vou fazer com que a variável receba o próprio  
+`ajax.responseText` (que será uma string).  
+
+Ou seja, se o request estiver ok, ele irá atribuir o Parseamento do json à essa  
+variável. Se po acaso a resposta não for um json e ele for disparar um erro, ao invés  
+de mostrar o erro para o usuário, ele irá cair na cláusula catch e, na cláusula catch  
+o responseText está simplesmente sendo passado para a variável, que será mostrada no  
+console:  
+
+```JAVASCRIPT 
+(function(win, doc) {
+  'use strict';
+
+  var ajax = new XMLHttpRequest();
+
+  ajax.open(
+    'GET',
+    '/curso-javascript-ninja/javascript-ninja-exemplos/data/data.xml'
+  );
+  ajax.send();
+
+  var response = '';
+  ajax.addEventListener('readystatechange', function() {
+    if(isRequestOk()) {
+      try {
+        response = JSON.parse(ajax.responseText);
+      }
+      catch(e) {
+        response = ajax.responseText;
+      }
+      console.log(response);
+    }
+  }, false);
+
+  function isRequestOk() {
+    return ajax.readyState === 4 && ajax.status === 200;
+  }
+
+})(window, document);
+```
+
+![image](https://user-images.githubusercontent.com/29297788/32451865-22addd2e-c2ff-11e7-8f87-107bba8ee59d.png)
+
+Ou seja, se eu não conseguir manipulá-lo como um `.json`, ele irá trazer para mim esse  
+documento como uma string.  
+
+Se eu chamo o `.json`, ele será parseado normalmente e trazer o objeto para mim, porque ele  
+caiu no `try`, que **não deu nenhum erro, então ele não entra no `catch`**:  
+
+```JAVASCRIPT 
+(function(win, doc) {
+  'use strict';
+
+  var ajax = new XMLHttpRequest();
+
+  ajax.open(
+    'GET',
+    '/curso-javascript-ninja/javascript-ninja-exemplos/data/data.json'
+  );
+  ajax.send();
+
+  var response = '';
+  ajax.addEventListener('readystatechange', function() {
+    if(isRequestOk()) {
+      try {
+        response = JSON.parse(ajax.responseText);
+      }
+      catch(e) {
+        response = ajax.responseText;
+      }
+      console.log(response);
+    }
+  }, false);
+
+  function isRequestOk() {
+    return ajax.readyState === 4 && ajax.status === 200;
+  }
+
+})(window, document);
+```
+
+![image](https://user-images.githubusercontent.com/29297788/32451962-5b0b771c-c2ff-11e7-8d0d-d6ad09b596ff.png)
