@@ -596,3 +596,11 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 --- 
 
+6. #### [Ajax - Parte 04](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-28/06-ajax-parte-04.md)
+
+* ##### Tratamento de erros 
+* ##### throw new Error('error message') e throw new SyntaxError('error message') - Como disparar erros em JavaScript 
+* ##### try e catch 
+
+--- 
+
