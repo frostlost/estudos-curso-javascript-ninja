@@ -577,3 +577,12 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Como funciona uma requisição AJAX 
 
 --- 
+
+4. #### [Ajax - parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-28/04-ajax-parte-02.md)
+
+* ##### O evento readystatechange 
+* ##### A propriedade readyState 
+* ##### Os números de estado das requisições 
+* ##### ajax.status - Verificando os status da requisição 
+
+--- 
