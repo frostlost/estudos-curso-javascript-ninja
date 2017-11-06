@@ -105,3 +105,44 @@ o usuário.
 
 O `try` irá tentar fazer algo, se ele não conseguir, ele irá cair na cláusula `catch`  
 para resolver o problema do erro.  
+
+Suponhamos que eu dispare um erro comum dentro da cláusula `try`. Como estou  
+disparando um erro, um erro sempre será disparado. Após isso, ele irá cair na  
+cláusula `catch` e dizer qual erro aconteceu, retornando-o como `string`, ao invés  
+de erro. O parâmetro `(e)` no `catch` é o objeto de erro:  
+
+```JAVASCRIPT 
+(function(win, doc) {
+  'use strict';
+
+  var ajax = new XMLHttpRequest();
+
+  ajax.open(
+    'GET',
+    '/curso-javascript-ninja/javascript-ninja-exemplos/data/data.xml'
+  );
+  ajax.send();
+
+  ajax.addEventListener('readystatechange', function() {
+    if(isRequestOk()) {
+      try {
+        throw new Error('Mensagem de erro');
+      }
+      catch(e) {
+        console.log(e);
+      }
+    }
+  }, false);
+
+  function isRequestOk() {
+    return ajax.readyState === 4 && ajax.status === 200;
+  }
+
+})(window, document);
+```
+
+![image](https://user-images.githubusercontent.com/29297788/32450571-b4db30ce-c2fb-11e7-8171-e31921b6da9f.png)
+
+Ou seja, o `try` executou o código que está dentro dele. Se esse código dispara  
+qualquer tipo de erro, ele manda esse erro como objeto para o parâmetro `(e)` do  
+catch.
