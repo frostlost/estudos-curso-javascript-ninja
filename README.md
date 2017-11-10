@@ -604,3 +604,14 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 --- 
 
+## Aula 29
+
+1. #### [Revisão desafio da semana #28 - Parte 1](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-29/01-revisao-desafio-28-01.md)
+
+* ##### Crie um formulário com um input de texto que receberá um CEP e um botão de submit 
+* ##### Crie uma estrutura HTML para receber informações de endereço: "Logradouro, Bairro, Estado, Cidade e CEP." Essas informações serão preenchidas com os dados da requisição feita no JS 
+* ##### Crie uma área que receberá mensagens com o status da requisição: "Carregando, sucesso ou erro." 
+* ##### Utilize a lib DOM criada anteriormente para facilitar a manipulação e adicionar as informações em tela 
+
+---
+
