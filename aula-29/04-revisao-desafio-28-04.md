@@ -314,11 +314,11 @@ objeto, que possui as mesmas propriedades mas com valores diferentes:
 
   function clearData() {
     return {
-      address: '-',
-      district: '-',
-      state: '-',
-      city: '-',
-      code: '-'
+      logradouro: '*',
+      bairro: '*',
+      uf: '*',
+      localidade: '*',
+      cep: '*'
     };
   }
 
