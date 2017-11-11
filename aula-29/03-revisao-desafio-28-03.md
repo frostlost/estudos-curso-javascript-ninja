@@ -1,4 +1,4 @@
-# Revisão desafio da semana #28 - Parte 2 
+# Revisão desafio da semana #28 - Parte 3 
 
 ## Limpando o cep entrado pelo usuário 
 
