@@ -622,3 +622,11 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 --- 
 
+3. #### [Revisão desafio da semana #28 - Parte 3](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-29/03-revisao-desafio-28-03.md)
+
+* ##### Limpando o cep entrado pelo usuário 
+* ##### Preenchendo os dados do cep com a propriedade `.textContent` 
+* ##### try / catch - Fazendo com que o o objeto json parseado seja null em casos de erros de requisição 
+* ##### Enquanto os dados são buscados, na área de mensagens de status, deve mostrar a mensagem: "Buscando informações para o CEP [CEP]..." Se não houver dados para o CEP entrado, mostrar a mensagem: "Não encontramos o endereço para o CEP [CEP]." Se houver endereço para o CEP digitado, mostre a mensagem: "Endereço referente ao CEP [CEP]:" 
+
+--- 
