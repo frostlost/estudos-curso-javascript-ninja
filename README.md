@@ -641,3 +641,11 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Código final 
 
 --- 
+
+5. #### [Module Pattern - Parte 01](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-29/05-module-pattern-01.md)
+
+* ##### Separando o código em módulos 
+* ##### Exportando a lib/módulo DOM 
+* ##### Module patterns 
+
+--- 
