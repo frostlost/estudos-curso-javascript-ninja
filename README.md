@@ -615,3 +615,10 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
+2. #### [Revisão desafio da semana #28 - Parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-29/02-revisao-desafio-28-02.md)
+
+* ##### Ao submeter esse formulário, deve ser feito um request Ajax para a URL: "https://viacep.com.br/ws/[CEP]/json/", onde [CEP] será o CEP passado no input criado no HTML 
+* ##### Substituindo o cep da url 
+
+--- 
+
