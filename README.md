@@ -630,3 +630,14 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Enquanto os dados são buscados, na área de mensagens de status, deve mostrar a mensagem: "Buscando informações para o CEP [CEP]..." Se não houver dados para o CEP entrado, mostrar a mensagem: "Não encontramos o endereço para o CEP [CEP]." Se houver endereço para o CEP digitado, mostre a mensagem: "Endereço referente ao CEP [CEP]:" 
 
 --- 
+
+4. #### [Revisão desafio da semana #28 - Parte 4](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-29/04-revisao-desafio-28-04.md)
+
+* ##### (cont.) Enquanto os dados são buscados, na área de mensagens de status, deve mostrar a mensagem: "Buscando informações para o CEP [CEP]..." Se não houver dados para o CEP entrado, mostrar a mensagem: "Não encontramos o endereço para o CEP [CEP]." Se houver endereço para o CEP digitado, mostre a mensagem: "Endereço referente ao CEP [CEP]:" 
+* ##### Variáveis no início do código 
+* ##### Posicionando as mensagens de erro, acerto e loading 
+* ##### As funções clearCep() e replaceCep(str) 
+* ##### Limpando os campos em caso de erro do request 
+* ##### Código final 
+
+--- 
