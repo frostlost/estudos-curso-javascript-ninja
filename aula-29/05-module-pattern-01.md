@@ -267,3 +267,446 @@ acessá-lo por que coloquei-o em escopo global:
 
 ![image](https://user-images.githubusercontent.com/29297788/32693604-ed8e5550-c714-11e7-943d-5341392b1351.png)
 
+## Module patterns 
+É um padrão usado para melhorar um código, fazendo com que ele seja também um módulo que  
+possa ser exportado, caso necessário.  
+
+O module pattern é basicamente uma função que irá retornar os métodos que forem necessários.  
+
+Ela irá retornar um objeto, que retornará um método `init` que possui um código dentro de  
+sua função que será exportado. Assim, todos os métodos retornados no objeto serão globais.  
+Ou seja, esses métodos serão retornados e acessados através da invocação dessa função `app`.  
+
+Vou fazer com que o método `init` retorne as declarações das variáveis:  
+
+```JAVASCRIPT 
+(function(win, doc, DOM) {
+  'use strict';
+
+  function app() {
+    return {
+      init: function() {
+        var $formCep = new DOM('[data-js="form-cep"]');
+        var $inputCep = new DOM('[data-js="input-cep"]');
+        var $status = new DOM('[data-js="status-msg"]');
+        var $logradouro = new DOM('[data-js="logradouro"]');
+        var $bairro = new DOM('[data-js="bairro"]');
+        var $estado = new DOM('[data-js="estado"]');
+        var $cidade = new DOM('[data-js="cidade"]');
+        var $cep = new DOM('[data-js="cep"]');
+        var ajax = new XMLHttpRequest();
+        $formCep.on('submit', handleFormSubmit);
+      };
+    };
+  }
+
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    ajax.open('GET', replaceCep('https://viacep.com.br/ws/[CEP]/json/'));
+    ajax.send();
+    getMsg('loading');
+    ajax.addEventListener('readystatechange', handleStateChange);
+  }
+
+  function handleStateChange() {
+    if(isRequestOk()) {
+      getMsg('ok');
+      fillCepFields();
+    }
+  }
+
+  function fillCepFields() {
+    var data = parseData();
+    if(!data) {
+      getMsg('error');
+      data = clearData();
+      console.log('data error', data);
+    }
+    $logradouro.get()[0].textContent = data.logradouro;
+    $bairro.get()[0].textContent = data.bairro;
+    $estado.get()[0].textContent = data.uf;
+    $cidade.get()[0].textContent = data.localidade;
+    $cep.get()[0].textContent = data.cep;
+  }
+
+  function clearData() {
+    return {
+      logradouro: '*',
+      bairro: '*',
+      uf: '*',
+      localidade: '*',
+      cep: '*'
+    };
+  }
+
+  function getMsg(type) {
+    var messages = {
+      error: replaceCep('Não encontramos o endereço para o CEP [CEP].'),
+      ok: replaceCep('Endereço referente ao CEP [CEP]:'),
+      loading: replaceCep('Buscando informações para o CEP [CEP]...')
+    };
+    $status.get()[0].textContent = messages[type];
+  }
+
+  function replaceCep(str) {
+    return str.replace('[CEP]', clearCep());
+  }
+
+  function clearCep() {
+    return $inputCep.get()[0].value.replace(/\D+/g, '');
+  }
+
+  function parseData() {
+    var result;
+    try {
+      result = JSON.parse(ajax.responseText);
+    }
+    catch(e) {
+      result = null;
+    }
+    return result;
+  }
+
+  function isRequestOk() {
+    return ajax.readyState === 4 && ajax.status === 200;
+  }
+
+})(window, document, window.DOM);
+``` 
+
+Agora, para acessar esse método `init`, posso especificar  
+
+```JAVASCRIPT 
+app().init();
+```
+
+Irei também colocar todas as funções dentro do módulo, antes do return:  
+
+```JAVASCRIPT 
+(function(win, doc, DOM) {
+  'use strict';
+
+  function app() {
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      ajax.open('GET', replaceCep('https://viacep.com.br/ws/[CEP]/json/'));
+      ajax.send();
+      getMsg('loading');
+      ajax.addEventListener('readystatechange', handleStateChange);
+    }
+
+    function handleStateChange() {
+      if(isRequestOk()) {
+        getMsg('ok');
+        fillCepFields();
+      }
+    }
+
+    function fillCepFields() {
+      var data = parseData();
+      if(!data) {
+        getMsg('error');
+        data = clearData();
+        console.log('data error', data);
+      }
+      $logradouro.get()[0].textContent = data.logradouro;
+      $bairro.get()[0].textContent = data.bairro;
+      $estado.get()[0].textContent = data.uf;
+      $cidade.get()[0].textContent = data.localidade;
+      $cep.get()[0].textContent = data.cep;
+    }
+
+    function clearData() {
+      return {
+        logradouro: '*',
+        bairro: '*',
+        uf: '*',
+        localidade: '*',
+        cep: '*'
+      };
+    }
+
+    function getMsg(type) {
+      var messages = {
+        error: replaceCep('Não encontramos o endereço para o CEP [CEP].'),
+        ok: replaceCep('Endereço referente ao CEP [CEP]:'),
+        loading: replaceCep('Buscando informações para o CEP [CEP]...')
+      };
+      $status.get()[0].textContent = messages[type];
+    }
+
+    function replaceCep(str) {
+      return str.replace('[CEP]', clearCep());
+    }
+
+    function clearCep() {
+      return $inputCep.get()[0].value.replace(/\D+/g, '');
+    }
+
+    function parseData() {
+      var result;
+      try {
+        result = JSON.parse(ajax.responseText);
+      }
+      catch(e) {
+        result = null;
+      }
+      return result;
+    }
+
+    function isRequestOk() {
+      return ajax.readyState === 4 && ajax.status === 200;
+    }
+
+    return {
+      init: function() {
+        var $formCep = new DOM('[data-js="form-cep"]');
+        var $inputCep = new DOM('[data-js="input-cep"]');
+        var $status = new DOM('[data-js="status-msg"]');
+        var $logradouro = new DOM('[data-js="logradouro"]');
+        var $bairro = new DOM('[data-js="bairro"]');
+        var $estado = new DOM('[data-js="estado"]');
+        var $cidade = new DOM('[data-js="cidade"]');
+        var $cep = new DOM('[data-js="cep"]');
+        var ajax = new XMLHttpRequest();
+        $formCep.on('submit', handleFormSubmit);
+      }
+    };
+  }
+
+  app().init();
+
+})(window, document, window.DOM);
+```
+
+Ou seja, peguei as funções e as coloquei no escopo de uma outra função (`app()`).  
+Isso fará com que o que faz parte do módulo fique centralizado na função `app()`.  
+Ou seja, tudo o que faz parte do módulo fica em `app()`, tudo fica dividido em  
+funções e no final, o método principal `init` será retornado, fazendo o `init` das  
+variáveis.  
+
+**O problema deste caso** é que ao atualizar e executar a aplicação, será mostrado  
+que alguma variável não está definida:  
+
+![image](https://user-images.githubusercontent.com/29297788/32693804-ea1120c6-c717-11e7-8840-fbc7597d76a0.png)
+
+Isso está acontecendo porque estou chamando essa variável em um escopo local, no  
+caso, o escopo da função/método `init`:  
+
+```JAVASCRIPT 
+    return {
+      init: function() {
+        var $formCep = new DOM('[data-js="form-cep"]');
+        var $inputCep = new DOM('[data-js="input-cep"]');
+        var $status = new DOM('[data-js="status-msg"]');
+        var $logradouro = new DOM('[data-js="logradouro"]');
+        var $bairro = new DOM('[data-js="bairro"]');
+        var $estado = new DOM('[data-js="estado"]');
+        var $cidade = new DOM('[data-js="cidade"]');
+        var $cep = new DOM('[data-js="cep"]');
+        var ajax = new XMLHttpRequest();
+        $formCep.on('submit', handleFormSubmit);
+      }
+    };
+  }
+```
+
+Ou seja, as variáveis que foram criadas só são acessíveis lá dentro.  
+
+Então, **é preciso reposicionar essas variáveis para o escopo da função `app()`**  
+e excluir a chamada do método `init` ao invocar `app()`:  
+
+```JAVASCRIPT 
+(function(win, doc, DOM) {
+  'use strict';
+
+  function app() {
+
+    var $formCep = new DOM('[data-js="form-cep"]');
+    var $inputCep = new DOM('[data-js="input-cep"]');
+    var $status = new DOM('[data-js="status-msg"]');
+    var $logradouro = new DOM('[data-js="logradouro"]');
+    var $bairro = new DOM('[data-js="bairro"]');
+    var $estado = new DOM('[data-js="estado"]');
+    var $cidade = new DOM('[data-js="cidade"]');
+    var $cep = new DOM('[data-js="cep"]');
+    var ajax = new XMLHttpRequest();
+    $formCep.on('submit', handleFormSubmit);
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      ajax.open('GET', replaceCep('https://viacep.com.br/ws/[CEP]/json/'));
+      ajax.send();
+      getMsg('loading');
+      ajax.addEventListener('readystatechange', handleStateChange);
+    }
+
+    function handleStateChange() {
+      if(isRequestOk()) {
+        getMsg('ok');
+        fillCepFields();
+      }
+    }
+
+    function fillCepFields() {
+      var data = parseData();
+      if(!data) {
+        getMsg('error');
+        data = clearData();
+        console.log('data error', data);
+      }
+      $logradouro.get()[0].textContent = data.logradouro;
+      $bairro.get()[0].textContent = data.bairro;
+      $estado.get()[0].textContent = data.uf;
+      $cidade.get()[0].textContent = data.localidade;
+      $cep.get()[0].textContent = data.cep;
+    }
+
+    function clearData() {
+      return {
+        logradouro: '*',
+        bairro: '*',
+        uf: '*',
+        localidade: '*',
+        cep: '*'
+      };
+    }
+
+    function getMsg(type) {
+      var messages = {
+        error: replaceCep('Não encontramos o endereço para o CEP [CEP].'),
+        ok: replaceCep('Endereço referente ao CEP [CEP]:'),
+        loading: replaceCep('Buscando informações para o CEP [CEP]...')
+      };
+      $status.get()[0].textContent = messages[type];
+    }
+
+    function replaceCep(str) {
+      return str.replace('[CEP]', clearCep());
+    }
+
+    function clearCep() {
+      return $inputCep.get()[0].value.replace(/\D+/g, '');
+    }
+
+    function parseData() {
+      var result;
+      try {
+        result = JSON.parse(ajax.responseText);
+      }
+      catch(e) {
+        result = null;
+      }
+      return result;
+    }
+
+    function isRequestOk() {
+      return ajax.readyState === 4 && ajax.status === 200;
+    }
+
+  }
+
+  app();
+
+})(window, document, window.DOM);
+```
+
+Se eu quisesse exportar esse módulo `app` para que ele fosse usado em outro  
+lugar, poderia pendurá-lo no window, da mesma forma feita com a lib `DOM`:  
+
+```JAVASCRIPT 
+(function(win, doc, DOM) {
+  'use strict';
+
+  function app() {
+
+    var $formCep = new DOM('[data-js="form-cep"]');
+    var $inputCep = new DOM('[data-js="input-cep"]');
+    var $status = new DOM('[data-js="status-msg"]');
+    var $logradouro = new DOM('[data-js="logradouro"]');
+    var $bairro = new DOM('[data-js="bairro"]');
+    var $estado = new DOM('[data-js="estado"]');
+    var $cidade = new DOM('[data-js="cidade"]');
+    var $cep = new DOM('[data-js="cep"]');
+    var ajax = new XMLHttpRequest();
+    $formCep.on('submit', handleFormSubmit);
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      ajax.open('GET', replaceCep('https://viacep.com.br/ws/[CEP]/json/'));
+      ajax.send();
+      getMsg('loading');
+      ajax.addEventListener('readystatechange', handleStateChange);
+    }
+
+    function handleStateChange() {
+      if(isRequestOk()) {
+        getMsg('ok');
+        fillCepFields();
+      }
+    }
+
+    function fillCepFields() {
+      var data = parseData();
+      if(!data) {
+        getMsg('error');
+        data = clearData();
+        console.log('data error', data);
+      }
+      $logradouro.get()[0].textContent = data.logradouro;
+      $bairro.get()[0].textContent = data.bairro;
+      $estado.get()[0].textContent = data.uf;
+      $cidade.get()[0].textContent = data.localidade;
+      $cep.get()[0].textContent = data.cep;
+    }
+
+    function clearData() {
+      return {
+        logradouro: '*',
+        bairro: '*',
+        uf: '*',
+        localidade: '*',
+        cep: '*'
+      };
+    }
+
+    function getMsg(type) {
+      var messages = {
+        error: replaceCep('Não encontramos o endereço para o CEP [CEP].'),
+        ok: replaceCep('Endereço referente ao CEP [CEP]:'),
+        loading: replaceCep('Buscando informações para o CEP [CEP]...')
+      };
+      $status.get()[0].textContent = messages[type];
+    }
+
+    function replaceCep(str) {
+      return str.replace('[CEP]', clearCep());
+    }
+
+    function clearCep() {
+      return $inputCep.get()[0].value.replace(/\D+/g, '');
+    }
+
+    function parseData() {
+      var result;
+      try {
+        result = JSON.parse(ajax.responseText);
+      }
+      catch(e) {
+        result = null;
+      }
+      return result;
+    }
+
+    function isRequestOk() {
+      return ajax.readyState === 4 && ajax.status === 200;
+    }
+
+  }
+
+  win.app = app;
+  app();
+
+})(window, document, window.DOM);
+```
