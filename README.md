@@ -649,3 +649,13 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Module patterns 
 
 --- 
+
+6. #### [Module Pattern - Parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-29/06-module-pattern-02.md)
+
+* ##### Revealing Module Pattern 
+* ##### Restringindo o acesso à métodos de uma função 
+* ##### Restringindo o acesso à métodos de uma função exportada 
+* ##### O conceito de Closures 
+* ##### Código final 
+
+--- 
