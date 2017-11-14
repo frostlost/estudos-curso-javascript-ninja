@@ -139,3 +139,4 @@ visualização.
 
 `<input type="url">` é um type do HTML5.  
 
+![image](https://user-images.githubusercontent.com/29297788/32799882-12ff20ec-c960-11e7-9910-28035d082768.png)
