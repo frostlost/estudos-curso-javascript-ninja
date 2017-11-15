@@ -659,3 +659,11 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Código final 
 
 --- 
+
+## Aula 30
+
+1. #### [Revisão do Desafio 29 - Parte 01](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-30/01-revisao-desafio-29-01.md)
+
+* ##### Criando o index.html do app 
+
+---
