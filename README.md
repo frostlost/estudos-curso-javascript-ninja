@@ -677,3 +677,14 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Código final 
 
 ---
+
+3. #### [Revisão do Desafio 29 - Parte 03](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-30/03-revisao-desafio-29-03.md)
+
+* ##### Código atual  
+* ##### Relembrando o `this`  
+* ##### O `this` dentro de module patterns  
+* ##### Inserindo dados da empresa usando AJAX 
+* ##### Relembrando o `call` 
+* ##### Código final 
+
+---
