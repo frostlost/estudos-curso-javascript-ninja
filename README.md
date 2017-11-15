@@ -667,3 +667,13 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Criando o index.html do app 
 
 ---
+
+2. #### [Revisão do Desafio 29 - Parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-30/02-revisao-desafio-29-02.md)
+
+* ##### CSS do app 
+* ##### Separe o nosso módulo de DOM criado nas últimas aulas em um arquivo DOM.js 
+* ##### Alterando os métodos da lib DOM para que sejam estáticos 
+* ##### E aqui nesse arquivo, faça a lógica para cadastrar os carros, em um módulo que será nomeado de "app" 
+* ##### Código final 
+
+---
