@@ -792,3 +792,5 @@ será retirado da função construtora `DOM`, por enquanto. E o `get()` continua
 </body>
 </html>
 ```
+
+![image](https://user-images.githubusercontent.com/29297788/32903057-2a785302-cadb-11e7-963b-54c5917292e8.png)
