@@ -559,7 +559,7 @@ Lembrando que o `this`, dentro do método `handleSubmit` se refere ao formulári
 
 ![image](https://user-images.githubusercontent.com/29297788/32902395-6facd670-cad9-11e7-836d-68098cb2dce6.png)
 
-## adofjidojsiosssssssssssssssssssssssssssssssssssssdfoisdjfosdjfosdjofdsoifosdfosdfsdffsdsdiofoisdjodfs
+## O erro com o método `get()`
 Como visto acima, está sendo mostrado um erro dizendo que o `get()` não está retornando  
 o próprio elemento. Então, o  
 
