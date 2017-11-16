@@ -688,3 +688,19 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Código final 
 
 ---
+
+4. #### [Revisão do Desafio 29 - Parte 04](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-30/04-revisao-desafio-29-04.md)
+
+* ##### Código atual 
+* ##### Iniciando o cadastro de carros na tabela 
+* ##### Melhorando a DOM lib 
+* ##### Melhorando o método get() da DOM lib 
+* ##### Melhorando a função construtora principal da DOM lib 
+* ##### Fazendo com que o new seja desnecessário ao instanciar um objeto com a DOM lib 
+* ##### O operador instanceof 
+* ##### Referenciando o DOM através do $ 
+* ##### Preenchendo os dados da tabela a cada vez que o form é submetido 
+* ##### O erro com o método get() 
+* ##### Código final 
+
+---
