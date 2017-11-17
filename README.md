@@ -704,3 +704,12 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Código final 
 
 ---
+
+5. #### [Revisão do Desafio 29 - Parte 05](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-30/05-revisao-desafio-29-05.md)
+
+* ##### Código atual 
+* ##### Cadastrando um carro na tabela 
+* ##### Evitando o uso repetitivo do app como function (app().nomeDoMetodo) 
+* ##### document.createDocumentFragment() - Criando os elementos do DOM a serem inseridos na tabela 
+
+---
