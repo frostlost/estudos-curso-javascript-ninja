@@ -348,7 +348,7 @@ console.log(new DOM('input'));
 Ele irá dizer se o objeto faz parte da instância de outro objeto, retornando `true`  
 or `false`.  
 
-Posso verificar, por exemplo, se um objeto do é uma instância do construtor  
+Posso verificar, por exemplo, se um objeto é uma instância do construtor  
 de objetos. Ou seja, se ele é um objeto que foi criado baseado no elemento Object:  
 
 ```JAVASCRIPT 
