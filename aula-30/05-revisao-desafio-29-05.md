@@ -249,14 +249,14 @@ irei anexar a imagem como filha da sua td:
         var $tdPlate = doc.createElement('td');
         var $tdColor = doc.createElement('td');
 
-        // $image.src = DOM('[data-js="image"]').get().value; <- alternativa
+        // $image.src = $('[data-js="image"]').get().value; <- alternativa
         $image.setAttribute('src', DOM('[data-js="image"]').get().value);
         $tdImage.appendChild($image);
 
-        $tdBrand.textContent = DOM('[data-js="brand-model"]').get().value;
-        $tdYear.textContent = DOM('[data-js="year"]').get().value;
-        $tdPlate.textContent = DOM('[data-js="plate"]').get().value;
-        $tdColor.textContent = DOM('[data-js="color"]').get().value;
+        $tdBrand.textContent = $('[data-js="brand-model"]').get().value;
+        $tdYear.textContent = $('[data-js="year"]').get().value;
+        $tdPlate.textContent = $('[data-js="plate"]').get().value;
+        $tdColor.textContent = $('[data-js="color"]').get().value;
 
         $tr.appendChild($tdImage);
         $tr.appendChild($tdBrand);
