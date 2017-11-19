@@ -298,7 +298,7 @@ irei anexar a imagem como filha da sua td:
 })(window, document, window.DOM);
 ```
 
-Também tomei algumas precauções no `css` para que a imagem não fiquei muito  
+Também tomei algumas precauções no `css` para que a imagem não fique muito  
 grande na tabela:  
 
 ```CSS
