@@ -287,4 +287,118 @@ Digamos que eu queira manipular o css de uma div do html:
 
 ![image](https://user-images.githubusercontent.com/29297788/33026417-8401757e-cdf7-11e7-95de-503ff92e25dc.png)
 
+Se eu simplesmente quiser ver quais propriedades css posso usar com o `.style`, posso dar  
+um `console.log($div.style);`:  
+
+![image](https://user-images.githubusercontent.com/29297788/33026604-f90a9c9c-cdf7-11e7-93a4-9bc26d92d2e3.png)
+
+>Porém, não é uma boa prática usar essa propriedade. Em alguns momentos ela pode ser  
+necessária para, por exemplo, estilizar um display none no elemento:  
+
+```JAVASCRIPT 
+(function(win, doc) {
+
+  'use strict';
+
+  var $div = doc.querySelector('div');
+
+  $div.style.width = '100px';
+  $div.style.height = '100px';
+  $div.style.backgroundColor = 'red';
+  $div.style.display = 'none';
+
+  console.log($div.style);
+
+})(window, document);
+```
+
+![image](https://user-images.githubusercontent.com/29297788/33026887-b6da0e9c-cdf8-11e7-832f-f57002548235.png)
+
+## Estilizando elementos através do método `setAttribute('style', 'styleProperties')` 
+Ainda na estilização inline de elementos, é possível usar esse método também, passando  
+o atribut `style` como 1º parâmetro e seu valor como 2º parâmetro:  
+
+```JAVASCRIPT 
+(function(win, doc) {
+
+  'use strict';
+
+  var $div = doc.querySelector('div');
+
+  $div.setAttribute('style', 'width: 100px; height: 100px; background-color: red;');
+
+})(window, document);
+```
+
+![image](https://user-images.githubusercontent.com/29297788/33027095-5edc1cde-cdf9-11e7-8f4f-e3b9bd56dc46.png)
+
+>Também não é uma boa prática usar esse método. Em alguns momentos ele pode ser  
+necessário em certas ocasiões excepcionais.  
+
+## Estilizando elementos através da propriedade `elementName.classList` 
+Essa propriedade permite que classes do elemento sejam modificadas. Ela funciona tanto como  
+`getter` ou `setter`.  
+
+Suponhamos que eu tenha uma classe em meu elemento. Vou utilizar essa propriedade como um `getter`,  
+para saber quais classes esse elemento possui:
+
+```HTML 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Closure / Module Pattern - Aula 30, parte 06</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="container"></div>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
+```
+
+```CSS 
+.container {
+  width: 100px;
+  height: 100px;
+  background: green;
+  transition: .3s;
+}
+
+.blue {
+  background: blue;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+```
+
+```JAVASCRIPT 
+(function(win, doc) {
+
+  'use strict';
+
+  var $div = doc.querySelector('div');
+
+  console.log($div.classList);
+
+})(window, document);
+```
+
+![image](https://user-images.githubusercontent.com/29297788/33027567-9a2b14e2-cdfa-11e7-9cea-425d52230972.png)
+
+Ou seja, é retornado um array com uma lista de todas as classes que o elemento possui.  
+
+*** 
+
+Suponhamos que eu queira manipular as classes que esse elemento possui, utilizando a  
+propriedade `element.classList` como um setter.  
 
