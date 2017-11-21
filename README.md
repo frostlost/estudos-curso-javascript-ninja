@@ -713,3 +713,22 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### document.createDocumentFragment() - Criando os elementos do DOM a serem inseridos na tabela 
 
 ---
+
+6. #### [Closure e Manipulando CSS](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-30/06-closure-e-manipulacao-css.md)
+
+* ##### Closure 
+* ##### Exemplos de closure com variáveis de escopo global e local 
+* ##### Exemplos de closure com variáveis contadoras e incrementos 
+* ##### Exemplo de closure com variáveis que recebem uma IIFE 
+* ##### Manipulando CSS 
+* ##### elementName.style.cssProperty 
+* ##### Estilizando elementos através do método setAttribute('style', 'styleProperties') 
+* ##### Estilizando elementos através da propriedade elementName.classList 
+* ##### elementName.classList como getter 
+* ##### elementName.classList como setter 
+* ##### elementName.classList.contains('className') 
+* ##### elementName.classList.add('className') 
+* ##### elementName.classList.toggle('className') 
+* ##### elementName.classList.remove('className') 
+
+---
