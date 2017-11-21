@@ -339,6 +339,7 @@ necessário em certas ocasiões excepcionais.
 Essa propriedade permite que classes do elemento sejam modificadas. Ela funciona tanto como  
 `getter` ou `setter`.  
 
+## `elementName.classList` como getter 
 Suponhamos que eu tenha uma classe em meu elemento. Vou utilizar essa propriedade como um `getter`,  
 para saber quais classes esse elemento possui:
 
@@ -397,8 +398,114 @@ para saber quais classes esse elemento possui:
 
 Ou seja, é retornado um array com uma lista de todas as classes que o elemento possui.  
 
-*** 
-
+## `elementName.classList` como setter 
 Suponhamos que eu queira manipular as classes que esse elemento possui, utilizando a  
-propriedade `element.classList` como um setter.  
+propriedade `element.classList` como um setter. Isso é possível ao utilizar as  
+seguintes propriedades:  
+
+![image](https://user-images.githubusercontent.com/29297788/33050368-b45d2c14-ce4b-11e7-940b-410aeb26d384.png)
+
+### `elementName.classList.contains('className')`
+Essa propriedade irá verificar se uma classe existe no elemento, retornando `true` or  
+`false`: 
+
+```JAVASCRIPT 
+(function(win, doc) {
+
+  'use strict';
+
+  var $div = doc.querySelector('div');
+
+  console.log($div.classList.contains('container'));
+
+})(window, document);
+
+// true
+```
+
+### `elementName.classList.add('className')`
+Essa propriedade irá adicionar uma classe ao elemento:  
+
+```JAVASCRIPT 
+(function(win, doc) {
+
+  'use strict';
+
+  var $div = doc.querySelector('div');
+
+  $div.classList.add('blue');
+
+})(window, document);
+```
+
+![image](https://user-images.githubusercontent.com/29297788/33050536-7c1a6bea-ce4c-11e7-96b6-12723a59c332.png)
+
+>Lembrando que a class blue já está setada no arquivo css.  
+
+### `elementName.classList.toggle('className')` 
+A tradução de literal de `toggle` é 'alternar'.  
+
+Vou manipular qual classe css o elemento recebe no evento de click, fazendo com que,  
+a cada click no elemento, ele faça o `toggle` da class blue, que muda a cor de  
+background do elemento:  
+
+```JAVASCRIPT 
+(function(win, doc) {
+
+  'use strict';
+
+  var $div = doc.querySelector('div');
+
+  $div.addEventListener('click', function() {
+    this.classList.toggle('red');
+  }, false);
+
+})(window, document);
+```
+
+```CSS 
+.container {
+  width: 100px;
+  height: 100px;
+  background: green;
+  transition: .3s;
+}
+
+.blue {
+  background: blue;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+```
+
+![image](https://user-images.githubusercontent.com/29297788/33050765-afafea4c-ce4d-11e7-8e09-8a3f2a39763f.png)
+
+Ou seja, o `toggle` está tirando e colocando a class no elemento. Se, ao clicar,  
+a classe não existir no elemento, ele a adiciona. Se, ao clicar, a classe existir  
+no elemento, ele a remove.  
+
+### `elementName.classList.remove('className')` 
+Remove a classe de um elemento:  
+
+```JAVASCRIPT 
+(function(win, doc) {
+
+  'use strict';
+
+  var $div = doc.querySelector('div');
+
+  $div.addEventListener('click', function() {
+    this.classList.remove('container');
+  }, false);
+
+})(window, document);
+```
+
+![image](https://user-images.githubusercontent.com/29297788/33050847-34654f2a-ce4e-11e7-8b9e-65ddc2bd2760.png)
 
