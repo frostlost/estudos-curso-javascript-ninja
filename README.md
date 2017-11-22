@@ -732,3 +732,16 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### elementName.classList.remove('className') 
 
 ---
+
+## Aula 31
+
+1. #### [DOM - innerHTML](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-31/01-dom-inner-html.md)
+
+* ##### A propriedade innerHTML 
+* ##### `.innerHTML` como getter 
+* ##### `.innerHTML` como setter 
+* ##### `.innerHTML` - Fazendo com que o elemento permaneça com todo o html interno que ele já tem + o html setado 
+* ##### `.innerHTML` vs. `.textContent` 
+* ##### Descobrindo o tipo de um objeto com o `toString` 
+
+---
