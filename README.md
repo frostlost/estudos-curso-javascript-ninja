@@ -745,3 +745,10 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Descobrindo o tipo de um objeto com o `toString` 
 
 ---
+
+2. #### [DOM - innerHTML: Problemas de Segurança](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-31/02-dom-inner-html-seguranca.md)
+
+* ##### Provocando um erro com uma imagem e um script inline 
+* ##### Limpando o html da página atual com o input no textarea 
+
+---
