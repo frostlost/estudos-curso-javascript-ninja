@@ -19,6 +19,8 @@ disponíveis em um `HTMLElement`.
 - beforeend: O html do segundo parâmetro será adicionado **antes do fechamento da tag**.  
 - afterend: O html do segundo parâmetro será adicionado **após o fechamento da tag**.  
 
+***
+
 - Exemplo com o `beforebegin`:  
 
 ```HTML
