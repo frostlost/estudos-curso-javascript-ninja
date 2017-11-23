@@ -763,3 +763,15 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### .outerHTML 
 
 ---
+
+4. #### [O objeto date](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-31/04-objeto-date.md)
+
+* ##### devdocs.io 
+* ##### new Date() - Criando e instanciando uma nova data 
+* ##### new Date() - Construindo e manipulando uma nova data através de parâmetros 
+* ##### new Date() - A contagem dos meses 
+* ##### arrayMonths.indexOf(monthName) 
+* ##### new Date() - A contagem dos dias 
+* ##### new Date() - A contagem dos Meses - Parte 02 
+
+---
