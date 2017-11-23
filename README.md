@@ -752,3 +752,14 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Limpando o html da página atual com o input no textarea 
 
 ---
+
+3. #### [DOM - insertAdjacentHTML](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-31/03-dom-insert-adjacent-html.md)
+
+* ##### insertAdjacentHTML(position, htmlText) 
+* ##### Tabela com as possíveis posições a serem passadas por parâmetro para o insertAdjacentHTML(position, htmlText) 
+* ##### Problemas de segurança do insertAdjacentHTML() 
+* ##### insertAdjacentHTML() - inserindo um elemento do DOM como segundo parâmetro 
+* ##### console.dir(htmlElement) - visualizando as propriedades disponíveis de um elemento html 
+* ##### .outerHTML 
+
+---
