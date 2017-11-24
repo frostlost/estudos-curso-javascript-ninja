@@ -219,4 +219,97 @@ array como segundo parâmetro:
 ## Sobre métodos de funções 
 O `apply` e essas funções demonstradas são funções como quaisquer outras. Ou seja,  
 também possuem as mesmas propriedades usadas para os métodos e funções  
-convencionais (call
+convencionais (call, apply, bind, name...). Exemplo:  
+
+```JAVASCRIPT 
+(function(win, doc) {
+  'use strict';
+
+  console.log(Math.min.apply.name);
+
+})(window, document);
+
+// apply
+```
+
+Portanto, todos os métodos de funções já apresentados estão disponíveis para os  
+métodos `Math.min(x)` e `Math.max(x)`. 
+
+## `Math.random()` 
+Esse método retorna um **número aleatório entre 0 e 1**:  
+
+```JAVASCRIPT
+(function(win, doc) {
+  'use strict';
+
+  console.log(Math.random());
+
+})(window, document);
+
+// 0.3367347630613524
+``` 
+
+## `Math.random()` - retornando um número entre 0 e 3 
+Para que isso seja possível, basta multiplicar o `Math.random()` por 3, ou pelo  
+valor necessário.  
+
+Os próprios `0` e `3` não serão retornados. O resultado sempre será maior que `0`  
+e menor que `3`:  
+
+```JAVASCRIPT 
+(function(win, doc) {
+  'use strict';
+
+  console.log(Math.random() * 3);
+
+})(window, document);
+
+// 2.5488070926859994
+```
+
+## `Math.floor(Math.random() * 3)` - retornando um número arredondado entre 0 e 2 
+Com o `Math.floor()` neste caso, o retorno será sempre um número aleatório, podendo  
+ser `0`, `1` ou `2`, mas nunca o `3`. **Ou seja, o número aleatório será arredondado  
+para abaixo de 3**: 
+
+```JAVASCRIPT 
+(function(win, doc) {
+  'use strict';
+
+  console.log(Math.floor(Math.random() * 3));
+
+})(window, document);
+
+// 0
+```
+
+## `Math.ceil(Math.random() * 3)` - retornando um número arredondado de 1 a 3 
+Com o `Math.ceil()` neste caso, o retorno será sempre um número aleatório, podendo  
+ser `1`, `2` ou `3`, mas nunca o `0` ou `4`. **Ou seja, o número aleatório será  
+arredondado para cima**: 
+
+```JAVASCRIPT 
+(function(win, doc) {
+  'use strict';
+
+  console.log(Math.ceil(Math.random() * 3));
+
+})(window, document);
+
+// 1
+```
+
+## `Math.round(Math.random() * 3)` - retornando um número arredondado de 0 a 3 
+Com o `Math.round()` neste caso, o retorno será sempre um número aleatório, podendo  
+ser `0`, `1`, `2` ou `3`, mas nunca o `4`:  
+
+```JAVASCRIPT 
+(function(win, doc) {
+  'use strict';
+
+  console.log(Math.round(Math.random() * 3));
+
+})(window, document);
+
+// 0
+```
