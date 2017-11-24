@@ -775,3 +775,27 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### new Date() - A contagem dos Meses - Parte 02 
 
 ---
+
+5. #### [O objeto date - Propriedades e métodos](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-31/05-objeto-date-props-mets.md)
+
+* ##### Date.now() 
+* ##### Date.now() - Convertendo milisegundos para segundos 
+* ##### Date.now() - Convertendo segundos em minutos 
+* ##### Date.now() - Convertendo minutos em horas 
+* ##### Date.now() - Convertendo horas em dias 
+* ##### Date.now() - Convertendo dias em anos 
+* ##### Date.now() - Sabendo em quantos milisegundos um código foi executado 
+* ##### Tabela com métodos que podem ser usados após instanciar o objeto new Date() 
+* ##### date.getDate(); 
+* ##### date.getDay(); 
+* ##### date.getFullYear(); 
+* ##### date.getYear(); 
+* ##### date.getHours(); 
+* ##### date.getMilliseconds(); 
+* ##### date.getMinutes(); 
+* ##### date.getMonth(); 
+* ##### date.getSeconds(); 
+* ##### date.getTime(); 
+* ##### Outros métodos do Date Object 
+
+---
