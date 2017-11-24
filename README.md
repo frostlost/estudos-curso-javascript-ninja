@@ -799,3 +799,26 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Outros métodos do Date Object 
 
 ---
+
+6. #### [Conhecendo o objeto `Math`](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-31/06-objeto-math.md)
+
+* ##### Math.PI 
+* ##### Tabela com alguns métodos usados com o objeto Math 
+* ##### Math.abs(x) 
+* ##### O padrão de arredondamento em números decimais 
+* ##### Math.ceil(x) 
+* ##### Math.floor(x) 
+* ##### Math.round(x) 
+* ##### Math.sqrt(x) 
+* ##### Math.cbrt(x) 
+* ##### Math.max(n1, n2, n3...) 
+* ##### Math.min(n1, n2, n3...) 
+* ##### Usando Math.max(x) e Math.min(x) com o apply() 
+* ##### Sobre métodos de funções 
+* ##### Math.random() 
+* ##### Math.random() - retornando um número entre 0 e 3 
+* ##### Math.floor(Math.random() * 3) - retornando um número arredondado entre 0 e 2 
+* ##### Math.ceil(Math.random() * 3) - retornando um número arredondado de 1 a 3 
+* ##### Math.round(Math.random() * 3) - retornando um número arredondado de 0 a 3 
+
+---
