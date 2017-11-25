@@ -146,8 +146,9 @@ browser.
 
 Sempre que eu utilizar o `data-`, vou estar utilizando-o no JavaScript.  
 Dificilmente o `data-` será utilizado para estilizar. Então, eu **uso esse  
-atributo para nomear os elementos que eu for manipular com o JavaScript**.
+atributo para nomear os elementos que eu for manipular com o JavaScript**. 
 
+![image](https://user-images.githubusercontent.com/29297788/33234507-0c4d5a04-d20f-11e7-9b2a-cad9a2f1235f.png)
 
 ## Métodos que param ou limpam o intervalo
 
