@@ -832,6 +832,5 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### package.json 
 * ##### O que é uma rest-api 
 * ##### Utilizando o Node para testar códigos 
-* ##### Subindo um servidor com o Node  
 
 ---
