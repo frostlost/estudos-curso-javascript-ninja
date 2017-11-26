@@ -829,7 +829,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 * ##### AJAX - Aprendendo como tudo isso funciona no servidor 
 * ##### Listagem inicial dos diretórios e arquivos 
-* ##### package.json 
+* ##### O arquivo package.json 
 * ##### O que é uma rest-api 
 * ##### Utilizando o Node para testar códigos 
 * ##### Subindo o servidor com o Node  
