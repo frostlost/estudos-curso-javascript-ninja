@@ -835,3 +835,28 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Subindo o servidor com o Node  
 
 ---
+
+2. #### [REST Api](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-32/02-rest-api.md)
+
+* ##### Instalando o nodemon 
+* ##### Derrubando o servidor 
+* ##### Instalando o Express Js localmente 
+* ##### A pasta node_modules 
+* ##### Requisitando o express de node_modules 
+* ##### O método require() 
+* ##### Executando o express 
+* ##### O método get('url', callback) 
+* ##### O verbo get 
+* ##### res.send('response') - Enviando uma resposta para o front-end 
+* ##### app.listen(numeroDaPorta) - Selecionando a porta em que a resposta será ouvida 
+* ##### Testando o servidor 
+* ##### Criando novas rotas / url's 
+* ##### Acessando uma rota inexistente 
+* ##### Criando uma nova rota, antes inexistente 
+* ##### Atualizando o servidor manualmente em casos de bug no nodemon 
+* ##### Fazendo uma requisição AJAX no front-end 
+* ##### Subindo um servidor front-end com o python 
+* ##### Testando o servidor front-end 
+* ##### O problema de CORS 
+
+---
