@@ -822,3 +822,16 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Math.round(Math.random() * 3) - retornando um número arredondado de 0 a 3 
 
 ---
+
+## Aula 32
+
+1. #### [Ajax](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-32/01-ajax.md)
+
+* ##### AJAX - Aprendendo como tudo isso funciona no servidor 
+* ##### Listagem inicial dos diretórios e arquivos 
+* ##### package.json 
+* ##### O que é uma rest-api 
+* ##### Utilizando o Node para testar códigos 
+* ##### Subindo um servidor com o Node  
+
+---
