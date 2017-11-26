@@ -25,7 +25,7 @@ a resposta é outra. Ou seja, uma requisição `HTTP` `GET` e a url traz uma res
 requisição `HTTP` `POST` com a mesma url traz outra.  
 
 Ao fazer [uma requisição get de um cep](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-29/01-revisao-desafio-28-01.md), por exemplo, onde era acessada uma url com  
-`/cep/numeroDoCep`, a requisição era feita pedindo o número do cep, o servidor pegava  
+`/[CEP]/json/`, a requisição era feita pedindo o número do cep, o servidor pegava  
 aquela informação (nº do cep) e retornava o endereço completo daquele cep. Esse é um  
 exemplo de como funciona uma API rest.  
 
