@@ -35,8 +35,7 @@ ele trará o retorno desses comandos:
 
 ![image](https://user-images.githubusercontent.com/29297788/33237236-25208ed4-d255-11e7-9e90-70911c3b6559.png)
 
-## Subindo o servidor com o Node
-Com o Node instalado, posso usar o comando `node nomeDoArquivo.js` para que o servidor  
+É possível também usar o comando `node nomeDoArquivo.js` para que o node  
 execute o código desse arquivo:  
 
 ![image](https://user-images.githubusercontent.com/29297788/33237217-71fb8df4-d254-11e7-9247-f4532ce8bdfd.png)
