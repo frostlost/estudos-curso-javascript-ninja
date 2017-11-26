@@ -100,3 +100,62 @@ Na aba network, posso verificar que é feita uma requisição `get` no document 
 
 ![image](https://user-images.githubusercontent.com/29297788/33241512-9a713bf4-d2ad-11e7-906d-915e0028d5f6.png)
 
+## Criando novas rotas / url's 
+Posso criar outra rota e outra resposta quando a url `/user` for acessada, por exemplo:  
+
+![image](https://user-images.githubusercontent.com/29297788/33241578-b7c8bb04-d2ae-11e7-8c0a-32a4795aaec0.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33241581-c66eb884-d2ae-11e7-87b0-22214eab87a4.png)
+
+## Acessando uma rota inexistente 
+Ao tentar acessar `localhost:3000/arroz`, por exemplo, será mostrado na tela que essa  
+rota não existe e será retornado o status `404`, na aba network:  
+
+![image](https://user-images.githubusercontent.com/29297788/33241609-2284d5d6-d2af-11e7-8135-d62b0b693dc2.png)
+
+## Criando uma nova rota, antes inexistente 
+Posso criar então a rota arroz e a resposta quando a url `/arroz` for acessada:  
+
+![image](https://user-images.githubusercontent.com/29297788/33241634-6de50640-d2af-11e7-94ec-eafe031b104e.png)
+
+Basicamente, é assim que funciona uma requisição get em um servidor.  
+
+## Atualizando o servidor manualmente em casos de bug no nodemon 
+O comando `rs` (restart) pode ser usado nesses casos. Caso isso não seja suficiente,  
+o servidor pode ser derrubado com o comando `ctrl+c` e iniciado novamente  
+com o comando `nodemon index.js`:  
+
+![image](https://user-images.githubusercontent.com/29297788/33241666-c916416e-d2af-11e7-9848-ebd067453835.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33241694-410c087a-d2b0-11e7-95d7-aafab6e98c9c.png)
+
+## Fazendo uma requisição AJAX no front-end 
+Antes, irei adicionar um `<h1>` e o script no documento html:  
+
+![image](https://user-images.githubusercontent.com/29297788/33241717-cd911d1c-d2b0-11e7-9148-3ec40f9cd7ad.png)
+
+No `main.js`, será feita uma requisição ajax com o verbo `GET` para o `localhost:3000/user`  
+(isso deve retornar a string 'user'). Então, criarei o evento que escuta se a requisição foi  
+feita com sucesso. Se a requisição estiver ok, a resposta será exibido no console:  
+
+![image](https://user-images.githubusercontent.com/29297788/33241743-6cf98560-d2b1-11e7-81df-f7399550d78e.png)
+
+## Subindo um servidor front-end com o `python`
+Na pasta da aplicação front-end, irei subir o servidor `localhost:9001`.  
+
+Isso pode ser feito com o comando `python -m SimpleHTTPServer 9001`:  
+
+![image](https://user-images.githubusercontent.com/29297788/33241797-0efff420-d2b2-11e7-9d75-92d33ea897de.png)
+
+## Testando o servidor front-end 
+Ao acessar `localhost:9001` no browser, o `<h1>` do arquivo `index.html` é mostrado  
+na tela:  
+
+![image](https://user-images.githubusercontent.com/29297788/33241810-5202a9e8-d2b2-11e7-97be-7a6e8de9c57d.png)
+
+## O problema de CORS
+Ao abrir o console, é exibido um erro dizendo que o XMLHttpRequest da  
+url requisitada não pode ser carregado . Na próxima aula será mostrado como  
+esse erro pode ser resolvido, no back-end. 
+
+![image](https://user-images.githubusercontent.com/29297788/33241879-fe3e6cec-d2b2-11e7-8959-3b1c90156ade.png)
