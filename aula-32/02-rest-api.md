@@ -40,7 +40,7 @@ Com o servidor de pé novamente, posso declarar o 'use strict' no arquivo `index
 então não é necessário a utilização de IIFE's no node. Para que algo fique em escopo  
 global no node, é perciso forçar. Isso vale apenas para o node (back-end).  
 
-Posso então criar uma variável `express` e atribuir o método express a ela:  
+Posso então criar uma variável `express` e atribuir o método `require()` a ela:  
 
 ## O método `require()`  
 É um método do node que irá requisitar um arquivo. Quando a string `'express'` é passada  
