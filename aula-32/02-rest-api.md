@@ -143,9 +143,9 @@ feita com sucesso. Se a requisição estiver ok, a resposta será exibido no con
 ## Subindo um servidor front-end com o `python`
 Na pasta da aplicação front-end, irei subir o servidor `localhost:9001`.  
 
-Isso pode ser feito com o comando `python -m SimpleHTTPServer 9001`:  
+Isso pode ser feito com o comando `python -m http.server 9001`:  
 
-![image](https://user-images.githubusercontent.com/29297788/33241797-0efff420-d2b2-11e7-9d75-92d33ea897de.png)
+![image](https://user-images.githubusercontent.com/29297788/33242448-6051d910-d2bc-11e7-9ab8-cbb50737db3e.png)
 
 ## Testando o servidor front-end 
 Ao acessar `localhost:9001` no browser, o `<h1>` do arquivo `index.html` é mostrado  
