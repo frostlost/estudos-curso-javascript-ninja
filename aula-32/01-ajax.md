@@ -10,11 +10,15 @@ A pasta `front` irá conter a aplicação front-end e a `rest-api`, a aplicaçã
 Elas ficarão separadas e irão ser subidas em portas separadas, como se a aplicação  
 estivesse sendo utilizada, de fato, em 2 servidores diferentes.  
 
-## `package.json`  
+## O arquivo `package.json`  
 Como o node precisa desse arquivo para guardar informações dos pacotes dele, vou criá-lo  
-na pasta `rest-api`:  
+na pasta `rest-api`.  
+
+Dentro dele, é necessário haver, pelo menos, um objeto vazio: 
 
 ![initial_folders](https://user-images.githubusercontent.com/29297788/33237158-b50602fc-d252-11e7-9f29-dfc3c7d2915c.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33241107-43d6f432-d2a8-11e7-835e-8e1c39041c23.png)
 
 ## O que é uma rest-api  
 É uma API, uma aplicação de servidor, onde ele responde através de url's, através de rotas  
