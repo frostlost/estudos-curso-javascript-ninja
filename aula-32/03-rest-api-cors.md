@@ -95,4 +95,54 @@ de cada propriedade será um objeto com as propriedades nome e idade:
 
 ![image](https://user-images.githubusercontent.com/29297788/33246854-cf12142a-d300-11e7-9862-85c6e8e73a34.png)
 
-Agora, quando eu acessar a url `/user` 
+Agora, quando eu acessar a url `/user/username`, suponhamos que eu queira mostrar  
+essas propriedades no console. Posso criar uma variável `username`, que irá pegar  
+o `req.params.username` e, responder com um método `json`, do `express`, e a reposta  
+será o objeto `users` com o nome do usuário que for passado na url. Se o nome da  
+url estiver no objeto, o nome e idade do usuário serão mostrados:  
+
+![image](https://user-images.githubusercontent.com/29297788/33246992-def60c60-d301-11e7-92d4-7b6ea86b7758.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33247033-267e19ba-d302-11e7-824a-00634790754f.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33247027-19143b24-d302-11e7-9d54-84233d94c04f.png)
+
+Caso um username que não existe seja passado na url, o retorno será um objeto em branco:  
+
+![image](https://user-images.githubusercontent.com/29297788/33247063-5851a2c2-d302-11e7-91b9-f31b39537b64.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33247067-5fde18ae-d302-11e7-84b0-53d53c1e9653.png)
+
+## Tratando uma requisição `GET` onde o usuário não existe 
+Vou fazer com que, independente do status, o `responseText` sempre seja mostrado:  
+
+![image](https://user-images.githubusercontent.com/29297788/33247165-24d1686e-d303-11e7-8a3e-c910d34be045.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33247122-c2ffc9d2-d302-11e7-8a2d-36ada7babb0d.png)
+
+E, no back-end, irei especificar que, se o username que foi passado na url existir no  
+objeto `users`, será feito um retorno com o json de `users[username]`. Se não, será  
+enviado um jason com um objeto de erro dizendo que o usuário não foi encontrado:  
+
+![image](https://user-images.githubusercontent.com/29297788/33247206-652d1232-d303-11e7-9646-8009462ee46a.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33247211-7784a116-d303-11e7-8b42-b10c3938bc23.png)
+
+É possível também mudar o status e enviar um status de erro, com o `res.status(404)`.  
+Então, irei mandar para o front-end esse status 404 e, quando eu for pegar minha requisição  
+`GET`, o `ajax.status` do console irá mostrar o status que veio do servidor:  
+
+![image](https://user-images.githubusercontent.com/29297788/33247238-9ea86606-d303-11e7-857c-5c7c194b5edf.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33247255-cf9d43d0-d303-11e7-83f4-a67f30e9a960.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33247263-e6267cc0-d303-11e7-89c2-5525a86b5e5b.png)
+
+## Observações finais sobre servidores back-end 
+Então, a partir do servidor, é possível fazer requisições de informações com o `GET`,  
+passar algumas informações para o servidor (a informação que quero buscar) para o servidor  
+me devolver.  
+
+Há algumas questões de segurança que não foram vistas aqui. A REST Api como foi vista até aqui  
+não deve ser colocada em produção. O que foi visto até aqui tem o intuito de servir de teste e  
+mostrar um pouco de como funciona uma REST Api. 
