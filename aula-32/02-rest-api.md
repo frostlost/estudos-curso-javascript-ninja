@@ -138,7 +138,7 @@ No `main.js`, será feita uma requisição ajax com o verbo `GET` para o `localh
 (isso deve retornar a string 'user'). Então, criarei o evento que escuta se a requisição foi  
 feita com sucesso. Se a requisição estiver ok, a resposta será exibido no console:  
 
-![image](https://user-images.githubusercontent.com/29297788/33241743-6cf98560-d2b1-11e7-81df-f7399550d78e.png)
+![image](https://user-images.githubusercontent.com/29297788/33246118-0649d1c0-d2f8-11e7-8e7f-1bb788fe1ffd.png)
 
 ## Subindo um servidor front-end com o `python`
 Na pasta da aplicação front-end, irei subir o servidor `localhost:9001`.  
