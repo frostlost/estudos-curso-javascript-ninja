@@ -76,7 +76,7 @@ Quando o método get é utilizado, o request possui o objeto `params` e, nesse o
 
 ![image](https://user-images.githubusercontent.com/29297788/33246725-5b6ad3dc-d2ff-11e7-9b93-42de36266235.png)
 
-O `req.params` são parâmetros quem vem através da url. Então, por exemplo, se eu acessar  
+O `req.params` são parâmetros que vem através da url. Então, por exemplo, se eu acessar  
 `localhost:3000/user/maria`, ele irá trazer o `:username`, que é `'maria'`:  
 
 ![image](https://user-images.githubusercontent.com/29297788/33246761-cf35614c-d2ff-11e7-977b-d72ad660df26.png)
