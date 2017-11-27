@@ -81,3 +81,48 @@ será abortada no `2`:
 
 Ou seja, ele mostrou o `0` por que ele não trouxe o `ajax.responseText`. Ele trouxe o  
 status somente como `0` por que a requisição não foi concluída. 
+
+## O verbo `POST` 
+
+![image](https://user-images.githubusercontent.com/29297788/33273046-3fd0eec6-d373-11e7-9a5e-95e8f60560e2.png)
+
+É utilizado da mesmo forma que o `GET`, passando `POST`.  
+
+Para esse verbo, é preciso ter um `header` setado. Para isso, deve ser utilizado o método  
+`setRequestHeader()`:  
+
+![image](https://user-images.githubusercontent.com/29297788/33273106-6eb00808-d373-11e7-8842-9c06a4d49ea9.png)
+
+Esse método irá requisitar um header e, normalmente, quando o header for utilizado, é necessário  
+especificar o tipo de conteúdo que está sendo enviado para o servidor:  
+
+![image](https://user-images.githubusercontent.com/29297788/33273186-afb97c26-d373-11e7-8bc6-5894270d926c.png)
+
+Ou seja, preciso mandar um header dizendo que o tipo do meu conteúdo é `aplication...`.  
+Isso significa que estou enviando um conteúdo de um formulário, que esses dados estão sendo  
+enviados para o servidor em formato de query string. Existem outros tipos de content type,  
+como o `textHTML`, por exemplo, mas, basicamente, esse formato será o utilizado, pois  
+funciona em todos os browsers e qualquer servidor consegue receber esse formato em texto  
+e convertê-lo para o formato que ele precisa.  
+
+O método `setRequestHeader()` precisa ser especificado em casos de qualquer outro tipo  
+de requisição que não seja `GET`. 
+
+Após isso, o `ajax.send()` será feito com os valores a serem enviados para o servidor  
+especificados por parâmetro:  
+
+![image](https://user-images.githubusercontent.com/29297788/33273470-88fb3c7c-d374-11e7-871b-267cbebe0252.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33273571-d6dc9a08-d374-11e7-900c-7fe6d219505c.png)
+
+Ou seja, a ideia do post é, enviar dados para o servidor para que o servidor faça  
+algo com esses dados. Salvá-los, por exemplo. O máximo que o servidor deve fazer é  
+enviar uma resposta dizendo que conseguiu salvar esses dados.  
+
+Informações importantes como nome de usuário e senha devem ser passados como query  
+string, através do verbo `POST`, ao invés de serem enviados na url com o verbo `GET`.  
+
+Além das questões de segurança, o verbo `GET` é limitado. Podem ser enviados no máximo  
+246 caracteres através dele. O método post envia uma quantidade bem maior de dados.  
+
+Na próxima aula haverá exemplos práticos com o `POST`.
