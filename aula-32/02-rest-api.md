@@ -15,6 +15,8 @@ no arquivo:
 Com o `ctrl+c` é possível derrubar o servidor para que outro pacote do  
 node seja instalado, como o express, por exemplo.  
 
+## Exemplo de REST Api com Express 
+
 ## Instalando o [Express Js](https://github.com/expressjs/express/) localmente 
 Posso instalar o express localmente com o comando `npm install --save express`. 
 
