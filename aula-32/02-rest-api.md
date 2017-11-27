@@ -158,4 +158,4 @@ Ao abrir o console, é exibido um erro dizendo que o XMLHttpRequest da
 url requisitada não pode ser carregado . Na próxima aula será mostrado como  
 esse erro pode ser resolvido, no back-end. 
 
-![image](https://user-images.githubusercontent.com/29297788/33241879-fe3e6cec-d2b2-11e7-8959-3b1c90156ade.png)
+![image](https://user-images.githubusercontent.com/29297788/33246315-404143ca-d2fa-11e7-9f32-dfe46c8963b8.png)
