@@ -20,3 +20,16 @@ necessário. Posso então apenas mostrar a resposta do ajax e o status dele no
 console:  
 
 ![image](https://user-images.githubusercontent.com/29297788/33271320-1013eb5c-d36e-11e7-86e1-8d9942fc1c8c.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33271356-261f0440-d36e-11e7-87e6-7e31a4076ae5.png)
+
+Ele mostrou a resposta de forma normal mas, até o chrome exibe um alerta dizendo  
+que a requisição síncrona na thread principal já foi depreciada devido aos seus  
+efeitos na experiência do usuário. Ou seja, esse formato não deve ser utilizado.  
+
+Se o terceiro parâmetro for retirado ou passado como `true`, ou seja, estou dizendo  
+que a requisição deve ser assíncrona, ao tentar executar, o `0` será mostrado no  
+console:  
+
+![image](https://user-images.githubusercontent.com/29297788/33271512-9ac34dd8-d36e-11e7-9fc1-8601f25882d8.png)
+
