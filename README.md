@@ -876,3 +876,13 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Observações finais sobre servidores back-end e REST Api 
 
 ---
+
+4. #### [Ajax - sync - POST](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-32/04-ajax-sync-post.md)
+
+* ##### <async> 
+* ##### Fazendo uma requisição síncrona 
+* ##### O outro formato de requisição ajax 
+* ##### ajax.abort() 
+* ##### O verbo POST 
+
+---
