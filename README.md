@@ -879,7 +879,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 4. #### [Ajax - sync - POST](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-32/04-ajax-sync-post.md)
 
-* ##### <async> 
+* ##### `<async> `
 * ##### Fazendo uma requisição síncrona 
 * ##### O outro formato de requisição ajax 
 * ##### ajax.abort() 
