@@ -840,6 +840,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 * ##### Instalando o nodemon 
 * ##### Derrubando o servidor 
+* ##### Exemplo de REST Api com Express 
 * ##### Instalando o Express Js localmente 
 * ##### A pasta node_modules 
 * ##### Requisitando o express de node_modules 
