@@ -49,3 +49,35 @@ válido.
 
 > Lembrando de sempre incluir o `on` caso esse formato de propriedade do objeto ajax seja  
 utilizado. 
+
+## `ajax.abort()` 
+Ele irá abortar a requisição ajax. Isso é interessante em casos onde faço uma requisição e  
+quero buscar apenas os headers que o servidor irá enviar. Quando o servidor mandar os  
+headers, a requisição deve ser parada.  
+
+Obs.: O nº `4` do `ajax.readyState === 4` é o corpo da requisição:  
+
+![image](https://user-images.githubusercontent.com/29297788/33272605-ca9aad32-d371-11e7-9002-0092925d3fa1.png)
+
+Existem casos onde o corpo da resposta pode ser algo gigantesco (não é o caso, pois o que está sendo  
+enviado é apenas um nome de usuário ou um objeto com erro): 
+
+![image](https://user-images.githubusercontent.com/29297788/33272683-0621011c-d372-11e7-9842-7a017913412d.png)
+
+Mas, em minha aplicação, em casos onde aja uma requisição em que a resposta é grande, talvez  
+eu não queira pegar o corpo da requisição, apenas os `headers`. Quando os `headers` estiverem 
+prontos, irei pegá-los (`ajax.readyState === 2`). Isso é útil em casos onde é necessário saber  
+apenas o tipo da requisição ou só pegar uma informação da requisição.  
+
+Quando os `headers` forem recebidos, `headers ok` será mostrado no console e o ajax será  
+abortado:  
+
+![image](https://user-images.githubusercontent.com/29297788/33272861-ac1c9928-d372-11e7-93cf-e18aa13e119f.png)
+
+Com o `ajax.abort()`, o JS não irá chegar no segundo if com o `4`, por que a requisição  
+será abortada no `2`:  
+
+![image](https://user-images.githubusercontent.com/29297788/33272948-f1101f64-d372-11e7-8a0d-b4becb1f8ca4.png)
+
+Ou seja, ele mostrou o `0` por que ele não trouxe o `ajax.responseText`. Ele trouxe o  
+status somente como `0` por que a requisição não foi concluída. 
