@@ -860,3 +860,18 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### O problema de CORS 
 
 ---
+
+3. #### [REST Api - Cors](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-32/03-rest-api-cors.md)
+
+* ##### Instalando o módulo Cors 
+* ##### O que é o módulo cors 
+* ##### require('cors') - Importando o módulo cors 
+* ##### app.use(cors()) - Liberando o acesso à REST Api 
+* ##### Pegando um usuário específico com o GET do ajax 
+* ##### Passando um usuário inexistente com o GET do ajax 
+* ##### Deixando as rotas de usuário dinâmicas no back-end 
+* ##### Passando informações específicas de um usuário na REST Api 
+* ##### Tratando uma requisição GET onde o usuário não existe 
+* ##### Observações finais sobre servidores back-end e REST Api 
+
+---
