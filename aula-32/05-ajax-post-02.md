@@ -142,3 +142,11 @@ Vou criar então uma requisição `GET` no front-end, passando um usuário que e
 
 ![image](https://user-images.githubusercontent.com/29297788/33300548-2aa949d4-d3d8-11e7-96fa-89a61dd1dc7a.png)
 
+Para fazer com que o `filter` retorne apenas o usuário, sem o array, posso passar  
+o `[0]` como retorno dele, para que ele retorne apenas o 1º item do array:  
+
+![image](https://user-images.githubusercontent.com/29297788/33300629-8d06c84a-d3d8-11e7-94af-d783dc541ffc.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33300647-a76bdc5c-d3d8-11e7-9bcd-210543cf87f9.png)
+
+Na próxima aula, será visto como cadastrar um usuário na memória.  
