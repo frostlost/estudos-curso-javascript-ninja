@@ -902,3 +902,13 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Testanto uma requisição GET 
 
 ---
+
+6. #### [Ajax - POST - Parte 03](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-32/06-ajax-post-03.md)
+
+* ##### Cadastrando um usuário na memória 
+* ##### Pegando um usuário cadastrado, com o método GET 
+* ##### Criando uma verificação e evitando o recadastro de usuários repetidos 
+* ##### JSON.parse() - Convertendo o usuário de string para JSON 
+* ##### Vantagens da REST Api 
+
+---
