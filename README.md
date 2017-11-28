@@ -886,3 +886,19 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### O verbo POST 
 
 ---
+
+5. #### [Ajax - POST - Parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-32/05-ajax-post-02.md)
+
+* ##### Exemplo prático de envio do método POST 
+* ##### ajax.setRequestHeader() 
+* ##### Enviando os dados do usuário 
+* ##### Padronizando as propriedades do objeto 
+* ##### Testando essa requisição com o método GET 
+* ##### O padrão de resposta de uma REST Api 
+* ##### app.post() - Criando o método Http POST no servidor back-end 
+* ##### Instalando o módulo body-parser 
+* ##### Cadastrando temporariamente novos usuários no objeto users 
+* ##### Utilizando o método some para pegar o nome de um usuário 
+* ##### Testanto uma requisição GET 
+
+---
