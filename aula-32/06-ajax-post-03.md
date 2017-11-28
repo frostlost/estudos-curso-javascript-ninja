@@ -22,7 +22,7 @@ array `users` o próprio objeto enviado pelo front-end. Para isso, irei inserir
 Após isso, no método post do back-end, ao invés de apenas enviar direto um `json`  
 com o usuário, irei dar um `push` no array de usuários com um objeto que será o  
 novo usuário que foi recebido. Abaixo do `push`, irei retornar um json que é o  
-próprio objeto `users` que já virá com o roberto preenchido.  
+próprio array `users` que já virá com o roberto preenchido.  
 
 Então, o username será o `req.body.username`, o age será o `req.body.age` e o  
 name será `req.body.name`. Lembrando que, essas propriedades estão baseadas no  
