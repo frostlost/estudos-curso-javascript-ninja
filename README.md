@@ -912,3 +912,18 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Vantagens da REST Api 
 
 ---
+
+## Aula 33
+
+1. #### [Testes](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-33/01-testes.md)
+
+* ##### Aviso 
+* ##### TDD - O que é 
+* ##### Testando uma calculadora simples 
+* ##### Instalando o Mocha 
+* ##### describe() - Começando a escrever o primeiro teste 
+* ##### it() 
+* ##### Sobre testes em geral 
+* ##### O que ter em mente antes de escrever um teste 
+
+---
