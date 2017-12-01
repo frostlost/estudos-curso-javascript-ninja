@@ -31,10 +31,33 @@ função retorne `10`:
 ![image](https://user-images.githubusercontent.com/29297788/33492245-9bff7216-d6a3-11e7-8d90-f8dd988302b9.png)
 
 Essa função deveria somar os dois valores, mas, ao invés disso, estou retornando o `10` diretamente.  
-Isso é feito por que o teste está dizendo que, se `1` e `9` forem os argumentos da função, ela  
-deve retornar `10`, só que eu preciso escrever com o mínimo de código possível, ou seja, não  
-preciso escrever nenhuma lógica se eu sei que irei retornar `10`. Isso é o conceito baby steps.  
+Isso é feito por que o teste está dizendo que, se `1` e `9` forem entrados, ela deve retornar `10`,  
+**só que eu preciso escrever com o mínimo de código possível, ou seja, não vou escrever nenhuma  
+lógica se eu sei que posso retornar `10`**. Isso é o conceito baby steps.  
 
 Se o mocha for executado agora, esse módulo irá passar no teste:  
 
 ![image](https://user-images.githubusercontent.com/29297788/33492400-1b7fed18-d6a4-11e7-9d69-3906c7f7baaa.png)
+
+Mas isso não significa que terminei minha implementação, ao invés disso, significa que eu ainda  
+preciso fazer mais testes. 
+
+## A documentação gerada pelos testes 
+Quanto mais testes forem feitos em  uma aplicação, melhor ela irá estar documentada, pois o que o  
+mocha exibe começa a se transformar em uma documentação:  
+
+![image](https://user-images.githubusercontent.com/29297788/33492706-0bbde2bc-d6a5-11e7-89cd-56e636717be2.png)
+
+Ou seja, ele está listando que o módulo `# SUM` deveria ser uma função e deveria retornar `10` quando  
+foram passados `1` e `9`.  
+
+## Escrevendo um teste especificando que uma função deve retornar `5` quando `2` e `3` foram passados por parâmetro 
+Então, eu espero que, assim que eu executar a função `sum` e passar `2` e `3` por parâmetro,  
+espero que o resultado seja `5`:  
+
+![image](https://user-images.githubusercontent.com/29297788/33492955-d2b094b4-d6a5-11e7-9ff6-4c05a758ea9b.png)
+
+Ao executar o mocha, esse teste irá quebrar, pois a função, atualmente, está retornando `10`. Ou  
+seja, o valor esperado era `5` mas o valor retornado é `10`:  
+
+![image](https://user-images.githubusercontent.com/29297788/33493054-19ea8664-d6a6-11e7-8b98-b7baa6a6b2f5.png)
