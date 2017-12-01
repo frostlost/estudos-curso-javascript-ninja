@@ -927,3 +927,23 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### O que ter em mente antes de escrever um teste 
 
 ---
+
+2. #### [Escrevendo os primeiros testes](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-33/02-primeiros-testes.md)
+
+* ##### Sobre a estrutura de diretórios  
+* ##### it(desc) - Escrevendo a descrição de um teste 
+* ##### Importando um módulo para o teste 
+* ##### it(desc, callback) - Escrevendo a função de callback de um teste 
+* ##### Instalando o chai 
+* ##### O comando --save-dev 
+* ##### Importando o chai para o teste 
+* ##### BDD - Behaviour Driven Development 
+* ##### expect() - Escrevendo a asserção que irá garantir que o teste funcione 
+* ##### Executando um teste falho com o mocha 
+* ##### O conceito baby steps / a base dos testes 
+* ##### module.exports = moduleName - Exportando um módulo no Node 
+* ##### Executando um teste correto com o mocha 
+* ##### RED, GREEN, BLUE - As três etapas de um teste 
+* ##### Refatorando um módulo 
+
+---
