@@ -94,3 +94,26 @@ que o módulo ainda não havia sido escrito.
 ![image](https://user-images.githubusercontent.com/29297788/33489131-2eea6130-d69a-11e7-999f-6ff1b73f56f9.png)
 
 ## RED, GREEN, BLUE - As três etapas de um teste 
+
+- RED: Ocorre quando o teste falha. A 1º etapa de um teste é fazer o red, ou seja,  
+escrever um teste que falhe.  
+- GREEN: Com baby steps, ou seja, escrevendo o mínimo de código possível, fazer com que  
+esse código passe no teste.  
+- BLUE: Refactory. Reescrever o código que passou no teste. removendo duplicações,  
+melhorando o código, mas sem escrever funcionalidades novas, independente do tamanho  
+do refactory.  
+
+Após isso, voltar ao passo 1 e escrever um outro teste, para outra funcionalidade do  
+módulo, que falhe no teste.  
+
+## Refatorando um módulo 
+Um exemplo de uma pequena refatoração que pode ser feita é, ao invés de exportar diretamente  
+uma função anônima, posso nomear a função, separá-la do export e passar a referência dela  
+para o export.  
+
+Ou seja, houve uma refatoração e isso não quebrou o teste:  
+
+![image](https://user-images.githubusercontent.com/29297788/33489805-1b539c20-d69c-11e7-8730-7915e503af38.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33489825-36d7d268-d69c-11e7-9141-a97f46524799.png)
+
