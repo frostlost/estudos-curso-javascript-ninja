@@ -61,3 +61,44 @@ Ao executar o mocha, esse teste irá quebrar, pois a função, atualmente, está
 seja, o valor esperado era `5` mas o valor retornado é `10`:  
 
 ![image](https://user-images.githubusercontent.com/29297788/33493054-19ea8664-d6a6-11e7-8b98-b7baa6a6b2f5.png)
+
+Então, com baby steps, farei com que o módulo passe no teste. Preciso, então, passar os valores  
+por parâmetro e fazer com que a função retorne a soma desses dois parâmetros. Essa é a menor  
+quantidade de código que posso escrever para que esse módulo passe no teste:  
+
+![image](https://user-images.githubusercontent.com/29297788/33493219-7a800076-d6a6-11e7-9703-ef68cb1087f4.png)
+
+Ao executar o mocha, é exibido que o módulo passou no teste:  
+
+![image](https://user-images.githubusercontent.com/29297788/33493247-942c3904-d6a6-11e7-87ea-641618c962fd.png)
+
+Ele passou por que os meus testes, até agora, são: verificar se `sum` é uma função, se  
+`1` e `9` são passados por parâmetro, `10` deve ser retornado e `2` e `3` deve retornar  
+`5`:  
+
+![image](https://user-images.githubusercontent.com/29297788/33493373-fb64241a-d6a6-11e7-84ed-c918eaa8949a.png)
+
+>Lembrando que os próximos testes a serem escritos, não devem quebrar os anteriores. 
+
+## Escrevendo um teste especificando que uma função deve retornar um erro caso receba apenas um parâmetro  
+
+Irei então, escrever um teste para verificar se esse módulo está preparado para receber dois  
+parâmetros ou não. 
+
+![image](https://user-images.githubusercontent.com/29297788/33493531-7c8849c2-d6a7-11e7-85ec-d8a240086723.png)
+
+Irei escrever então que, o esperado é que a invocação de `sum` com apenas um parâmetro retorne um  
+erro:  
+
+![image](https://user-images.githubusercontent.com/29297788/33493597-bfd68dec-d6a7-11e7-998e-54c41e20437e.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33493642-ddcb9734-d6a7-11e7-91fd-c3141a16456f.png)
+
+Então, o esperado é que `NaN` seja um erro. `NaN` está sendo retornado por que apenas um parâmetro  
+está sendo passado e ele está somando um parâmetro com o outro. Então, preciso escrever o mínimo  
+de código possível para retornar um erro se os dois parâmetros não foram passados.  
+
+Erei especificar então que se o parâmetro 1 ou o 2 não for passado, um erro será retornado,  
+pedindo para que dois números sejam passados por parâmetro:  
+
+![image](https://user-images.githubusercontent.com/29297788/33493789-60506aae-d6a8-11e7-9e3a-ec75e230485a.png)
