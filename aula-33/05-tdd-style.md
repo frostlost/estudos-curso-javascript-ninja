@@ -4,7 +4,7 @@
 Abaixo dos testes BDD já criados, irei criar um novo teste com um novo `it()`.  
 
 ## O método `assert` 
-O título desse teste será `''Assert`. Irei, então, invocar o assert, e atribuí-lo  
+O título desse teste será `'Assert'`. Irei, então, invocar o assert, e atribuí-lo  
 à uma variável `assert`.  
 
 ## O método `assert.equal(value, result, message)`
