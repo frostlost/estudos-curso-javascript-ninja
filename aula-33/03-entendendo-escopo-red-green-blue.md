@@ -129,7 +129,7 @@ disparado.
 
 ![image](https://user-images.githubusercontent.com/29297788/33510677-107a9e70-d6f6-11e7-8a0e-ebc319dd857f.png)
 
-Ao executar o mocha, ele exibe que o teste falhou, por que ele esperava que 'a' e 'b' fosse  
+Ao executar o mocha, ele exibe que o teste falhou, por que ele esperava que 'ab' fosse  
 um erro, porém, esses valores foram concatenados. 
 
 ![image](https://user-images.githubusercontent.com/29297788/33510695-4ec02f10-d6f6-11e7-91cd-581954b68e36.png)
