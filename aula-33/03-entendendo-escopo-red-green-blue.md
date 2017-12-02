@@ -96,7 +96,7 @@ erro:
 
 Então, o esperado é que `NaN` seja um erro. `NaN` está sendo retornado por que apenas um parâmetro  
 está sendo passado e ele está somando um parâmetro com o outro. Então, preciso escrever o mínimo  
-de código possível para retornar um erro se os dois parâmetros não foram passados.  
+de código possível para retornar um erro se os dois parâmetros não forem passados.  
 
 Irei especificar então que, se o parâmetro 1 ou o 2 não for passado, um erro será retornado,  
 pedindo para que dois números sejam passados por parâmetro:  
