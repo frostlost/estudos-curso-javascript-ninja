@@ -947,3 +947,15 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Refatorando um módulo 
 
 ---
+
+3. #### [Entendendo o escopo Red - Green - Blue](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-33/03-entendendo-escopo-red-green-blue.md)
+
+* ##### Escrevendo o teste em que uma função receba dois parâmetros e deva retornar a soma desses dois parâmetros 
+* ##### O return em funções 
+* ##### A documentação gerada pelos testes 
+* ##### Escrevendo um teste especificando que uma função deve retornar 5 quando 2 e 3 foram passados por parâmetro 
+* ##### Escrevendo um teste especificando que uma função deve retornar um erro caso receba apenas um parâmetro 
+* ##### new Error('errorPhrase') 
+* ##### Escrevendo um teste especificando que os dois parâmetros passados para uma função sejam números, de fato 
+
+---
