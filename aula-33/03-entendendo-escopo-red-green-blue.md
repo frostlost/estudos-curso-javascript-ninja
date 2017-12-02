@@ -98,7 +98,47 @@ Então, o esperado é que `NaN` seja um erro. `NaN` está sendo retornado por qu
 está sendo passado e ele está somando um parâmetro com o outro. Então, preciso escrever o mínimo  
 de código possível para retornar um erro se os dois parâmetros não foram passados.  
 
-Erei especificar então que se o parâmetro 1 ou o 2 não for passado, um erro será retornado,  
+Irei especificar então que, se o parâmetro 1 ou o 2 não for passado, um erro será retornado,  
 pedindo para que dois números sejam passados por parâmetro:  
 
 ![image](https://user-images.githubusercontent.com/29297788/33493789-60506aae-d6a8-11e7-9e3a-ec75e230485a.png)
+
+## `new Error('errorPhrase')` 
+`Error` é um objeto em JavaScript, em que é possível passar uma frase de erro como parâmetro.  
+
+Executando o mocha novamente, o módulo irá passar no teste, pois está retornando um erro  
+corretamente:  
+
+![image](https://user-images.githubusercontent.com/29297788/33510596-ef564466-d6f4-11e7-983f-a690d07e4a12.png)
+
+Se um `console.log()` invocando a função, passando apenas um parâmetro para ela, for especificado  
+dentro do teste, o mocha retorna o erro especificado no módulo:  
+
+![image](https://user-images.githubusercontent.com/29297788/33510617-2cfa4c4a-d6f5-11e7-9c91-3e3086dbd7ad.png)
+
+## Escrevendo um teste especificando que os dois parâmetros passados para uma função sejam números, de fato 
+Preciso garantir que os dois argumentos passados ao invocar a função sejam, de fato, números. Caso  
+não sejam, a soma não deve ser feita.  
+
+Vou dizer que `sum` deverá retornar um erro caso algum argumento não seja um número.  
+
+![image](https://user-images.githubusercontent.com/29297788/33510663-d9d16b6a-d6f5-11e7-9503-81860de836bb.png)
+
+Então irei dizer que, se `sum` for invocado com os argumentos `'a'` e `'b'`, um erro será  
+disparado.  
+
+![image](https://user-images.githubusercontent.com/29297788/33510677-107a9e70-d6f6-11e7-8a0e-ebc319dd857f.png)
+
+Ao executar o mocha, ele exibe que o teste falhou, por que ele esperava que 'a' e 'b' fosse  
+um erro, porém, esses valores foram concatenados. 
+
+![image](https://user-images.githubusercontent.com/29297788/33510695-4ec02f10-d6f6-11e7-91cd-581954b68e36.png)
+
+Atualmente, o módulo está fazendo com que, se algum dos dois números não for passado,  
+ele irá somar. Como duas strings foram passadas, a concatenação é feita:  
+
+![image](https://user-images.githubusercontent.com/29297788/33510721-e1a65264-d6f6-11e7-9f1e-222c0dcb6d54.png)
+
+Então, ele concatenou mas deveria retornar um erro, por que não quero que o módulo some  
+strings. É necessário então fazer uma implementação que não irá deixar o módulo concatenar  
+strings, retornando um erro, nesse caso. 
