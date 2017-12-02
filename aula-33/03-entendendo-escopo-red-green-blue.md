@@ -134,8 +134,8 @@ um erro, porém, esses valores foram concatenados.
 
 ![image](https://user-images.githubusercontent.com/29297788/33510695-4ec02f10-d6f6-11e7-91cd-581954b68e36.png)
 
-Atualmente, o módulo está fazendo com que, se algum dos dois números não for passado,  
-ele irá somar. Como duas strings foram passadas, a concatenação é feita:  
+Atualmente, o módulo está fazendo com que, se algum dos dois argumentos não for número,  
+ele irá concatenar. Como duas strings foram passadas, a concatenação é feita:  
 
 ![image](https://user-images.githubusercontent.com/29297788/33510721-e1a65264-d6f6-11e7-9f1e-222c0dcb6d54.png)
 
