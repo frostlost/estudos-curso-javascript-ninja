@@ -971,3 +971,14 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Por que testar 
 
 ---
+
+5. #### [TDD Style](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-33/05-tdd-style.md)
+
+* ##### Escrevendo um teste no formato TDD 
+* ##### O método assert 
+* ##### O método assert.equal(value, result, message) 
+* ##### O método asset.strictEqual(value, result, message) 
+* ##### Sobre testes em BDD 
+* ##### Documentações - Assert e Chai 
+
+---
