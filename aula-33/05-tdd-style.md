@@ -56,6 +56,6 @@ TDD.
 O BDD é, basicamente, uma evolução do TDD. É um formato que facilita a leitura do  
 código.  
 
-## Documentações 
+## Documentações - Assert e Chai
 - [Documentação do `assert`](https://nodejs.org/dist/latest-v9.x/docs/api/assert.html)
 - [Documentação do `chai`](http://chaijs.com/)
