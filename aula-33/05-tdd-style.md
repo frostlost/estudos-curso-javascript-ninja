@@ -40,7 +40,7 @@ Se o `50` for passado como string, o teste não irá quebrar:
 Isso acontece por que ele testa a igualdade usando o `==`, ou seja, ele não testa o  
 tipo.  
 
-Se eu passar o método `asset.strictEqual(value, result, message)`, ele irá testar a  
+Se eu passar o método `assert.strictEqual(value, result, message)`, ele irá testar a  
 igualdade com o `===`. Ou seja, testa o valor e o tipo do resultado. Isso irá quebrar  
 o teste, pois estou especificando que 20 + 30 deveria resultar no **número** 50 mas  
 estou testando o resultado da minha asserção como uma **string** 50:  
