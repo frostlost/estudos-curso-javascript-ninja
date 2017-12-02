@@ -959,3 +959,15 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Escrevendo um teste especificando que os dois parâmetros passados para uma função sejam números, de fato 
 
 ---
+
+4. #### [Escrevendo mais testes](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-33/04-escrevendo-mais-testes.md)
+
+* ##### Escrevendo um teste especificando que os dois parâmetros passados para uma função sejam números, de fato (cont.) 
+* ##### Refatorando 
+* ##### Refatorando o if da função que irá validar se dois argumentos estão sendo passados ao invocar sum 
+* ##### `Object.prototype.toString.call(arg) === '[object Number]'` - Refatorando o if da função que irá validar se o tipo do argumento num1 ou num2 é um número 
+* ##### A função isNaN(num) 
+* ##### Estabelecendo a quantidade de testes a serem escritos 
+* ##### Por que testar 
+
+---
