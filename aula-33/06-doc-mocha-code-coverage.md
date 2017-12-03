@@ -118,7 +118,47 @@ Com isso, ao acessar o arquivo `sum.js`, será mostrado o código coberto por te
 `function sum(num1, num2)`, etc.  
 
 Em casos de módulos que não estejam 100% cobertos, ele mostra, por exemplo, `if`'s que  
-não estão sendo cobertos, ou seja, ele não está entrando no `if`:  
+não estão sendo cobertos por teste, ou seja, ele não está entrando no `if`:  
 
 ![image](https://user-images.githubusercontent.com/29297788/33526845-e81acc78-d82d-11e7-8e4b-24ac7ab0b414.png)
 
+## Observações sobre o test coverage 
+O test coverage não irpa garantir que o meu código esteja funcionando 100%, mas pode  
+dar um bom caminho para isso.  
+
+Ele não garante 100% pois, posso ter escrito um teste que não testa realmente o  
+meu código. Eu poderia simplesmente testar, por exemplo, `expect true to be equal true`,  
+ou seja, isso não irá testar nada no meu código, não irá dizer nada.  
+
+Os testes precisam ser limpos e pequenos, testando uma parte específica do código.  
+
+A ideia por trás dos testes é automatizar aquilo que seria feito manualmente e, de  
+quebra, ainda ganhar uma pequena documentação dizendo o que aquele código faz.  
+
+## Sobre testes unitários / testes de unidade  
+Todos os testes feitos até aqui são testes de unidade. Eles testam uma única parte  
+do meu código por vez. Cada teste irá testar uma parte do meu código.  
+
+## O plugin `Lcov info` - Atom 
+Após instalar o plugin, executar o comando `shift + ctrl + p`, e escolher  
+`Lcov Info: Toogle`, ele irá exibir o quanto do projeto está coberto por testes.  
+
+Ele também mostra a cobertura de teste no próprio arquivo:  
+
+![image](https://user-images.githubusercontent.com/29297788/33526995-4bd473d4-d830-11e7-898a-8e4fdfb3cadf.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33527003-63d268f6-d830-11e7-9691-cf7502d808ca.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33527010-779640e2-d830-11e7-85f3-74cd03182cc5.png)
+
+Se eu comentar algum teste, por exemplo, e executar o `istanbul` novamente, ele irá  
+gerar a pasta `coverage` novamente e irá atualizar o arquivo com o código testado.  
+No caso, apenas a linha marcada de vermelho não está coberta por testes:  
+
+![image](https://user-images.githubusercontent.com/29297788/33527038-c5d63460-d830-11e7-964d-a2157deb4627.png)
+
+> É necessário rodar o coverage por que ele pega informações da pasta `coverage` para  
+então mostrar o code coverage direto no arquivo do código.  
+
+Para excluir a visualização do code coverage no próprio arquivo, basta executar o comando  
+`shift + ctrl + p` e escolher `Lcov Info: Toogle` novamente.  
