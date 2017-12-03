@@ -28,7 +28,7 @@ serão somados e o resultado será 60, ao invés do esperado (50):
 ![image](https://user-images.githubusercontent.com/29297788/33520555-54ad8a2c-d7a4-11e7-8869-22e6e12eb457.png)
 
 Neste caso, então, o erro está no teste, e não no módulo. A quebra foi feita  
-propositalmente para propósitos didáticos. 
+intencionalmente, para propósitos didáticos. 
 
 ## O método `asset.strictEqual(value, result, message)`
 Se o `50` for passado como string, o teste não irá quebrar:  
