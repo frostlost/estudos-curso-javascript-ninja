@@ -32,3 +32,21 @@ por exemplo.
 
 Então, posso utilizar essas funções em casos onde seja necessário fazer algo antes  
 de executar cada teste, ou depois, ou antes ou depois de executar todos os testes. 
+
+## Code Coverage 
+É a verificação do quanto um código está coberto por testes.  
+
+É interessante saber isso, por exemplo, ao ter um módulo em que não se sabe quanto  
+dele está coberto por testes.  
+
+No exemplo do módulo de soma, que é um módulo pequeno, foi testado se o módulo é  
+uma função, se ele retorna 10 ao serem passados 1 e 9 como argumentos, se ele retorna  
+5 ao serem passados 2 e 3 como argumentos, se ele retorna um erro ao ser passado  
+apenas um argumento, se ele retorna um erro caso um argumento que não seja número  
+seja passado.  
+
+![image](https://user-images.githubusercontent.com/29297788/33521160-7ee04048-d7b1-11e7-9259-27e7fbc769a6.png)
+
+## 
+Então, embora tudo isso esteja sendo testado, como saber o quanto desse código está  
+coberto por testes? 
