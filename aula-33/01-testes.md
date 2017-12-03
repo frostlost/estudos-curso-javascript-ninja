@@ -56,7 +56,7 @@ A função de soma possui regras básicas:
 1. Os dois parâmetros da função precisam ser números.  
 2. O resultado precisa ser o resultado da soma dos dois números.  
 3. Se um desses argumentos não for número, uma mensagem de erro deve ser retornada, ao invés da  
-soma desses dois parâmetros em que um ou mais não são números. A mensagem deverá dizer que  
+soma desses dois argumentos em que um ou mais não são números. A mensagem deverá dizer que  
 um ou os dois parâmetros não são números e não puderam ser somados corretamente.  
 
 Portanto, ao iniciar um teste, é preciso saber exatamente o que o módulo irá fazer. Talvez  
