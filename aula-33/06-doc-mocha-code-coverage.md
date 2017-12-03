@@ -123,7 +123,7 @@ não estão sendo cobertos por teste, ou seja, ele não está entrando no `if`:
 ![image](https://user-images.githubusercontent.com/29297788/33526845-e81acc78-d82d-11e7-8e4b-24ac7ab0b414.png)
 
 ## Observações sobre o test coverage 
-O test coverage não irpa garantir que o meu código esteja funcionando 100%, mas pode  
+O test coverage não irá garantir que o meu código esteja funcionando 100%, mas pode  
 dar um bom caminho para isso.  
 
 Ele não garante 100% pois, posso ter escrito um teste que não testa realmente o  
