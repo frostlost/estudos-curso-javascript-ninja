@@ -139,7 +139,7 @@ quebra, ainda ganhar uma pequena documentação dizendo o que aquele código faz
 Todos os testes feitos até aqui são testes de unidade. Eles testam uma única parte  
 do meu código por vez. Cada teste irá testar uma parte do meu código.  
 
-## O plugin `Lcov info` - Atom 
+## O plugin [`Lcov info`](https://atom.io/packages/lcov-info) - Atom 
 Após instalar o plugin, executar o comando `shift + ctrl + p`, e escolher  
 `Lcov Info: Toogle`, ele irá exibir o quanto do projeto está coberto por testes.  
 
