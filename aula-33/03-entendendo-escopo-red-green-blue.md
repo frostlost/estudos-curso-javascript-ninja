@@ -13,7 +13,7 @@ parâmetro, isso seja igual a `10`:
 
 ![image](https://user-images.githubusercontent.com/29297788/33491861-a3ae2878-d6a2-11e7-9db8-9391d360a6ac.png)
 
-Feiro isso, irei executar o mocha novamente. Ele irá dizer que tenho um teste que passou e um  
+Feito isso, irei executar o mocha novamente. Ele irá dizer que tenho um teste que passou e um  
 teste que falhou. O teste que falhou foi o último escrito, por que não tenho nenhum retorno na  
 função. Ele disse que espera que `undefined` seja igual a `10`:  
 
