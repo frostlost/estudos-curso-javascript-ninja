@@ -68,7 +68,7 @@ os testes sejam executados somente para o ambiente de desenvolvimento.
 
 ## Executando um test coverage com o `istanbul`
 Após isso, posso especificar o comando `istanbul cover caminho/do/mocha`, passando o  
-caminho do mocha (`node_modules/mocha/bin_mocha`). Isso irá trazer os testes. Esse  
+caminho do mocha (`node_modules/mocha/bin/_mocha`). Isso irá trazer os testes. Esse  
 comando do `_mocha` é como se ele estivesse sendo executado normalmente:  
 
 ![image](https://user-images.githubusercontent.com/29297788/33526618-189ec96a-d82b-11e7-8834-d1902a49c091.png)
