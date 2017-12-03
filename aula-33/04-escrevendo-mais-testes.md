@@ -52,8 +52,8 @@ um objeto. Ele irá dizer que o número é um objeto, ao invés de número.
 ![image](https://user-images.githubusercontent.com/29297788/33517116-38e16d16-d765-11e7-9c0f-11511af65141.png)
 
 Por isso, ao invés de utilizar o `typeof`, a função `isNumber(arg)` será criada.  
-Ela irá retornar se o argumento é um número independente se ele for um número puro  
-ou um número criado a partir do objeto Number.  
+Ela irá retornar se o argumento é um número **independente se ele for um número puro  
+ou um número criado a partir do objeto Number**.  
 
 Ao executar o mocha, é exibido que os testes continuam passando:  
 
