@@ -982,3 +982,18 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Documentações - Assert e Chai 
 
 ---
+
+6. #### [Documentação do Mocha e Code Coverage](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-33/06-doc-mocha-code-coverage.md)
+
+* ##### Documentações - Mocha 
+* ##### hooks - Mocha 
+* ##### Code Coverage 
+* ##### Istanbul 
+* ##### Problemas com o `_mocha` no windows 
+* ##### Executando um test coverage com o istanbul 
+* ##### Visualizando o code coverage no browser 
+* ##### Observações sobre o test coverage 
+* ##### Sobre testes unitários / testes de unidade 
+* ##### O plugin Lcov info - Atom 
+
+---
