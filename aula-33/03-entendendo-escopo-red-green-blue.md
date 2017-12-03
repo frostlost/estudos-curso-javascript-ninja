@@ -31,8 +31,8 @@ função retorne `10`:
 ![image](https://user-images.githubusercontent.com/29297788/33492245-9bff7216-d6a3-11e7-8d90-f8dd988302b9.png)
 
 Essa função deveria somar os dois valores, mas, ao invés disso, estou retornando o `10` diretamente.  
-Isso é feito por que o teste está dizendo que, se `1` e `9` forem entrados, ela deve retornar `10`,  
-**só que eu preciso escrever com o mínimo de código possível, ou seja, não vou escrever nenhuma  
+Isso é feito por que o teste está dizendo que, se `1` e `9` forem entrados, ela deve retornar `10`  
+**só que, eu preciso escrever com o mínimo de código possível, ou seja, não vou escrever nenhuma  
 lógica se eu sei que posso retornar `10`**. Isso é o conceito baby steps.  
 
 Se o mocha for executado agora, esse módulo irá passar no teste:  
