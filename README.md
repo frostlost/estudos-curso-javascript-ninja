@@ -997,3 +997,14 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### O plugin Lcov info - Atom 
 
 ---
+
+## Aula 34
+
+1. #### [Deprecated Methods e Intro Uglify](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-34/01-deprecated-meths-intro-uglify.md)
+
+* ##### Deprecated Methods 
+* ##### O exemplo da diretiva 'use strict'; 
+* ##### Sobre o ES6 
+* ##### Performance: Uglify 
+
+---
