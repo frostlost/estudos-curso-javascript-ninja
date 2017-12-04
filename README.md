@@ -1008,3 +1008,16 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Performance: Uglify 
 
 ---
+
+2. #### [Uglify.js - parte 1](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-34/02-uglify-parte-01.md)
+
+* ##### Instalando o UglifyJs 
+* ##### Estrutura de arquivos e pastas usadas para o exemplo 
+* ##### Criando o script do exemplo 
+* ##### Criando o html do exemplo 
+* ##### Enfeiando um código 
+* ##### Criando um arquivo minificado com o uglifyjs 
+* ##### Comprimindo ainda mais um arquivo .js 
+* ##### Como uma IIFE afeta a compressão dos arquivos 
+
+---
