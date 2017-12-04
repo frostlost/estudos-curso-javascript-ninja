@@ -58,3 +58,38 @@ baixados, através da aba `sources`,  posso visualizar o arquivo minificado:
 ![image](https://user-images.githubusercontent.com/29297788/33565234-b64e76be-d903-11e7-9166-8fccb2dc6bd6.png)
 
 ![image](https://user-images.githubusercontent.com/29297788/33565324-f09bb00c-d903-11e7-8a8f-af39ab0b2659.png)
+
+## Comprimindo ainda mais um arquivo `.js`  
+Com o comando `ls - lha`, posso verificar o tamanho dos arquivos, em bytes:  
+
+![image](https://user-images.githubusercontent.com/29297788/33565408-27f54d4c-d904-11e7-910f-d3d916efaf67.png)
+
+Ou seja, o arquivo principal pesa 99 bytes e o minificado, 71.  
+
+Para diminuir ainda mais, posso usar o comando  
+`uglifyjs --output caminhoEnomeDoArquivo.js --compress -- nomeArquivoASerMinificado.js`.  
+Isso irá comprimir ainda mais o arquivo:  
+
+![image](https://user-images.githubusercontent.com/29297788/33565555-8f7c3dae-d904-11e7-8a07-94c9912de986.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33565573-a27c04c0-d904-11e7-9dd0-81ab05b1d9c4.png)
+
+Ele diminuiu o arquivo para 70 bytes.  
+
+## Como uma `IIFE` afeta a compressão dos arquivos  
+A `IIFE` precisa dos parênteses por que não é possível executar uma função literal  
+diretamente.  
+
+![image](https://user-images.githubusercontent.com/29297788/33565683-f696f3ee-d904-11e7-8c3f-b54b29b8f65c.png)
+
+Ou seja, é necessário transformar essa função em uma expressão. Isso pode ser feito  
+ao atribuí-la a uma variável, colocá-la entre parênteses para que ela ganhe prioridade  
+na execução do JS. O parênteses fará com que o JS avalie essa função dentro do  
+parênteses e dizer "dentro desse parênteses há uma função", e, por isso, posso usar os  
+dois parênteses de fora para invocá-la:  
+
+![image](https://user-images.githubusercontent.com/29297788/33565869-759110e4-d905-11e7-8a17-e97869c639da.png)
+
+Porém, ao usar o `compress` na minificação, os parênteses que envolvem a função são  
+removidos e substituídos por uma exclamação no início da função:  
+
