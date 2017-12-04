@@ -93,3 +93,8 @@ dois parênteses de fora para invocá-la:
 Porém, ao usar o `compress` na minificação, os parênteses que envolvem a função são  
 removidos e substituídos por uma exclamação no início da função:  
 
+![image](https://user-images.githubusercontent.com/29297788/33565948-b5455862-d905-11e7-80d7-37932a76fbb0.png)
+
+Essa exclamação faz exatamente a mesma coisa que os parênteses.  
+
+Em outros casos, a compressão pode reduzir um arquivo de 100k em até 20k.  
