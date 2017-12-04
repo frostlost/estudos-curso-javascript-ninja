@@ -6,7 +6,7 @@ Isso pode acontecer, por exemplo, por que a forma como uma funcionalidade funcio
 resolve mais um problema, ou até mesmo por que a forma como ela funciona está gerando  
 mais problemas atualmente.  
 
-## O exemplo da diretiva `'use strict;'` 
+## O exemplo da diretiva `'use strict';` 
 Ela foi criada para remover vários problemas da versão anterior do JS (es3). E códigos  
 antigos, que ainda utilizam o ES3 ainda funcionam nesse formato devido a essa diretiva.  
 Ela faz com que esses códigos antigos sejam entendidos pelo browser e não se quebrem.  
