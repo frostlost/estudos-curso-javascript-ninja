@@ -83,7 +83,7 @@ diretamente.
 ![image](https://user-images.githubusercontent.com/29297788/33565683-f696f3ee-d904-11e7-8c3f-b54b29b8f65c.png)
 
 Ou seja, é necessário transformar essa função em uma expressão. Isso pode ser feito  
-ao atribuí-la a uma variável, colocá-la entre parênteses para que ela ganhe prioridade  
+ao atribuí-la a uma variável ou colocá-la entre parênteses para que ela ganhe prioridade  
 na execução do JS. O parênteses fará com que o JS avalie essa função dentro do  
 parênteses e dizer "dentro desse parênteses há uma função", e, por isso, posso usar os  
 dois parênteses de fora para invocá-la:  
