@@ -1021,3 +1021,16 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Como uma IIFE afeta a compressão dos arquivos 
 
 ---
+
+2. #### [Uglify.js - parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-34/03-uglify-parte-02.md)
+
+* ##### Executando o Atom através do terminal 
+* ##### uglifyjs --mangle - Minificando ainda mais o código 
+* ##### uglifyjs --mangle --compress - Minificando ainda mais o código ao combinar o mangle e o compress 
+* ##### Sobre o acesso via mobile 
+* ##### Pretty print - Melhorando a exibição de um código minificado 
+* ##### Minificando o window 
+* ##### Drop ao usar variáveis não utilizadas 
+* ##### Minificando um código que usa variáveis sem o var (globais) 
+
+---
