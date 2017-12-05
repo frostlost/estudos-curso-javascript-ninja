@@ -1017,7 +1017,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Criando o html do exemplo 
 * ##### Enfeiando um código 
 * ##### Criando um arquivo minificado com o uglifyjs 
-* ##### Comprimindo ainda mais um arquivo .js 
+* ##### `--compress` - Comprimindo ainda mais um arquivo `.js` 
 * ##### Como uma IIFE afeta a compressão dos arquivos 
 
 ---
