@@ -4,6 +4,18 @@ Atualmente, `main.min.js` está minificado dessa forma:
 
 ![image](https://user-images.githubusercontent.com/29297788/33606368-6386bb70-d9a4-11e7-932f-64fb178f454c.png)
 
+## Executando o Atom através do terminal  
+Com o comando `atom nomeOuNomeECaminhoDoArquivo`, ele irá abrir o atom já com o arquivo ou projeto  
+especificado aberto:  
+
+![image](https://user-images.githubusercontent.com/29297788/33608301-4b6bc2f4-d9ab-11e7-8504-e1c3559ef3a0.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33608313-5089d780-d9ab-11e7-8b54-a96dd80c90d2.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33608397-8e3a083e-d9ab-11e7-9080-f5d712e8443b.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33608407-9148c02e-d9ab-11e7-8b40-4de513b4ae02.png)
+
 ## `uglifyjs --mangle` - Minificando ainda mais o código  
 Em alguns momentos, a única coisa que preciso manter em uma função nomeada é que o nome  
 dela seja o mesmo nome ao ser invocada. Então o `--mangle` irá substituir os nomes das variáveis:  
@@ -59,7 +71,7 @@ O Pretty print irá melhorar a visualização do código, mantendo o código mon
 Ou seja, ao dar erro em um nome de uma variável ou uma função, não será possível saber  
 quem é essa variável ou função, pois o nome delas ainda estão modificados.  
 
-## 
+## Minificando o `window` 
 Ao passar variáveis globais como variáveis locais para o código, como a `window`, foi  
 explicado que essas variáveis irão funcionar bem mais rápido devido a serem locais  
 agora.  
@@ -72,10 +84,26 @@ Digamos que eu queira, então exportar a função `init` usando `window` como re
 ![image](https://user-images.githubusercontent.com/29297788/33607544-a72fa234-d9a8-11e7-9c4d-6f83e685a41c.png)
 
 Ou seja, o `win` passado por parâmetro foi minificado, mas o `window.init`, não,  
-exatamente por que o chamei como `window`. Ou seja, o melhor é sempre referenciar o  
-`window` como `win` (variável local), para que ele seja minificado:  
+exatamente por que o chamei como `window`. Ele não pode minificar uma variável sem saber  
+se ela foi criada por mim ou se ela é global (vem de outro lugar). Agora, se o global  
+é passado como local, ele pode minificar o local.  
+
+Ou seja, o melhor é sempre referenciar o `window` como `win` (variável local), para que  
+ele seja minificado:  
 
 ![image](https://user-images.githubusercontent.com/29297788/33607633-f07403cc-d9a8-11e7-8731-026891341cb2.png)
 
 ![image](https://user-images.githubusercontent.com/29297788/33607730-29998276-d9a9-11e7-83d1-d97dd0b83492.png)
 
+O `win` foi substituído por `n`.  
+
+## Drop ao usar variáveis não utilizadas 
+Se uma variável declarada não é usada no código, ao minificar o código, ele dá um aviso dizendo que  
+ele dropou (removeu) a variável que não está sendo utilizada antes de ter minificado o código:  
+
+![image](https://user-images.githubusercontent.com/29297788/33607937-d6200f24-d9a9-11e7-8da1-92e56abe1fc4.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33608040-496166d6-d9aa-11e7-8ccc-209da2cfa202.png)
+
+## Usando variáveis desconhecidas (acidentalmente globais) 
+Ao 
