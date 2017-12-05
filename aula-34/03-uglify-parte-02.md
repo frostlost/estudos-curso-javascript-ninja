@@ -105,5 +105,17 @@ ele dropou (removeu) a variável que não está sendo utilizada antes de ter min
 
 ![image](https://user-images.githubusercontent.com/29297788/33608040-496166d6-d9aa-11e7-8ccc-209da2cfa202.png)
 
-## Usando variáveis desconhecidas (acidentalmente globais) 
-Ao 
+## Minificando um código que usa variáveis sem o `var` globais) 
+Ao usar uma variável sem a declaração da palavra `var` (variável global) e minificar o código,  
+a variável global será mantida no código minificado e, ao subir o servidor e checkar o console  
+ao tentar executar o código, o erro dizendo que a variável não está definida:  
+
+![image](https://user-images.githubusercontent.com/29297788/33608492-d1a32e0c-d9ab-11e7-83b0-32ec3f5485a9.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33608552-08790c62-d9ac-11e7-85f7-1db56c1a4e22.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33608601-319a9f84-d9ac-11e7-9b6b-0bc135e32500.png)
+
+Ao ir em sources e tentar debugar, ele sublinha a variável mas, em um código maior, é bem mais  
+complicado debugar esse tipo de erro. Para tentar debugar, posso tentar usar o Pretty print (que  
+nem sempre pode resolver) ou usar o Sourcemaps, que será mostrado na próxima aula.
