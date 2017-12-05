@@ -105,7 +105,7 @@ ele dropou (removeu) a variável que não está sendo utilizada antes de ter min
 
 ![image](https://user-images.githubusercontent.com/29297788/33608040-496166d6-d9aa-11e7-8ccc-209da2cfa202.png)
 
-## Minificando um código que usa variáveis sem o `var` globais) 
+## Minificando um código que usa variáveis sem o `var` (globais) 
 Ao usar uma variável sem a declaração da palavra `var` (variável global) e minificar o código,  
 a variável global será mantida no código minificado e, ao subir o servidor e checkar o console  
 ao tentar executar o código, o erro dizendo que a variável não está definida:  
