@@ -54,9 +54,9 @@ reduzida, que tem um limite de banda para baixar.
 **Quanto mais o arquivo é reduzido, melhor para o usuário, pois, além do browser baixar o arquivo  
 mais rápido, ele também será executado mais rápido, pois o arquivo está menor.**  
 
-Ou seja, o arquivo indentável e legível é mantido mas, no final do desenvolvimento, esse  
+Ou seja, o arquivo indentado e legível é mantido mas, no final do desenvolvimento, esse  
 bundle minificado é gerado, para que o browser tenha menos trabalho ao baixá-lo e o usuário  
-consiga, sem problemas, acessar a aplicação econimozando banda.  
+consiga, sem problemas, acessar a aplicação economizando banda.  
 
 ## Pretty print - Melhorando a exibição de um código minificado  
 O problema da minificação é que, em grandes códigos minificados, não há como debugá-los  
