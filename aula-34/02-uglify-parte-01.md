@@ -40,7 +40,7 @@ Ou seja, ele simplesmente removeu os espaços em branco do código e o diminuiu 
 nenhum arquivo novo**.  
 
 ## Criando um arquivo minificado com o uglifyjs 
-Para isso, posso usar o comando `uglifyjs --output caminhoEnomeDoArquivoASerCriado.js -- nomeArquivoASerMinificado.js`.  
+Para isso, posso usar o comando `uglifyjs --output caminhoEnomeDoArquivoMinificadoASerCriado.js -- nomeArquivoASerMinificado.js`.  
 Sempre ao passar parâmetros para o uglifyjs, é necessário especificar dois traços  
 antes do nome do arquivo a ser minificado (arquivo principal).  
 
@@ -67,7 +67,7 @@ Com o comando `ls - lha` (`dir`, no windows), posso verificar o tamanho dos arqu
 Ou seja, o arquivo principal pesa 99 bytes e o minificado, 71.  
 
 Para diminuir ainda mais, posso usar o comando  
-`uglifyjs --output caminhoEnomeDoArquivoASerCriado.js --compress -- nomeArquivoASerMinificado.js`.  
+`uglifyjs --output caminhoEnomeDoArquivoMinificadoASerCriado.js --compress -- nomeArquivoASerMinificado.js`.  
 Isso irá comprimir ainda mais o arquivo:  
 
 ![image](https://user-images.githubusercontent.com/29297788/33565555-8f7c3dae-d904-11e7-8a07-94c9912de986.png)
