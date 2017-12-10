@@ -60,7 +60,7 @@ baixados, através da aba `sources`,  posso visualizar o arquivo minificado:
 ![image](https://user-images.githubusercontent.com/29297788/33565324-f09bb00c-d903-11e7-8a8f-af39ab0b2659.png)
 
 ## `--compress` - Comprimindo ainda mais um arquivo `.js`  
-Com o comando `ls - lha`, posso verificar o tamanho dos arquivos, em bytes:  
+Com o comando `ls - lha` (`dir`, no windows), posso verificar o tamanho dos arquivos, em bytes:  
 
 ![image](https://user-images.githubusercontent.com/29297788/33565408-27f54d4c-d904-11e7-910f-d3d916efaf67.png)
 
