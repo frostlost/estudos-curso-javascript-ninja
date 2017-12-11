@@ -62,4 +62,53 @@ Resumindo, escrevo o código de forma organizada, utilizo o `uglifyjs` para mini
 utilizo o `source-map` para que o browser leia esse arquivo sem minificá-lo. O `source-map`  
 irá deixar o arquivo menor do que ele realmente é, criando um mapa para o arquivo principal  
 e o browser irá conseguir voltar o arquivo como era quando foi escrito. Ou seja, **a ideia  
-do `source-map` é facilitar o debug do código minificado**.  
+do `source-map` é facilitar o debug do código que foi minificado**.  
+
+## screw IE8 - Uglify 
+Na documentação do Uglify, posso ver que, uma das flags que pode ser utilizada é o `--screw-ie8`,  
+que ignora coisas que seriam minificadas para funcionar no Internet Explorer 8. Ou seja, há a  
+possibilidade do código ficar ainda menor:  
+
+![image](https://user-images.githubusercontent.com/29297788/33811096-164ee8b4-ddf5-11e7-8785-d3ea574073ef.png)
+
+## Usando corretamente o ternário em uma aplicação  
+É importante ressaltar que o ternário não é um `if`, apenas funciona de forma similar.  
+
+Suponhamos que eu tenha a seguinte verificação com utilizando o `if`:  
+
+![image](https://user-images.githubusercontent.com/29297788/33811135-b4fab524-ddf5-11e7-9d4c-c87dd78db69d.png)
+
+Essa mesma verificação em ternário pode ser feita da seguinte forma:  
+
+![image](https://user-images.githubusercontent.com/29297788/33811154-1c58e25e-ddf6-11e7-91e7-cf380187db56.png)
+
+Ou seja, se `number` for igual a `1`, o que há após a interrogação será exibido, se não,  
+o que há após os dois pontos será exibido.  
+
+**Só que essa forma de uso acima está incorreta. **
+
+O ternário funciona de forma parecida com uma função, **ele é uma expressão que  
+retorna um valor**. Isso é algo diferente de um `if`, pois não é possível atribuir  
+um `if` a uma variável, por exemplo.  
+
+Portanto, as formas corretas de utilização do ternário são:  
+
+1. Atribuindo-o a uma variável que retorna um valor. Ou seja, ao invés de dar um  
+`console.log()` no ternário em si, irei retornar só a string (valor). O `console.log()`  
+pode ser declarado abaixo, apenas exibindo o **valor** que o ternário retornar:  
+
+![image](https://user-images.githubusercontent.com/29297788/33811203-06759ff8-ddf7-11e7-8c7a-9fabe8678c3b.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33811210-1bde7fa4-ddf7-11e7-8877-d3869ed77a36.png)
+
+2. Retornando seu valor dentro de uma função. Ou seja, a função irá retornar o valor  
+que o ternário retornar:  
+
+![image](https://user-images.githubusercontent.com/29297788/33811231-6447b382-ddf7-11e7-9e0d-416387953a2a.png)
+
+3. Passando-o completamente como parâmetro de um `console.log()`:  
+
+![image](https://user-images.githubusercontent.com/29297788/33811269-4a27752c-ddf8-11e7-81a6-6b956840b492.png)
+
+Essas são as formas corretas de se utilizar o ternário. Ele não deve ser usado  
+aleatoriamente no meio do código da aplicação.  
