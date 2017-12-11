@@ -88,3 +88,51 @@ o computador trave. Portanto, esse é o motivo pelo qual variáveis globais nunc
 ser utilizadas. Só o que realmente for necessário usar globalmente deve ser pendurado  
 no objeto `window`.  
 
+## O uso do ponto e vírgula  
+O uso do `;` não é obrigatório, pois o JS possui o Automatic Semicolon Insert.  
+
+Isso significa que, se o ponto e vírgula não for utilizado no final das linhas, não há  
+problema algum, desde que algumas pequenas regras sejam seguidas:  
+
+- Uma linha não deve começar com caracteres especiais `[]`, `()`, `!`, `{}`. No caso  
+dos parênteses, por exemplo, o `;` deve ser declarado antes de sua abertura, como na  
+abertura de uma `IIFE`:  
+
+![image](https://user-images.githubusercontent.com/29297788/33839937-a911c060-de7a-11e7-8e48-0c74293c7458.png)
+
+Porém, enquanto o JavaScript está sendo aprendido, é importante escrever a linguagem  
+corretamente e não há a necessidade de gerar uma preocupação a mais (uso ou não do `;`).  
+Mas após o aprendizado e bom entendimento da linguagem, não há problema em não  
+utilizar `;`.  
+
+## Code Style - Definindo padrões para um projeto  
+Em caso de dúvidas como o uso ou não do espaço entre a palavra-chave `function` e `()`  
+e outros detalhes que são irrelevantes para o JS, mas que são detalhes de code style.  
+
+Há várias formas de definir um code style a ser usado. Algumas ferramentas são:  
+
+- [jscs](http://jscs.info) - Permite que algumas regras de estilosejam criadas para um  
+projeto.  
+
+- [jshint](http://jshint.com)
+
+- [eslint](https://eslint.org)
+
+- [standardjs](https://standardjs.com/) - Usado pelo professor. É basicamente um  
+estilo de código que já possui um padrão pré-definido e não se faz necessário ficar  
+definindo para cada novo projeto um jscs, jshint, eslint ou qualquer outra  
+ferramenta de definição de estilo de código. O standard, basicamente, define um  
+padrão a ser utilizado. Isso elimina a necessidade de, a cada novo projeto, copiar  
+um jscs do projeto anterior e colá-lo no projeto atual.  
+
+Com o standard, é necessário apenas instalar uma lib no projeto e ele já estará  
+funcionando.  
+
+- [semistandard](https://github.com/Flet/semistandard) - Mesmas regras do  
+standardjs, mas com a permissão do uso de `;`. 
+
+## Linters  
+As ferramentas citadas acima são `linters`, ou seja, foram criadas para garantir a  
+qualidade do código.  
+
+Devem ser usadas sempre, para que o código escrito se mantenha com qualidade. 
