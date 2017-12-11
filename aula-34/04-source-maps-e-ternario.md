@@ -21,7 +21,7 @@ e funções.
 código**, a não ser em casos excepcionais onde o framework utilizado não aceita essa  
 propriedade, por exemplo.  
 
-## Adicionando o `--source-map caminhoDoArquivoMapASerGerado` ao minificar um arquivo 
+## Adicionando o `--source-map caminhoENomeDoArquivoMapASerGerado` ao minificar um arquivo 
 ![image](https://user-images.githubusercontent.com/29297788/33807164-8776e2bc-ddb9-11e7-89a1-02472feec0a3.png)
 
 Esse parâmetro fará com que um novo arquivo seja gerado. Posso então exibir o conteúdo  
