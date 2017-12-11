@@ -23,7 +23,9 @@ dela é `undefined`:
 
 Aqui vem a grande sacada: funções devem sempre retornar valores, utilizando a palavra  
 chave `return`. Como essa função tem o `console.log()` ao invés do `return`, ela não  
-retorna nada, e devido a não retornar nada, seu valor é `undefined`.  
+retorna nada, e devido a não retornar nada, seu valor é `undefined`. Ou seja, **todas  
+as vezes em que a invocação de uma função sem `return` é atribuída a uma variável, por  
+exemplo, o valor dela é `undefined`**.  
 
 Suponhamos que, ao invés de dar um `console.log()` na variável que recebe a invocação  
 da função, eu queira passar essa variável como argumento de um `alert`:  
@@ -35,3 +37,13 @@ da função, eu queira passar essa variável como argumento de um `alert`:
 Ou seja, o `undefined` é devido ao fato de a função não estar retornando nada. Ao invés  
 disso, ela só está mostrando a verificação no console.  
 
+**Portanto, o `console.log()` serve apenas para debugar um código e não deve ser  
+colocado em produção, pois o usuário não terá acesso a ele.**  
+
+O `return` sempre deve ser usado, ao invés do `console.log()`. Para que eu visualize  
+o valor que a função está retornando, aí sim posso usar o `console.log()` com a invocação  
+da função passada por argumento:  
+
+![image](https://user-images.githubusercontent.com/29297788/33812679-2957ca3c-de06-11e7-987c-454fcb9fe730.png)
+
+![image](https://user-images.githubusercontent.com/29297788/33812709-72858bc2-de06-11e7-8151-870b90a3c9ce.png)
