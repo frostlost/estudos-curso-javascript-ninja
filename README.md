@@ -1048,3 +1048,15 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 5. #### [Diferenças entre console.log e return](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-34/05-diferencas-console-log-e-return.md)
 
 ---
+
+6. #### [Objetos e encerramento](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-34/06-objetos-e-encerramento.md)
+
+* ##### Ponteiros de objetos 
+* ##### Garbage Collection 
+* ##### Por que é necessário entender o Garbage Collection 
+* ##### Memory Leak 
+* ##### O uso do ponto e vírgula 
+* ##### Code Style - Definindo padrões para um projeto 
+* ##### Linters 
+* ##### Espaços em branco / Pulo de linha no código 
+* ##### Dicas de Livros 
