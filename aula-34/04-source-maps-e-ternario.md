@@ -85,7 +85,7 @@ Essa mesma verificação em ternário pode ser feita da seguinte forma:
 Ou seja, se `number` for igual a `1`, o que há após a interrogação será exibido, se não,  
 o que há após os dois pontos será exibido.  
 
-**Só que essa forma de uso acima está incorreta. **
+**Só que essa forma de uso acima está incorreta.**
 
 O ternário funciona de forma parecida com uma função, **ele é uma expressão que  
 retorna um valor**. Isso é algo diferente de um `if`, pois não é possível atribuir  
