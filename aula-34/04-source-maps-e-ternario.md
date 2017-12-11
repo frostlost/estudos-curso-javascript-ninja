@@ -74,7 +74,7 @@ possibilidade do código ficar ainda menor:
 ## Usando corretamente o ternário em uma aplicação  
 É importante ressaltar que o ternário não é um `if`, apenas funciona de forma similar.  
 
-Suponhamos que eu tenha a seguinte verificação com utilizando o `if`:  
+Suponhamos que eu tenha a seguinte verificação, utilizando o `if`:  
 
 ![image](https://user-images.githubusercontent.com/29297788/33811135-b4fab524-ddf5-11e7-9d4c-c87dd78db69d.png)
 
