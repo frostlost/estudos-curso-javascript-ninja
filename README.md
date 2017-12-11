@@ -1022,7 +1022,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
-2. #### [Uglify.js - parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-34/03-uglify-parte-02.md)
+3. #### [Uglify.js - parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-34/03-uglify-parte-02.md)
 
 * ##### Executando o Atom através do terminal 
 * ##### uglifyjs --mangle - Minificando ainda mais o código 
@@ -1032,5 +1032,15 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Minificando o window 
 * ##### Drop ao usar variáveis não utilizadas 
 * ##### Minificando um código que usa variáveis sem o var (globais) 
+
+---
+
+4. #### [Sourcemaps e Ternário](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-34/04-source-maps-e-ternario.md)
+
+* ##### O que é o Sourcemaps 
+* ##### Uglifyjs - O uso do --mangle 
+* ##### Adicionando o --source-map caminhoDoArquivoMapASerGerado ao minificar um arquivo 
+* ##### screw IE8 - Uglify 
+* ##### Usando corretamente o ternário em uma aplicação 
 
 ---
