@@ -136,3 +136,17 @@ As ferramentas citadas acima são `linters`, ou seja, foram criadas para garanti
 qualidade do código.  
 
 Devem ser usadas sempre, para que o código escrito se mantenha com qualidade. 
+
+## Espaços em branco / Pulo de linha no código  
+O código não deve conter pulos de linha aleatórios. Pulos de linha falam muito  
+sobre o código e devem ser feitos em casos onde um conjunto do código deve ser  
+separado do outro:  
+
+![image](https://user-images.githubusercontent.com/29297788/33841096-df6970ba-de7d-11e7-911f-9a0c2425860b.png)
+
+## Dicas de Livros 
+- [Código limpo](https://www.google.com.br/search?q=c%C3%B3digo+limpo+livro&oq=c%C3%B3digo+limpo+livro&aqs=chrome..69i57j69i60l2j69i61j69i60l2.2399j0j7&sourceid=chrome&ie=UTF-8) - Essencial. Todo programador deveria ler. Traz uma qualidade de codificação muito grande.  
+- [JavaScript: O Guia Definitivo](https://www.google.com.br/search?ei=uq8uWp-uKsbE_Qbul6WwDA&q=javascript+guia+definitivo+livro&oq=javascript+guia+definitivo+livro&gs_l=psy-ab.3...114697.118565.0.118680.26.16.0.0.0.0.322.1603.2-5j1.6.0....0...1c.1.64.psy-ab..25.1.289...0j0i7i30k1j0i5i30k1.0.4t866ih_mXQ)
+- [JavaScript de Alto Desempenho](https://www.google.com.br/search?ei=MrAuWvToGYiX_Qb4oY7gAQ&q=javascript+de+alto+desempenho+livro&oq=javascript+de+alto+desempenho+livro&gs_l=psy-ab.3...48026.50104.0.50251.18.9.0.0.0.0.352.1323.3-4.4.0....0...1c.1.64.psy-ab..18.0.0....0.KYMo7iGXXB4)
+- [Segredos do Ninja JavaScript](https://www.google.com.br/search?ei=ZrAuWqi6CcTF_QbinZFY&q=segredos+do+ninja+javascript+livro&oq=segredos+do+ninja+javascript+livro&gs_l=psy-ab.3...39349.43795.0.43871.28.17.0.0.0.0.655.2455.2-1j2j2j1.6.0....0...1c.1.64.psy-ab..25.3.1028...0j0i7i30k1j0i8i30k1.0.84_T8pM6DSI)
+- [Functional JavaScript](https://www.google.com.br/search?ei=k7AuWqmZCISa_QbMnZn4Cg&q=functional+javascript+livro&oq=functional+javascript+livro&gs_l=psy-ab.3...64283.67478.0.67556.21.13.0.0.0.0.386.1081.2-3j1.4.0....0...1c.1.64.psy-ab..20.1.386...0i8i30k1.0.bB8eOSEIWuM)
