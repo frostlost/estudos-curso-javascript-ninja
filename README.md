@@ -1044,3 +1044,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Usando corretamente o ternário em uma aplicação 
 
 ---
+
+5. #### [Diferenças entre console.log e return](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-34/05-diferencas-console-log-e-return.md)
+
+---
