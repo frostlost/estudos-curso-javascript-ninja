@@ -84,9 +84,9 @@ Ou seja, `console.log(myFunction() === window);` is `true`.
 Assim como posso criar um objeto com `new Object()`, é possível criar  
 construtores próprios no JavaScript.  
 
-Construtores, por convenção, começam com letras maiúsculas. Para usá-los, é  
-preciso usar a palavra-chave `new` ao invocar a função construtora. Ao fazer  
-isso, é criado um novo objeto que possui as propriedades da função construtora:  
+Construtores, por convenção, começam com letras maiúsculas. Para usá-los, **é  
+preciso usar a palavra-chave `new` ao invocar a função construtora**. Ao fazer  
+isso, **é criado um novo objeto que possui as propriedades da função construtora**:  
 
 ```JAVASCRIPT
 (function() {
