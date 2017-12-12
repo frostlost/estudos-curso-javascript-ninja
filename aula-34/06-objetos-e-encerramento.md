@@ -107,9 +107,8 @@ utilizar `;`.
 
 ## Code Style - Definindo padrões para um projeto  
 Em caso de dúvidas como o uso ou não do espaço entre a palavra-chave `function` e `()`  
-e outros detalhes que são irrelevantes para o JS, mas que são detalhes de code style.  
-
-Há várias formas de definir um code style a ser usado. Algumas ferramentas são:  
+e outros detalhes que são irrelevantes para o JS, mas que são detalhes de code style,  
+há várias formas de definir um code style a ser usado. Algumas ferramentas são:  
 
 - [jscs](http://jscs.info) - Permite que algumas regras de estilosejam criadas para um  
 projeto.  
