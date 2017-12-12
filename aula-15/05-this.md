@@ -124,9 +124,9 @@ Posso então criar uma variável e atribuir esse novo objeto à ela.
 ```
 
 ## `this` referenciando um objeto instanciado  
-O `this` está referenciando esse novo objeto instanciado (`new MyConstructor()`)  
-e atribuído-o à variável `myConstructor`. Todas as propriedades da função  
-construtora serão penduradas em `myConstructor`.  
+**O `this` está referenciando esse novo objeto instanciado (`new MyConstructor()`)**  
+e atribuído à variável `myConstructor`. Todas as propriedades da função  
+construtora serão penduradas na variável `myConstructor`.  
 
 Ou seja, se eu chamar `myConstructor.prop1`, terei acesso ao valor dessa  
 propriedade. `myConstructor` herdou propriedades da função construtora:  
