@@ -237,7 +237,7 @@ argumentos o que os parâmetros pediam (name e lastName).
 Quando eu chamo `console.log( roger.fullName() );`, que é o método  
 `MyFunction.prototype.fullName`, ele me retorna o nome completo, como esperado.  
 
-Ou seja, o `this` dentro de  
+**Ou seja, o `this` dentro de** 
 
 ```JAVASCRIPT
 MyFunction.prototype.fullName = function() {
@@ -246,8 +246,8 @@ MyFunction.prototype.fullName = function() {
 }
 ```
 
-representa o mesmo `this` que está sendo instanciado dentro da função principal,  
-porque estou utilizando o `.prototype`.  
+**representa o mesmo `this` que está sendo instanciado dentro da função principal,  
+porque estou utilizando o `.prototype`**.  
 
 Se eu não especificar o `.prototype`:
 
