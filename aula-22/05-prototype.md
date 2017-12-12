@@ -3,8 +3,8 @@ Em aulas passadas, foi visto que os objetos principais do JavaScript (`Object`,
 `String`, `Array`, `Date`, `RegExp`, `Number`, ...) possuem uma propriedade  
 chamada `.prototype`.  
 
-Essa propriedade possui todos os métodos do objeto principal que irão ser  
-herdados sempre que eu criar um novo objeto. Ele irá estender os meus objetos.   
+**Essa propriedade possui todos os métodos do objeto principal que irão ser  
+herdados sempre que eu criar um novo objeto. Ele irá estender os meus objetos.** 
 
 Se eu crio um objeto vazio, por exemplo, quando o chamo, ele simplesmente irá  
 dizer que eu tenho um objeto vazio:  
