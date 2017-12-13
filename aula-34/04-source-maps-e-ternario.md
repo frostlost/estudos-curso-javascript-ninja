@@ -22,6 +22,7 @@ código**, a não ser em casos excepcionais onde o framework utilizado não acei
 propriedade, por exemplo.  
 
 ## Adicionando o `--source-map caminhoENomeDoArquivoMapASerGerado` ao minificar um arquivo 
+Comando atualizado: `uglifyjs main.js -o main.min.js -m -c --source-map "url='main.min.js.map'"`
 ![image](https://user-images.githubusercontent.com/29297788/33807164-8776e2bc-ddb9-11e7-89a1-02472feec0a3.png)
 
 Esse parâmetro fará com que um novo arquivo seja gerado. Posso então exibir o conteúdo  
