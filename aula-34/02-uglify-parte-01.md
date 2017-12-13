@@ -1,5 +1,7 @@
 # Uglify.js - parte 1 
 
+## [Considerações sobre qual lib instalar](https://github.com/da2k/curso-javascript-ninja/issues/2478#issuecomment-351041141)
+
 ## Instalando o [UglifyJs](https://www.npmjs.com/package/uglifyjs) 
 Como visualizado na documentação do pacote, no npm, posso executar o comando  
 `npm install uglify-js -g`:  
