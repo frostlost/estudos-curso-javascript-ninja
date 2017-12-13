@@ -1011,6 +1011,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 2. #### [Uglify.js - parte 1](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-34/02-uglify-parte-01.md)
 
+* ##### Considerações sobre qual lib instalar 
 * ##### Instalando o UglifyJs 
 * ##### Estrutura de arquivos e pastas usadas para o exemplo 
 * ##### Criando o script do exemplo 
