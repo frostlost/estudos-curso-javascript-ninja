@@ -127,7 +127,7 @@ arredondamento.
 // 10
 ```
 
-## `Math.sqrt(x)` 
+## `Math.sqrt(x)` - Raiz quadrada
 Square root. Esse método irá retornar a raiz quadrada de um número:  
 
 ```JAVASCRIPT
