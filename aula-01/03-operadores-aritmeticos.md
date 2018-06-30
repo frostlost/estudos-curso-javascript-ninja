@@ -17,10 +17,10 @@ fique mais legível.
 ```
 
 ## Operadores aritméticos
-- + adição
-- - subtração
-- * multiplicação
-- / divisão
+- `+` adição
+- `-` subtração
+- `-` multiplicação
+- `/` divisão
 
 ## Operadores aritméticos abreviados
 - `++`
