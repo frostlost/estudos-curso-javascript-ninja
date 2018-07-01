@@ -3,6 +3,51 @@
 # :books: Estudos do curso Javascript Ninja
 Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www.udemy.com/curso-javascript-ninja/?couponCode=JSNINJA), do professor [**Fernando Daciuk**](https://github.com/fdaciuk).
 
+## Aula 01
+
+1. #### [Introdução](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-01/01-introducao.md)
+
+* ##### Acessando o console do Node JS
+
+---
+
+2. #### [Variáveis e tipos de dados](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-01/02-variaveis-tipos-de-dados.md)
+
+* ##### Atribuindo números `float` à variáveis
+* ##### Tipos de Dados
+
+---
+
+3. #### [Operadores Aritméticos](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-01/03-operadores-aritmeticos.md)
+
+* ##### Expressões
+* ##### Operadores aritméticos abreviados
+
+---
+
+4. #### [Operadores de igualdade e relacionais](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-01/04-operadores-igualdade-relacionais.md)
+
+* ##### Operadores de igualdade
+* ##### Operadores relacionais
+
+---
+
+5. #### [Funções](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-01/05-funcoes.md)
+
+* ##### Escopo de funções
+* ##### `NaN`
+
+---
+
+6. #### [Desafio da semana 01](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-01/06-desafio-da-semana-01.md)
+
+* ##### Criando uma nova branch
+* ##### Mudando a branch atual
+* ##### Visualizando todas as branches criadas
+* ##### Atualizando uma branch quando o repositório original foi alterado
+
+---
+
 ## Aula 10
 
 4. #### [Wrapper Objects](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-10/04-wrapper-objects.md)
@@ -556,36 +601,36 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 2. #### [Revisão desafio da semana #27 - Parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-28/02-revisao-desafio-27.md)
 
-* ##### (cont...) Aproveitando a lib DOM que fizemos na semana anterior, crie agora para ela métodos semelhantes aos que existem no array, mas que sirvam para os elementos do DOM selecionados. Crie os seguintes métodos: - forEach, map, filter, reduce, reduceRight, every e some. 
-* ##### Testando os métodos de arrays criados 
+* ##### (cont...) Aproveitando a lib DOM que fizemos na semana anterior, crie agora para ela métodos semelhantes aos que existem no array, mas que sirvam para os elementos do DOM selecionados. Crie os seguintes métodos: - forEach, map, filter, reduce, reduceRight, every e some.
+* ##### Testando os métodos de arrays criados
   - ###### map()  
-  - ###### reduce() 
-* ##### Crie os seguintes métodos para verificação de tipo: - isArray, isObject, isFunction, isNumber, isString, isBoolean, isNull. 
-* ##### Devidos cuidados ao invocar os métodos de verificação de tipo 
-* ##### Uma observação sobre o undefined 
-* ##### Uma observação sobre o number 
+  - ###### reduce()
+* ##### Crie os seguintes métodos para verificação de tipo: - isArray, isObject, isFunction, isNumber, isString, isBoolean, isNull.
+* ##### Devidos cuidados ao invocar os métodos de verificação de tipo
+* ##### Uma observação sobre o undefined
+* ##### Uma observação sobre o number
 * ##### Código final
 
 ---
 
 3. #### [Introdução à AJAX](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-28/03-intro-ajax.md)
 
-* ##### O que é AJAX 
-* ##### Qual é a função do AJAX 
-* ##### O objeto window.XMLHttpRequest() 
-* ##### Os três passos básicos para que uma requisição AJAX funcione 
-* ##### Como funciona uma requisição AJAX 
+* ##### O que é AJAX
+* ##### Qual é a função do AJAX
+* ##### O objeto window.XMLHttpRequest()
+* ##### Os três passos básicos para que uma requisição AJAX funcione
+* ##### Como funciona uma requisição AJAX
 
---- 
+---
 
 4. #### [Ajax - parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-28/04-ajax-parte-02.md)
 
-* ##### O evento readystatechange 
-* ##### A propriedade readyState 
-* ##### Os números de estado das requisições 
-* ##### ajax.status - Verificando os status da requisição 
+* ##### O evento readystatechange
+* ##### A propriedade readyState
+* ##### Os números de estado das requisições
+* ##### ajax.status - Verificando os status da requisição
 
---- 
+---
 
 5. #### [Ajax - Parte 03](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-28/05-ajax-parte-03.md)
 
@@ -594,87 +639,87 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### JSON.parse(ajax.responseText) - Manipulando dados JSON
 * ##### ajax.responseXML - Manipulando dados XML
 
---- 
+---
 
 6. #### [Ajax - Parte 04](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-28/06-ajax-parte-04.md)
 
-* ##### Tratamento de erros 
-* ##### throw new Error('error message') e throw new SyntaxError('error message') - Como disparar erros em JavaScript 
-* ##### try e catch 
+* ##### Tratamento de erros
+* ##### throw new Error('error message') e throw new SyntaxError('error message') - Como disparar erros em JavaScript
+* ##### try e catch
 
---- 
+---
 
 ## Aula 29
 
 1. #### [Revisão desafio da semana #28 - Parte 1](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-29/01-revisao-desafio-28-01.md)
 
-* ##### Crie um formulário com um input de texto que receberá um CEP e um botão de submit 
-* ##### Crie uma estrutura HTML para receber informações de endereço: "Logradouro, Bairro, Estado, Cidade e CEP." Essas informações serão preenchidas com os dados da requisição feita no JS 
-* ##### Crie uma área que receberá mensagens com o status da requisição: "Carregando, sucesso ou erro." 
-* ##### Utilize a lib DOM criada anteriormente para facilitar a manipulação e adicionar as informações em tela 
+* ##### Crie um formulário com um input de texto que receberá um CEP e um botão de submit
+* ##### Crie uma estrutura HTML para receber informações de endereço: "Logradouro, Bairro, Estado, Cidade e CEP." Essas informações serão preenchidas com os dados da requisição feita no JS
+* ##### Crie uma área que receberá mensagens com o status da requisição: "Carregando, sucesso ou erro."
+* ##### Utilize a lib DOM criada anteriormente para facilitar a manipulação e adicionar as informações em tela
 
 ---
 
 2. #### [Revisão desafio da semana #28 - Parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-29/02-revisao-desafio-28-02.md)
 
-* ##### Ao submeter esse formulário, deve ser feito um request Ajax para a URL: "https://viacep.com.br/ws/[CEP]/json/", onde [CEP] será o CEP passado no input criado no HTML 
-* ##### Substituindo o cep da url 
+* ##### Ao submeter esse formulário, deve ser feito um request Ajax para a URL: "https://viacep.com.br/ws/[CEP]/json/", onde [CEP] será o CEP passado no input criado no HTML
+* ##### Substituindo o cep da url
 
---- 
+---
 
 3. #### [Revisão desafio da semana #28 - Parte 3](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-29/03-revisao-desafio-28-03.md)
 
-* ##### Limpando o cep entrado pelo usuário 
-* ##### Preenchendo os dados do cep com a propriedade `.textContent` 
-* ##### try / catch - Fazendo com que o o objeto json parseado seja null em casos de erros de requisição 
-* ##### Enquanto os dados são buscados, na área de mensagens de status, deve mostrar a mensagem: "Buscando informações para o CEP [CEP]..." Se não houver dados para o CEP entrado, mostrar a mensagem: "Não encontramos o endereço para o CEP [CEP]." Se houver endereço para o CEP digitado, mostre a mensagem: "Endereço referente ao CEP [CEP]:" 
+* ##### Limpando o cep entrado pelo usuário
+* ##### Preenchendo os dados do cep com a propriedade `.textContent`
+* ##### try / catch - Fazendo com que o o objeto json parseado seja null em casos de erros de requisição
+* ##### Enquanto os dados são buscados, na área de mensagens de status, deve mostrar a mensagem: "Buscando informações para o CEP [CEP]..." Se não houver dados para o CEP entrado, mostrar a mensagem: "Não encontramos o endereço para o CEP [CEP]." Se houver endereço para o CEP digitado, mostre a mensagem: "Endereço referente ao CEP [CEP]:"
 
---- 
+---
 
 4. #### [Revisão desafio da semana #28 - Parte 4](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-29/04-revisao-desafio-28-04.md)
 
-* ##### (cont.) Enquanto os dados são buscados, na área de mensagens de status, deve mostrar a mensagem: "Buscando informações para o CEP [CEP]..." Se não houver dados para o CEP entrado, mostrar a mensagem: "Não encontramos o endereço para o CEP [CEP]." Se houver endereço para o CEP digitado, mostre a mensagem: "Endereço referente ao CEP [CEP]:" 
-* ##### Variáveis no início do código 
-* ##### Posicionando as mensagens de erro, acerto e loading 
-* ##### As funções clearCep() e replaceCep(str) 
-* ##### Limpando os campos em caso de erro do request 
-* ##### Código final 
+* ##### (cont.) Enquanto os dados são buscados, na área de mensagens de status, deve mostrar a mensagem: "Buscando informações para o CEP [CEP]..." Se não houver dados para o CEP entrado, mostrar a mensagem: "Não encontramos o endereço para o CEP [CEP]." Se houver endereço para o CEP digitado, mostre a mensagem: "Endereço referente ao CEP [CEP]:"
+* ##### Variáveis no início do código
+* ##### Posicionando as mensagens de erro, acerto e loading
+* ##### As funções clearCep() e replaceCep(str)
+* ##### Limpando os campos em caso de erro do request
+* ##### Código final
 
---- 
+---
 
 5. #### [Module Pattern - Parte 01](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-29/05-module-pattern-01.md)
 
-* ##### Separando o código em módulos 
-* ##### Exportando a lib/módulo DOM 
-* ##### Module patterns 
+* ##### Separando o código em módulos
+* ##### Exportando a lib/módulo DOM
+* ##### Module patterns
 
---- 
+---
 
 6. #### [Module Pattern - Parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-29/06-module-pattern-02.md)
 
-* ##### Revealing Module Pattern 
-* ##### Restringindo o acesso à métodos de uma função 
-* ##### Restringindo o acesso à métodos de uma função exportada 
-* ##### O conceito de Closures 
-* ##### Código final 
+* ##### Revealing Module Pattern
+* ##### Restringindo o acesso à métodos de uma função
+* ##### Restringindo o acesso à métodos de uma função exportada
+* ##### O conceito de Closures
+* ##### Código final
 
---- 
+---
 
 ## Aula 30
 
 1. #### [Revisão do Desafio 29 - Parte 01](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-30/01-revisao-desafio-29-01.md)
 
-* ##### Criando o index.html do app 
+* ##### Criando o index.html do app
 
 ---
 
 2. #### [Revisão do Desafio 29 - Parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-30/02-revisao-desafio-29-02.md)
 
-* ##### CSS do app 
-* ##### Separe o nosso módulo de DOM criado nas últimas aulas em um arquivo DOM.js 
-* ##### Alterando os métodos da lib DOM para que sejam estáticos 
-* ##### E aqui nesse arquivo, faça a lógica para cadastrar os carros, em um módulo que será nomeado de "app" 
-* ##### Código final 
+* ##### CSS do app
+* ##### Separe o nosso módulo de DOM criado nas últimas aulas em um arquivo DOM.js
+* ##### Alterando os métodos da lib DOM para que sejam estáticos
+* ##### E aqui nesse arquivo, faça a lógica para cadastrar os carros, em um módulo que será nomeado de "app"
+* ##### Código final
 
 ---
 
@@ -683,53 +728,53 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Código atual  
 * ##### Relembrando o `this`  
 * ##### O `this` dentro de module patterns  
-* ##### Inserindo dados da empresa usando AJAX 
-* ##### Relembrando o `call` 
-* ##### Código final 
+* ##### Inserindo dados da empresa usando AJAX
+* ##### Relembrando o `call`
+* ##### Código final
 
 ---
 
 4. #### [Revisão do Desafio 29 - Parte 04](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-30/04-revisao-desafio-29-04.md)
 
-* ##### Código atual 
-* ##### Iniciando o cadastro de carros na tabela 
-* ##### Melhorando a DOM lib 
-* ##### Melhorando o método get() da DOM lib 
-* ##### Melhorando a função construtora principal da DOM lib 
-* ##### Fazendo com que o new seja desnecessário ao instanciar um objeto com a DOM lib 
-* ##### O operador instanceof 
-* ##### Referenciando o DOM através do $ 
-* ##### Preenchendo os dados da tabela a cada vez que o form é submetido 
-* ##### O erro com o método get() 
-* ##### Código final 
+* ##### Código atual
+* ##### Iniciando o cadastro de carros na tabela
+* ##### Melhorando a DOM lib
+* ##### Melhorando o método get() da DOM lib
+* ##### Melhorando a função construtora principal da DOM lib
+* ##### Fazendo com que o new seja desnecessário ao instanciar um objeto com a DOM lib
+* ##### O operador instanceof
+* ##### Referenciando o DOM através do $
+* ##### Preenchendo os dados da tabela a cada vez que o form é submetido
+* ##### O erro com o método get()
+* ##### Código final
 
 ---
 
 5. #### [Revisão do Desafio 29 - Parte 05](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-30/05-revisao-desafio-29-05.md)
 
-* ##### Código atual 
-* ##### Cadastrando um carro na tabela 
-* ##### Evitando o uso repetitivo do app como function (app().nomeDoMetodo) 
-* ##### document.createDocumentFragment() - Criando os elementos do DOM a serem inseridos na tabela 
+* ##### Código atual
+* ##### Cadastrando um carro na tabela
+* ##### Evitando o uso repetitivo do app como function (app().nomeDoMetodo)
+* ##### document.createDocumentFragment() - Criando os elementos do DOM a serem inseridos na tabela
 
 ---
 
 6. #### [Closure e Manipulando CSS](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-30/06-closure-e-manipulacao-css.md)
 
-* ##### Closure 
-* ##### Exemplos de closure com variáveis de escopo global e local 
-* ##### Exemplos de closure com variáveis contadoras e incrementos 
-* ##### Exemplo de closure com variáveis que recebem uma IIFE 
-* ##### Manipulando CSS 
-* ##### elementName.style.cssProperty 
-* ##### Estilizando elementos através do método setAttribute('style', 'styleProperties') 
-* ##### Estilizando elementos através da propriedade elementName.classList 
-* ##### elementName.classList como getter 
-* ##### elementName.classList como setter 
-* ##### elementName.classList.contains('className') 
-* ##### elementName.classList.add('className') 
-* ##### elementName.classList.toggle('className') 
-* ##### elementName.classList.remove('className') 
+* ##### Closure
+* ##### Exemplos de closure com variáveis de escopo global e local
+* ##### Exemplos de closure com variáveis contadoras e incrementos
+* ##### Exemplo de closure com variáveis que recebem uma IIFE
+* ##### Manipulando CSS
+* ##### elementName.style.cssProperty
+* ##### Estilizando elementos através do método setAttribute('style', 'styleProperties')
+* ##### Estilizando elementos através da propriedade elementName.classList
+* ##### elementName.classList como getter
+* ##### elementName.classList como setter
+* ##### elementName.classList.contains('className')
+* ##### elementName.classList.add('className')
+* ##### elementName.classList.toggle('className')
+* ##### elementName.classList.remove('className')
 
 ---
 
@@ -737,89 +782,89 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 1. #### [DOM - innerHTML](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-31/01-dom-inner-html.md)
 
-* ##### A propriedade innerHTML 
-* ##### `.innerHTML` como getter 
-* ##### `.innerHTML` como setter 
-* ##### `.innerHTML` - Fazendo com que o elemento permaneça com todo o html interno que ele já tem + o html setado 
-* ##### `.innerHTML` vs. `.textContent` 
-* ##### Descobrindo o tipo de um objeto com o `toString` 
+* ##### A propriedade innerHTML
+* ##### `.innerHTML` como getter
+* ##### `.innerHTML` como setter
+* ##### `.innerHTML` - Fazendo com que o elemento permaneça com todo o html interno que ele já tem + o html setado
+* ##### `.innerHTML` vs. `.textContent`
+* ##### Descobrindo o tipo de um objeto com o `toString`
 
 ---
 
 2. #### [DOM - innerHTML: Problemas de Segurança](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-31/02-dom-inner-html-seguranca.md)
 
-* ##### Provocando um erro com uma imagem e um script inline 
-* ##### Limpando o html da página atual com o input no textarea 
+* ##### Provocando um erro com uma imagem e um script inline
+* ##### Limpando o html da página atual com o input no textarea
 
 ---
 
 3. #### [DOM - insertAdjacentHTML](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-31/03-dom-insert-adjacent-html.md)
 
-* ##### insertAdjacentHTML(position, htmlText) 
-* ##### Tabela com as possíveis posições a serem passadas por parâmetro para o insertAdjacentHTML(position, htmlText) 
-* ##### Problemas de segurança do insertAdjacentHTML() 
-* ##### insertAdjacentHTML() - inserindo um elemento do DOM como segundo parâmetro 
-* ##### console.dir(htmlElement) - visualizando as propriedades disponíveis de um elemento html 
-* ##### .outerHTML 
+* ##### insertAdjacentHTML(position, htmlText)
+* ##### Tabela com as possíveis posições a serem passadas por parâmetro para o insertAdjacentHTML(position, htmlText)
+* ##### Problemas de segurança do insertAdjacentHTML()
+* ##### insertAdjacentHTML() - inserindo um elemento do DOM como segundo parâmetro
+* ##### console.dir(htmlElement) - visualizando as propriedades disponíveis de um elemento html
+* ##### .outerHTML
 
 ---
 
 4. #### [O objeto date](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-31/04-objeto-date.md)
 
-* ##### devdocs.io 
-* ##### new Date() - Criando e instanciando uma nova data 
-* ##### new Date() - Construindo e manipulando uma nova data através de parâmetros 
-* ##### new Date() - A contagem dos meses 
-* ##### arrayMonths.indexOf(monthName) 
-* ##### new Date() - A contagem dos dias 
-* ##### new Date() - A contagem dos Meses - Parte 02 
+* ##### devdocs.io
+* ##### new Date() - Criando e instanciando uma nova data
+* ##### new Date() - Construindo e manipulando uma nova data através de parâmetros
+* ##### new Date() - A contagem dos meses
+* ##### arrayMonths.indexOf(monthName)
+* ##### new Date() - A contagem dos dias
+* ##### new Date() - A contagem dos Meses - Parte 02
 
 ---
 
 5. #### [O objeto date - Propriedades e métodos](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-31/05-objeto-date-props-mets.md)
 
-* ##### Date.now() 
-* ##### Date.now() - Convertendo milisegundos para segundos 
-* ##### Date.now() - Convertendo segundos em minutos 
-* ##### Date.now() - Convertendo minutos em horas 
-* ##### Date.now() - Convertendo horas em dias 
-* ##### Date.now() - Convertendo dias em anos 
-* ##### Date.now() - Sabendo em quantos milisegundos um código foi executado 
-* ##### Tabela com métodos que podem ser usados após instanciar o objeto new Date() 
-* ##### date.getDate(); 
-* ##### date.getDay(); 
-* ##### date.getFullYear(); 
-* ##### date.getYear(); 
-* ##### date.getHours(); 
-* ##### date.getMilliseconds(); 
-* ##### date.getMinutes(); 
-* ##### date.getMonth(); 
-* ##### date.getSeconds(); 
-* ##### date.getTime(); 
-* ##### Outros métodos do Date Object 
+* ##### Date.now()
+* ##### Date.now() - Convertendo milisegundos para segundos
+* ##### Date.now() - Convertendo segundos em minutos
+* ##### Date.now() - Convertendo minutos em horas
+* ##### Date.now() - Convertendo horas em dias
+* ##### Date.now() - Convertendo dias em anos
+* ##### Date.now() - Sabendo em quantos milisegundos um código foi executado
+* ##### Tabela com métodos que podem ser usados após instanciar o objeto new Date()
+* ##### date.getDate();
+* ##### date.getDay();
+* ##### date.getFullYear();
+* ##### date.getYear();
+* ##### date.getHours();
+* ##### date.getMilliseconds();
+* ##### date.getMinutes();
+* ##### date.getMonth();
+* ##### date.getSeconds();
+* ##### date.getTime();
+* ##### Outros métodos do Date Object
 
 ---
 
 6. #### [Conhecendo o objeto `Math`](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-31/06-objeto-math.md)
 
-* ##### Math.PI 
-* ##### Tabela com alguns métodos usados com o objeto Math 
-* ##### Math.abs(x) 
-* ##### O padrão de arredondamento em números decimais 
-* ##### Math.ceil(x) 
-* ##### Math.floor(x) 
-* ##### Math.round(x) 
-* ##### Math.sqrt(x) 
-* ##### Math.cbrt(x) 
-* ##### Math.max(n1, n2, n3...) 
-* ##### Math.min(n1, n2, n3...) 
-* ##### Usando Math.max(x) e Math.min(x) com o apply() 
-* ##### Sobre métodos de funções 
-* ##### Math.random() 
-* ##### Math.random() - retornando um número entre 0 e 3 
-* ##### Math.floor(Math.random() * 3) - retornando um número arredondado entre 0 e 2 
-* ##### Math.ceil(Math.random() * 3) - retornando um número arredondado de 1 a 3 
-* ##### Math.round(Math.random() * 3) - retornando um número arredondado de 0 a 3 
+* ##### Math.PI
+* ##### Tabela com alguns métodos usados com o objeto Math
+* ##### Math.abs(x)
+* ##### O padrão de arredondamento em números decimais
+* ##### Math.ceil(x)
+* ##### Math.floor(x)
+* ##### Math.round(x)
+* ##### Math.sqrt(x)
+* ##### Math.cbrt(x)
+* ##### Math.max(n1, n2, n3...)
+* ##### Math.min(n1, n2, n3...)
+* ##### Usando Math.max(x) e Math.min(x) com o apply()
+* ##### Sobre métodos de funções
+* ##### Math.random()
+* ##### Math.random() - retornando um número entre 0 e 3
+* ##### Math.floor(Math.random() * 3) - retornando um número arredondado entre 0 e 2
+* ##### Math.ceil(Math.random() * 3) - retornando um número arredondado de 1 a 3
+* ##### Math.round(Math.random() * 3) - retornando um número arredondado de 0 a 3
 
 ---
 
@@ -827,89 +872,89 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 1. #### [Ajax](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-32/01-ajax.md)
 
-* ##### AJAX - Aprendendo como tudo isso funciona no servidor 
-* ##### Listagem inicial dos diretórios e arquivos 
-* ##### O arquivo package.json 
-* ##### O que é uma rest-api 
-* ##### Utilizando o Node para testar códigos 
+* ##### AJAX - Aprendendo como tudo isso funciona no servidor
+* ##### Listagem inicial dos diretórios e arquivos
+* ##### O arquivo package.json
+* ##### O que é uma rest-api
+* ##### Utilizando o Node para testar códigos
 * ##### Subindo o servidor com o Node  
 
 ---
 
 2. #### [REST Api](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-32/02-rest-api.md)
 
-* ##### Instalando o nodemon 
-* ##### Derrubando o servidor 
-* ##### Exemplo de REST Api com Express 
-* ##### Instalando o Express Js localmente 
-* ##### A pasta node_modules 
-* ##### Requisitando o express de node_modules 
-* ##### O método require() 
-* ##### Executando o express 
-* ##### O método get('url', callback) 
-* ##### O verbo get 
-* ##### res.send('response') - Enviando uma resposta para o front-end 
-* ##### app.listen(numeroDaPorta) - Selecionando a porta em que a resposta será ouvida 
-* ##### Testando o servidor 
-* ##### Criando novas rotas / url's 
-* ##### Acessando uma rota inexistente 
-* ##### Criando uma nova rota, antes inexistente 
-* ##### Atualizando o servidor manualmente em casos de bug no nodemon 
-* ##### Fazendo uma requisição AJAX no front-end 
-* ##### Subindo um servidor front-end com o python 
-* ##### Testando o servidor front-end 
-* ##### O problema de CORS 
+* ##### Instalando o nodemon
+* ##### Derrubando o servidor
+* ##### Exemplo de REST Api com Express
+* ##### Instalando o Express Js localmente
+* ##### A pasta node_modules
+* ##### Requisitando o express de node_modules
+* ##### O método require()
+* ##### Executando o express
+* ##### O método get('url', callback)
+* ##### O verbo get
+* ##### res.send('response') - Enviando uma resposta para o front-end
+* ##### app.listen(numeroDaPorta) - Selecionando a porta em que a resposta será ouvida
+* ##### Testando o servidor
+* ##### Criando novas rotas / url's
+* ##### Acessando uma rota inexistente
+* ##### Criando uma nova rota, antes inexistente
+* ##### Atualizando o servidor manualmente em casos de bug no nodemon
+* ##### Fazendo uma requisição AJAX no front-end
+* ##### Subindo um servidor front-end com o python
+* ##### Testando o servidor front-end
+* ##### O problema de CORS
 
 ---
 
 3. #### [REST Api - Cors](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-32/03-rest-api-cors.md)
 
-* ##### Instalando o módulo Cors 
-* ##### O que é o módulo cors 
-* ##### require('cors') - Importando o módulo cors 
-* ##### app.use(cors()) - Liberando o acesso à REST Api 
-* ##### Pegando um usuário específico com o GET do ajax 
-* ##### Passando um usuário inexistente com o GET do ajax 
-* ##### Deixando as rotas de usuário dinâmicas no back-end 
-* ##### Passando informações específicas de um usuário na REST Api 
-* ##### Tratando uma requisição GET onde o usuário não existe 
-* ##### Observações finais sobre servidores back-end e REST Api 
+* ##### Instalando o módulo Cors
+* ##### O que é o módulo cors
+* ##### require('cors') - Importando o módulo cors
+* ##### app.use(cors()) - Liberando o acesso à REST Api
+* ##### Pegando um usuário específico com o GET do ajax
+* ##### Passando um usuário inexistente com o GET do ajax
+* ##### Deixando as rotas de usuário dinâmicas no back-end
+* ##### Passando informações específicas de um usuário na REST Api
+* ##### Tratando uma requisição GET onde o usuário não existe
+* ##### Observações finais sobre servidores back-end e REST Api
 
 ---
 
 4. #### [Ajax - sync - POST](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-32/04-ajax-sync-post.md)
 
 * ##### `<async> `
-* ##### Fazendo uma requisição síncrona 
-* ##### O outro formato de requisição ajax 
-* ##### ajax.abort() 
-* ##### O verbo POST 
+* ##### Fazendo uma requisição síncrona
+* ##### O outro formato de requisição ajax
+* ##### ajax.abort()
+* ##### O verbo POST
 
 ---
 
 5. #### [Ajax - POST - Parte 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-32/05-ajax-post-02.md)
 
-* ##### Exemplo prático de envio do método POST 
-* ##### ajax.setRequestHeader() 
-* ##### Enviando os dados do usuário 
-* ##### Padronizando as propriedades do objeto 
-* ##### Testando essa requisição com o método GET 
-* ##### O padrão de resposta de uma REST Api 
-* ##### app.post() - Criando o método Http POST no servidor back-end 
-* ##### Instalando o módulo body-parser 
-* ##### Cadastrando temporariamente novos usuários no objeto users 
-* ##### Utilizando o método some para pegar o nome de um usuário 
-* ##### Testanto uma requisição GET 
+* ##### Exemplo prático de envio do método POST
+* ##### ajax.setRequestHeader()
+* ##### Enviando os dados do usuário
+* ##### Padronizando as propriedades do objeto
+* ##### Testando essa requisição com o método GET
+* ##### O padrão de resposta de uma REST Api
+* ##### app.post() - Criando o método Http POST no servidor back-end
+* ##### Instalando o módulo body-parser
+* ##### Cadastrando temporariamente novos usuários no objeto users
+* ##### Utilizando o método some para pegar o nome de um usuário
+* ##### Testanto uma requisição GET
 
 ---
 
 6. #### [Ajax - POST - Parte 03](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-32/06-ajax-post-03.md)
 
-* ##### Cadastrando um usuário na memória 
-* ##### Pegando um usuário cadastrado, com o método GET 
-* ##### Criando uma verificação e evitando o recadastro de usuários repetidos 
-* ##### JSON.parse() - Convertendo o usuário de string para JSON 
-* ##### Vantagens da REST Api 
+* ##### Cadastrando um usuário na memória
+* ##### Pegando um usuário cadastrado, com o método GET
+* ##### Criando uma verificação e evitando o recadastro de usuários repetidos
+* ##### JSON.parse() - Convertendo o usuário de string para JSON
+* ##### Vantagens da REST Api
 
 ---
 
@@ -917,84 +962,84 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 1. #### [Testes](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-33/01-testes.md)
 
-* ##### Aviso 
-* ##### TDD - O que é 
-* ##### Testando uma calculadora simples 
-* ##### Instalando o Mocha 
-* ##### describe() - Começando a escrever o primeiro teste 
-* ##### it() 
-* ##### Sobre testes em geral 
-* ##### O que ter em mente antes de escrever um teste 
+* ##### Aviso
+* ##### TDD - O que é
+* ##### Testando uma calculadora simples
+* ##### Instalando o Mocha
+* ##### describe() - Começando a escrever o primeiro teste
+* ##### it()
+* ##### Sobre testes em geral
+* ##### O que ter em mente antes de escrever um teste
 
 ---
 
 2. #### [Escrevendo os primeiros testes](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-33/02-primeiros-testes.md)
 
 * ##### Sobre a estrutura de diretórios  
-* ##### it(desc) - Escrevendo a descrição de um teste 
-* ##### Importando um módulo para o teste 
-* ##### it(desc, callback) - Escrevendo a função de callback de um teste 
-* ##### Instalando o chai 
-* ##### O comando --save-dev 
-* ##### Importando o chai para o teste 
-* ##### BDD - Behaviour Driven Development 
-* ##### expect() - Escrevendo a asserção que irá garantir que o teste funcione 
-* ##### Executando um teste falho com o mocha 
-* ##### O conceito baby steps / a base dos testes 
-* ##### module.exports = moduleName - Exportando um módulo no Node 
-* ##### Executando um teste correto com o mocha 
-* ##### RED, GREEN, BLUE - As três etapas de um teste 
-* ##### Refatorando um módulo 
+* ##### it(desc) - Escrevendo a descrição de um teste
+* ##### Importando um módulo para o teste
+* ##### it(desc, callback) - Escrevendo a função de callback de um teste
+* ##### Instalando o chai
+* ##### O comando --save-dev
+* ##### Importando o chai para o teste
+* ##### BDD - Behaviour Driven Development
+* ##### expect() - Escrevendo a asserção que irá garantir que o teste funcione
+* ##### Executando um teste falho com o mocha
+* ##### O conceito baby steps / a base dos testes
+* ##### module.exports = moduleName - Exportando um módulo no Node
+* ##### Executando um teste correto com o mocha
+* ##### RED, GREEN, BLUE - As três etapas de um teste
+* ##### Refatorando um módulo
 
 ---
 
 3. #### [Entendendo o escopo Red - Green - Blue](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-33/03-entendendo-escopo-red-green-blue.md)
 
-* ##### Escrevendo o teste em que uma função receba dois parâmetros e deva retornar a soma desses dois parâmetros 
-* ##### O return em funções 
-* ##### A documentação gerada pelos testes 
-* ##### Escrevendo um teste especificando que uma função deve retornar 5 quando 2 e 3 foram passados por parâmetro 
-* ##### Escrevendo um teste especificando que uma função deve retornar um erro caso receba apenas um parâmetro 
-* ##### new Error('errorPhrase') 
-* ##### Escrevendo um teste especificando que os dois parâmetros passados para uma função sejam números, de fato 
+* ##### Escrevendo o teste em que uma função receba dois parâmetros e deva retornar a soma desses dois parâmetros
+* ##### O return em funções
+* ##### A documentação gerada pelos testes
+* ##### Escrevendo um teste especificando que uma função deve retornar 5 quando 2 e 3 foram passados por parâmetro
+* ##### Escrevendo um teste especificando que uma função deve retornar um erro caso receba apenas um parâmetro
+* ##### new Error('errorPhrase')
+* ##### Escrevendo um teste especificando que os dois parâmetros passados para uma função sejam números, de fato
 
 ---
 
 4. #### [Escrevendo mais testes](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-33/04-escrevendo-mais-testes.md)
 
-* ##### Escrevendo um teste especificando que os dois parâmetros passados para uma função sejam números, de fato (cont.) 
-* ##### Refatorando 
-* ##### Refatorando o if da função que irá validar se dois argumentos estão sendo passados ao invocar sum 
-* ##### `Object.prototype.toString.call(arg) === '[object Number]'` - Refatorando o if da função que irá validar se o tipo do argumento num1 ou num2 é um número 
-* ##### A função isNaN(num) 
-* ##### Estabelecendo a quantidade de testes a serem escritos 
-* ##### Por que testar 
+* ##### Escrevendo um teste especificando que os dois parâmetros passados para uma função sejam números, de fato (cont.)
+* ##### Refatorando
+* ##### Refatorando o if da função que irá validar se dois argumentos estão sendo passados ao invocar sum
+* ##### `Object.prototype.toString.call(arg) === '[object Number]'` - Refatorando o if da função que irá validar se o tipo do argumento num1 ou num2 é um número
+* ##### A função isNaN(num)
+* ##### Estabelecendo a quantidade de testes a serem escritos
+* ##### Por que testar
 
 ---
 
 5. #### [TDD Style](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-33/05-tdd-style.md)
 
-* ##### Escrevendo um teste no formato TDD 
-* ##### O método assert 
-* ##### O método assert.equal(value, result, message) 
-* ##### O método asset.strictEqual(value, result, message) 
-* ##### Sobre testes em BDD 
-* ##### Documentações - Assert e Chai 
+* ##### Escrevendo um teste no formato TDD
+* ##### O método assert
+* ##### O método assert.equal(value, result, message)
+* ##### O método asset.strictEqual(value, result, message)
+* ##### Sobre testes em BDD
+* ##### Documentações - Assert e Chai
 
 ---
 
 6. #### [Documentação do Mocha e Code Coverage](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-33/06-doc-mocha-code-coverage.md)
 
-* ##### Documentações - Mocha 
-* ##### hooks - Mocha 
-* ##### Code Coverage 
-* ##### Istanbul 
-* ##### Problemas com o `_mocha` no windows 
-* ##### Executando um test coverage com o istanbul 
-* ##### Visualizando o code coverage no browser 
-* ##### Observações sobre o test coverage 
-* ##### Sobre testes unitários / testes de unidade 
-* ##### O plugin Lcov info - Atom 
+* ##### Documentações - Mocha
+* ##### hooks - Mocha
+* ##### Code Coverage
+* ##### Istanbul
+* ##### Problemas com o `_mocha` no windows
+* ##### Executando um test coverage com o istanbul
+* ##### Visualizando o code coverage no browser
+* ##### Observações sobre o test coverage
+* ##### Sobre testes unitários / testes de unidade
+* ##### O plugin Lcov info - Atom
 
 ---
 
@@ -1002,47 +1047,47 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 1. #### [Deprecated Methods e Intro Uglify](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-34/01-deprecated-meths-intro-uglify.md)
 
-* ##### Deprecated Methods 
-* ##### O exemplo da diretiva 'use strict'; 
-* ##### Sobre o ES6 
-* ##### Performance: Uglify 
+* ##### Deprecated Methods
+* ##### O exemplo da diretiva 'use strict';
+* ##### Sobre o ES6
+* ##### Performance: Uglify
 
 ---
 
 2. #### [Uglify.js - parte 1](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-34/02-uglify-parte-01.md)
 
-* ##### Considerações sobre qual lib instalar 
-* ##### Instalando o UglifyJs 
-* ##### Estrutura de arquivos e pastas usadas para o exemplo 
-* ##### Criando o script do exemplo 
-* ##### Criando o html do exemplo 
-* ##### Enfeiando um código 
-* ##### Criando um arquivo minificado com o uglifyjs 
-* ##### `--compress` - Comprimindo ainda mais um arquivo `.js` 
-* ##### Como uma IIFE afeta a compressão dos arquivos 
+* ##### Considerações sobre qual lib instalar
+* ##### Instalando o UglifyJs
+* ##### Estrutura de arquivos e pastas usadas para o exemplo
+* ##### Criando o script do exemplo
+* ##### Criando o html do exemplo
+* ##### Enfeiando um código
+* ##### Criando um arquivo minificado com o uglifyjs
+* ##### `--compress` - Comprimindo ainda mais um arquivo `.js`
+* ##### Como uma IIFE afeta a compressão dos arquivos
 
 ---
 
 3. #### [Uglify.js - parte 2](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-34/03-uglify-parte-02.md)
 
-* ##### Executando o Atom através do terminal 
-* ##### uglifyjs --mangle - Minificando ainda mais o código 
-* ##### uglifyjs --mangle --compress - Minificando ainda mais o código ao combinar o mangle e o compress 
-* ##### Sobre o acesso via mobile 
-* ##### Pretty print - Melhorando a exibição de um código minificado 
-* ##### Minificando o window 
-* ##### Drop ao usar variáveis não utilizadas 
-* ##### Minificando um código que usa variáveis sem o var (globais) 
+* ##### Executando o Atom através do terminal
+* ##### uglifyjs --mangle - Minificando ainda mais o código
+* ##### uglifyjs --mangle --compress - Minificando ainda mais o código ao combinar o mangle e o compress
+* ##### Sobre o acesso via mobile
+* ##### Pretty print - Melhorando a exibição de um código minificado
+* ##### Minificando o window
+* ##### Drop ao usar variáveis não utilizadas
+* ##### Minificando um código que usa variáveis sem o var (globais)
 
 ---
 
 4. #### [Sourcemaps e Ternário](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-34/04-source-maps-e-ternario.md)
 
-* ##### O que é o Sourcemaps 
-* ##### Uglifyjs - O uso do --mangle 
-* ##### Adicionando o --source-map caminhoDoArquivoMapASerGerado ao minificar um arquivo 
-* ##### screw IE8 - Uglify 
-* ##### Usando corretamente o ternário em uma aplicação 
+* ##### O que é o Sourcemaps
+* ##### Uglifyjs - O uso do --mangle
+* ##### Adicionando o --source-map caminhoDoArquivoMapASerGerado ao minificar um arquivo
+* ##### screw IE8 - Uglify
+* ##### Usando corretamente o ternário em uma aplicação
 
 ---
 
@@ -1052,12 +1097,12 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 6. #### [Objetos e encerramento](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-34/06-objetos-e-encerramento.md)
 
-* ##### Ponteiros de objetos 
-* ##### Garbage Collection 
-* ##### Por que é necessário entender o Garbage Collection 
-* ##### Memory Leak 
-* ##### O uso do ponto e vírgula 
-* ##### Code Style - Definindo padrões para um projeto 
-* ##### Linters 
-* ##### Espaços em branco / Pulo de linha no código 
-* ##### Dicas de Livros 
+* ##### Ponteiros de objetos
+* ##### Garbage Collection
+* ##### Por que é necessário entender o Garbage Collection
+* ##### Memory Leak
+* ##### O uso do ponto e vírgula
+* ##### Code Style - Definindo padrões para um projeto
+* ##### Linters
+* ##### Espaços em branco / Pulo de linha no código
+* ##### Dicas de Livros
