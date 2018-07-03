@@ -49,7 +49,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
-## Aula 02 [Introdução](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-02/aula-02.md)
+##  [Aula 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-02/aula-02.md)
 
 * ##### Prioridade / precedência entre operadores
 * ##### `++` Revisão do operador de soma abreviado - pós incremento
