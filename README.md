@@ -45,7 +45,33 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Mudando a branch atual
 * ##### Visualizando todas as branches criadas
 * ##### Atualizando uma branch quando o repositório original foi alterado
-* ##### Dando um push em uma nova branch 
+* ##### Dando um push em uma nova branch
+
+---
+
+## Aula 02
+
+1. #### [Introdução](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-02/aula-02.md)
+
+* ##### Prioridade / precedência entre operadores
+* ##### `++` Revisão do operador de soma abreviado - pós incremento
+* ##### Operadores lógicos
+  - ###### `&&`
+  - ###### `||`
+  - ###### `!`
+* ##### Operadores unários
+  - ###### `+`
+  - ###### `-`
+* ##### Estrutura léxica
+* ##### Case sensitive
+* ##### Comentários
+* ##### Literais
+* ##### Identificadores
+* ##### Palavras reservadas
+* ##### Instruções condicionais
+  - ###### `if`
+  - ###### `else`
+  - ###### `else if`
 
 ---
 
