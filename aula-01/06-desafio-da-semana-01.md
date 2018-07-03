@@ -5,10 +5,13 @@
 `git checkout nomeDaBranch`
 
 ## Visualizando todas as branches criadas
-git branch
+`git branch`
 
 ## Atualizando uma branch quando o repositório original foi alterado
-git fetch nomeDaBranch
+`git fetch nomeDaBranch`
+
+## Dando um push em uma nova branch
+`git push origin nomeDaBranch`
 
 - **Sempre fazer as alterações na branch criada**.
 - Após a conclusão, commitar as alterações

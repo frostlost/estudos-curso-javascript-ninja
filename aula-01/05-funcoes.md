@@ -4,6 +4,7 @@
 - Podem retornar valores.
 - Podem receber argumentos ou parâmetros.
   - Parâmetros são valores que eu posso passar para uma função ao invocá-la.
+- Não é necessário `;` ao declará-las.
 
 ```javascript
 function name() {
@@ -80,3 +81,4 @@ sum(8, 9);
 Not a number.
 - É um valor que indica que uma expressão deveria estar sendo feita com números,  
 mas ele não retorna um número.
+- Em JS, ele é avaliado como um tipo `number`

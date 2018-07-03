@@ -45,6 +45,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Mudando a branch atual
 * ##### Visualizando todas as branches criadas
 * ##### Atualizando uma branch quando o repositório original foi alterado
+* ##### Dando um push em uma nova branch 
 
 ---
 

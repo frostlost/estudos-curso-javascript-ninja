@@ -23,6 +23,8 @@ fique mais legível.
 - `/` divisão
 
 ## Operadores aritméticos abreviados
+- Causam efeito colateral, ou seja, atribuem um novo valor à uma variável. 
+
 - `++`
   - Soma mais um ao valor em questão
   - ++ depois do valor
