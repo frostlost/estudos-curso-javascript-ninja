@@ -27,13 +27,28 @@ Os tipos de dados mais conhecidos em JS são:
   - true or false
 
 - null
-  - Nenhum valor
+  - Sem valor
+  - Precisa ser **explicitamente** especificado / atribuído
   - Geralmente representa o valor de uma variável quando ela não tem valor
+```javascript
+let myLet = null;
+
+myLet;
+// null
+```
 
 - undefined
-  - Ausência de valor
+  - Ausência de valor, não foi especificado valor
   - Na maior parte das vezes, `null` e `undefined` são tratados como sendo a  
   mesma coisa
+  - Uma função que não recebe um argumento, trata a falta desse argumento como  
+  `undefined`
+```javascript
+let myLet;
+
+myLet;
+// undefined
+```
 
 - {} Object
   - Na maior parte das coisas, estarei lidando com este tipo

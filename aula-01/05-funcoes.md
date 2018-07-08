@@ -4,6 +4,7 @@
 - Podem retornar valores.
 - Podem receber argumentos ou parâmetros.
   - Parâmetros são valores que eu posso passar para uma função ao invocá-la.
+  - Parâmetros são válidos apenas dentro da função.
 - Não é necessário `;` ao declará-las.
 
 ```javascript

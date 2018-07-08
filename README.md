@@ -73,6 +73,18 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
+##  [Aula 03](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-03/aula-03.md)
+
+* ##### `undefined` no console
+* ##### Precedência de operadores de multiplicação e divisão
+* ##### `return`
+* ##### Tipos Primitivos
+* ##### Tipos de objeto
+* ##### Mais sobre funções
+* ##### Métodos
+
+---
+
 ## Aula 10
 
 4. #### [Wrapper Objects](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-10/04-wrapper-objects.md)
