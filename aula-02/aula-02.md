@@ -58,6 +58,7 @@ console.log(x === 3 || y === 3);
 ### `!`
   - Not
   - Tradução literal: não
+  - Converte para boolean e 
   - Inverte um valor
 
 ## Operadores unários

@@ -56,7 +56,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Operadores lógicos
   - ###### `&&`
   - ###### `||`
-  - ###### `!`
+  - ###### `!` - Invertendo um valor com o operador `not`
 * ##### Operadores unários
   - ###### `+`
   - ###### `-`
@@ -82,6 +82,20 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Tipos de objeto
 * ##### Mais sobre funções
 * ##### Métodos
+
+---
+
+##  [Aula 04](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-04/aula-04.md)
+
+* ##### Truthy
+* ##### Falsy
+* ##### `!!` Descobrindo a representação booleana de um valor sem utilizar o `if`
+* ##### Condicional ternário
+* ##### Escopo
+* ##### Escopo global
+* ##### Escopo local
+* ##### Garbage collection
+* ##### Declarando variáveis sem a palavra-chave `var`
 
 ---
 
