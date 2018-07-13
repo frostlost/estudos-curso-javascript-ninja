@@ -112,7 +112,7 @@ console.log(myVar);
 // ReferenceError: myVar is not defined
 ```
 
-## Garbage collection 
+## Garbage collection
 - Coleta de lixo  
 - Uma das vantagens do uso de variáveis locais é o Garbage collection, pois,  
 uma variável local faz com que o JS elimine da memória o espaço que esta  

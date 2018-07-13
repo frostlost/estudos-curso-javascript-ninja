@@ -3,44 +3,42 @@
 # :books: Estudos do curso Javascript Ninja
 Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www.udemy.com/curso-javascript-ninja/?couponCode=JSNINJA), do professor [**Fernando Daciuk**](https://github.com/fdaciuk).
 
-## Aula 01
-
-1. #### [Introdução](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-01/01-introducao.md)
+## [Aula 01](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-01/aula-01.md)
 
 * ##### Acessando o console do Node JS
-
----
-
-2. #### [Variáveis e tipos de dados](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-01/02-variaveis-tipos-de-dados.md)
-
+* ##### Variáveis e tipos de dados 
 * ##### Atribuindo números `float` à variáveis
 * ##### Tipos de Dados
-
----
-
-3. #### [Operadores Aritméticos](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-01/03-operadores-aritmeticos.md)
-
-* ##### Expressões
-* ##### Operadores aritméticos abreviados
-
----
-
-4. #### [Operadores de igualdade e relacionais](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-01/04-operadores-igualdade-relacionais.md)
-
+* ##### number
+* ##### string
+* ##### boolean
+* ##### null
+* ##### undefined
+* ##### `{}` Object
+* ##### Acessando propriedades de objetos 
+* ##### `[]` Array
+* ##### Expressões 
+* ##### Operadores aritméticos abreviados 
+* ##### `++`
+* ##### `--`
+* ##### `+=`
+* ##### `-=`
+* ##### `*=`
+* ##### `/=`
 * ##### Operadores de igualdade
+* ##### `==` igual a
+* ##### `!=` diferente de
+* ##### `===` igual a, e do mesmo tipo
+* ##### `!==` diferente, mas do mesmo tipo
 * ##### Operadores relacionais
-
----
-
-5. #### [Funções](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-01/05-funcoes.md)
-
+* ##### `>` maior que
+* ##### `<` menor que
+* ##### `>=` maior ou igual a
+* ##### `<=` menor ou igual a
+* ##### `<=` menor ou igual a
+* ##### Funções
 * ##### Escopo de funções
 * ##### `NaN`
-
----
-
-6. #### [Desafio da semana 01](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-01/06-desafio-da-semana-01.md)
-
 * ##### Criando uma nova branch
 * ##### Mudando a branch atual
 * ##### Visualizando todas as branches criadas
@@ -96,6 +94,21 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Escopo local
 * ##### Garbage collection
 * ##### Declarando variáveis sem a palavra-chave `var`
+
+---
+
+##  [Aula 05](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-05/aula-05.md)
+
+* ##### Objetos 
+* ##### Métodos
+* ##### Funções 
+* ##### Retorno de funções além dos tipos primitivos
+* ##### Funções retornando arrays 
+* ##### Funções retornando objetos 
+* ##### Arrays como parâmetros de funções 
+* ##### Objetos como parâmetros de funções 
+* ##### Acessando um arquivo no console do Node JS
+* ##### `console.log();`
 
 ---
 
