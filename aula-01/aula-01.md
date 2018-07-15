@@ -191,8 +191,7 @@ soma -= 10;
 // É o mesmo que soma = soma - 10;
 ```
 
-### `*=` Pega todo o valor que uma variável já tem e multiplica pelo valor que eu  
-especifiquei
+### `*=` Pega todo o valor que uma variável já tem e multiplica pelo valor que eu especifiquei
 
 ### `/=` Pega todo o valor que uma variável já tem e divide pelo valor que eu especifiquei
 
