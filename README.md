@@ -47,7 +47,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
-##  [Aula 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-02/aula-02.md)
+## [Aula 02](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-02/aula-02.md)
 
 * ##### Prioridade / precedência entre operadores
 * ##### `++` Revisão do operador de soma abreviado - pós incremento
@@ -71,7 +71,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
-##  [Aula 03](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-03/aula-03.md)
+## [Aula 03](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-03/aula-03.md)
 
 * ##### `undefined` no console
 * ##### Precedência de operadores de multiplicação e divisão
@@ -83,7 +83,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
-##  [Aula 04](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-04/aula-04.md)
+## [Aula 04](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-04/aula-04.md)
 
 * ##### Truthy
 * ##### Falsy
@@ -97,7 +97,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
-##  [Aula 05](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-05/aula-05.md)
+## [Aula 05](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-06/aula-06.md)
 
 * ##### Objetos 
 * ##### Métodos
@@ -109,6 +109,17 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Objetos como parâmetros de funções 
 * ##### Acessando um arquivo no console do Node JS
 * ##### `console.log();`
+
+---
+
+## [Aula 06](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-06/aula-06.md)
+
+* ##### `{'prop': 1}` - Strings como propriedades de Objetos 
+* ##### O que verdadeiramente são os arrays em JS 
+* ##### `,` o operador vírgula 
+* ##### `switch` - Estrutura condicional
+* ##### Estruturas de repetição (loop)
+* ##### `while`
 
 ---
 

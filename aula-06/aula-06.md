@@ -11,6 +11,7 @@ suas propriedades, pois o array é um objeto
 saber a propriedade de um objeto, ou quando o valor dessa propriedade  
 for uma string ou uma variável 
 
+
 ```javascript
 function returnPropObj(prop) {
   let myObj = {
@@ -44,6 +45,8 @@ console.log(myObjArr['3']);
 ## `,` o operador vírgula 
 - Separa instruções e as une em uma única expressão 
 - Pode ser usado no retorno de uma função
+- Quando usado em declarações de variáveis, dificulta o  
+reposicionamento delas no código 
 
 ```javascript
 let myLet, myLet2 = 2, myLet3;
@@ -54,4 +57,81 @@ let myLet, myLet2 = 2, myLet3;
 ```javascript
 return (x++, x);
 // incrementa a variável a antes de retorná-la
+```
+
+## `switch / case` - Estrutura condicional
+- É mais uma forma de fazer uma estrutura condicional 
+- Utiliza o operador strict equal `===` (testa o valor e o tipo) 
+- A palavra chave `break` para o switch, ignorando qualquer  
+outro comando abaixo dela. Caso não seja incluída, as outras  
+instruções continuam a ser avaliadas, ainda que uma delas  
+seja verdadeira
+
+Sintaxe: 
+
+```javascript
+function myFunc(x) {
+  switch(x) {
+    case 1: 
+    return `o valor de x é 1`;
+    break;
+
+    case 2: 
+    return `o valor de x é 2`;
+    break;
+
+    default:
+    return `o valor de x não é nem 1 nem 2`;
+  }
+}
+
+console.log(myFunc(2));
+// 'o valor de x é 2'
+```
+
+## Estruturas de repetição (loop)
+- 
+
+## `while`
+- A principal diferença entre estruturas condicionais e de loop é que,  
+**enquanto a expressão a ser avaliada for verdadeira**, as linhas de  
+código dentro do bloco serão executadas 
+- Enquanto a expressão passada por parênteses for true, ele executará  
+o código dentro do bloco 
+- Se a expressão retornar false, o while irá ser finalizado 
+- Um loop infinito é simplesmente um `while(true)`
+- Como `0` é um valor falsy, se ele for testado como expressão no  
+while, o while não será executado 
+- Para fazer um contador decrescente, por exemplo, basta decrementar  
+o valor numérico na expressão entre parênteses 
+- Sintaxe: 
+
+```javascript
+let counter = 0;
+
+while(counter < 10) {
+  counter++;
+}
+
+console.log(counter);
+// 10
+```
+
+```javascript
+let counter = 10;
+
+while(counter !== 0) {
+  counter--;
+}
+
+console.log(counter);
+// 0
+```
+
+```javascript
+let counter = 10;
+
+while(counter--) { // counter também pode ser decrementado aqui
+  console.log(counter);
+}
 ```
