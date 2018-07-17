@@ -73,29 +73,28 @@ Sintaxe:
 function myFunc(x) {
   switch(x) {
     case 1: 
-    return `o valor de x é 1`;
+    console.log(`o valor de x é 1`);
     break;
 
     case 2: 
-    return `o valor de x é 2`;
+    console.log(`o valor de x é 2`);
     break;
 
     default:
-    return `o valor de x não é nem 1 nem 2`;
+    console.log(`o valor de x não é nem 1 nem 2`);
   }
 }
 
-console.log(myFunc(2));
+myFunc(2);
 // 'o valor de x é 2'
 ```
 
 ## Estruturas de repetição (loop)
-- 
-
-## `while`
-- A principal diferença entre estruturas condicionais e de loop é que,  
+- A principal diferença entre estruturas condicionais e de repetição é que,  
 **enquanto a expressão a ser avaliada for verdadeira**, as linhas de  
 código dentro do bloco serão executadas 
+
+## `while`
 - Enquanto a expressão passada por parênteses for true, ele executará  
 o código dentro do bloco 
 - Se a expressão retornar false, o while irá ser finalizado 
