@@ -123,6 +123,20 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
+## [Aula 07](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-07/aula-07.md)
+
+* ##### `++` Pós Incremento (revisão)
+* ##### `switch` (revisão)
+* ##### `%` o operador módulo 
+* ##### Objetos embutidos no JS 
+* ##### Mais sobre Arrays 
+* ##### `.length` - Propriedade
+* ##### `while()` e `.length` - Iterando por itens de um array 
+* ##### `.push()` - Método
+* ##### `for` loop
+
+---
+
 ## Aula 10
 
 4. #### [Wrapper Objects](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-10/04-wrapper-objects.md)

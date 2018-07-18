@@ -67,7 +67,7 @@ métodos
 propriedades e métodos 
 - O array é um exemplo de objeto embutido 
 
-## `length`
+## `.length` - Propriedade
 - Retorna a quantidade de itens que um array possui 
 
 ```javascript
@@ -77,8 +77,10 @@ console.log(arr.length);
 // 3
 ```
 
+## `while()` e `.length` - Iterando por itens de um array 
 - Pode ser usado juntamente com o `while` para iterar por  
 todos os elementos de um array 
+- Evita o acesso manual aos itens de um array 
 - Posso, por exemplo, mostrar no console todos os itens do  
 array 
 - Para isso, é necessário saber a quantidade de itens do  
@@ -95,4 +97,74 @@ while(counter < arr.length) {
 }
 
 // 'melo', null, [Function]
+```
+
+- Também pode ser feito decrementando a variável 'contadora': 
+
+```javascript
+const arr = [3, 5, 'oi'];
+let qtd = arr.length;
+
+while(qtd > 0) {
+  console.log(arr[--qtd]);
+}
+```
+
+- Acessando a propriedade de um objeto: 
+
+```javascript
+const arr = [3, {quadro: 'vermelho'}, 'oi'];
+let qtd = arr.length;
+
+while(qtd > 0) {
+  console.log(arr[--qtd]);
+  if(qtd === 1)
+    console.log(`valor da propriedade quadro do objeto: ${arr[qtd].quadro}`);
+}
+```
+
+## `.push()` - Método
+- Adiciona um item **no final** do array 
+- Recebe, por parâmetro, o item a ser adicionado 
+- O item pode ser qualquer tipo de valor 
+- Retorna o length do array 
+- Evita a necessidade de reescrever o array para adicionar um item 
+
+```javascript
+const arr = [9, 58, 'print'];
+
+arr.push('hi!');
+
+console.log(arr);
+// [9, 58, 'print', 'hi!']
+```
+
+- Passando uma função como parâmetro 
+
+```javascript
+const arr = [9, 58, 'print'];
+
+arr.push(num => num * 2);
+
+console.log(arr[3](5));
+// 10
+```
+
+## `for` loop
+- Tem, basicamente, a mesma ideia do `while` 
+- Mas, tudo o que é feito fora do while, é feito dentro da expressão do `for` 
+- 1º parâmetro: Inicializador. 
+  - Múltiplas variáveis podem ser inicializadas, separadas por vírgula e  
+  sem o uso da palavra-chave na inicialização da segunda e seguintes  
+  variáveis
+- 2º parâmetro: Condição. 
+- 3º parâmetro: Expressão final. 
+- Os 3 parâmetros são separados por `;`
+
+- Sintaxe: 
+
+```javascript
+for(let num = 0; num <=  20; num++) {
+  console.log(num);
+}
 ```
