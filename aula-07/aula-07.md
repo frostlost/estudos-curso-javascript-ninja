@@ -45,8 +45,10 @@ para cada pessoa
 - `5 % 2 = 1` - O JS fez a divisão e verificou se existe  
 algum resto 
 - Todo número par tem resto `0`, quando dividido por 2 
+- Números ímpares tem resto **diferente** de `0` quando divididos  
+por 2
 
-Logando no console os números pare de 0 a 20: 
+Logando no console os números pares de 0 a 20: 
 
 ```javascript
 let num = 0;
@@ -67,7 +69,7 @@ métodos
 propriedades e métodos 
 - O array é um exemplo de objeto embutido 
 
-## `.length` - Propriedade
+## `.length` - Propriedade de array 
 - Retorna a quantidade de itens que um array possui 
 
 ```javascript
@@ -123,7 +125,7 @@ while(qtd > 0) {
 }
 ```
 
-## `.push()` - Método
+## `.push()` - Método de array
 - Adiciona um item **no final** do array 
 - Recebe, por parâmetro, o item a ser adicionado 
 - O item pode ser qualquer tipo de valor 
@@ -152,19 +154,24 @@ console.log(arr[3](5));
 
 ## `for` loop
 - Tem, basicamente, a mesma ideia do `while` 
-- Mas, tudo o que é feito fora do while, é feito dentro da expressão do `for` 
+- Mas, tudo o que é feito fora do while, é feito dentro da  
+expressão do `for` 
 - 1º parâmetro: Inicializador. 
-  - Múltiplas variáveis podem ser inicializadas, separadas por vírgula e  
-  sem o uso da palavra-chave na inicialização da segunda e seguintes  
-  variáveis
+  - Múltiplas variáveis podem ser inicializadas, separadas  
+  por vírgula e sem o uso da palavra-chave na inicialização  
+  da segunda e seguintes variáveis
 - 2º parâmetro: Condição. 
 - 3º parâmetro: Expressão final. 
 - Os 3 parâmetros são separados por `;`
+- Lembrando que a variável contadora **já é incrementada** no  
+3º parâmetro
+- É importante utilizar sempre o número do range. `<= 20` ao  
+invés de `< 21`, por exemplo. Isso dá legibilidade ao código 
 
 - Sintaxe: 
 
 ```javascript
-for(let num = 0; num <=  20; num++) {
+for(let num = 0; num <= 20; num++) { 
   console.log(num);
 }
 ```

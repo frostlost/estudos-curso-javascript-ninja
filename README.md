@@ -130,9 +130,9 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### `%` o operador módulo 
 * ##### Objetos embutidos no JS 
 * ##### Mais sobre Arrays 
-* ##### `.length` - Propriedade
+* ##### `.length` - Propriedade de array 
 * ##### `while()` e `.length` - Iterando por itens de um array 
-* ##### `.push()` - Método
+* ##### `.push()` - Método de array
 * ##### `for` loop
 
 ---

@@ -257,7 +257,9 @@ Fazem relação entre valores.
 - Podem receber argumentos ou parâmetros.
   - Parâmetros são valores que eu posso passar para uma função ao invocá-la.
   - Parâmetros são válidos apenas dentro da função.
-- Não é necessário `;` ao declará-las.
+- Não é necessário `;` ao declará-las na forma literal (`function name() {}`)
+- **É necessário** `;` ao atribuí-las á uma variável 
+- Uma função sem `()` é um objeto
 
 ```javascript
 function name() {

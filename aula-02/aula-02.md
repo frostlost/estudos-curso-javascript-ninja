@@ -174,6 +174,7 @@ para nomear variáveis e/ou funções
 ## `if` Instruções condicionais
 - Sempre irá retornar um valor booleano  
 - Testa se uma condição ou valor é verdadeiro
+- if's sem else ficam mais legíveis 
 
 ```javascript
 let x = 7;
@@ -192,6 +193,7 @@ console.log(x, y);
 - 'se não'
 - Entra em uma instrução caso o valor seja o contrário do valor de `if`
 - É executado caso `if` e `if else` sejam falsos
+- if's sem else ficam mais legíveis 
 
 ```javascript
 let x = 1;
