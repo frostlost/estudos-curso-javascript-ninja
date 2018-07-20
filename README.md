@@ -137,6 +137,20 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
+## [Aula 08](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-08/aula-08.md)
+
+* ##### A importância de nomear funções ES5
+* ##### ES6(ES2015) e a nomeação de funções 
+* ##### `.name` - Propriedade de função
+* ##### Introdução à Programação Funcional (Functional Programming)
+* ##### Objetos/cidadãos de primeira classe 
+* ##### Retornando objetos em funções 
+* ##### Retornando funções através de outras funções 
+* ##### Passando objetos como parâmetros de funções 
+* ##### Passando uma função como parâmetro de outras funções 
+
+---
+
 ## Aula 10
 
 4. #### [Wrapper Objects](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-10/04-wrapper-objects.md)

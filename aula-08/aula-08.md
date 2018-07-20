@@ -7,7 +7,7 @@ a função pode ser nomeada
     - É possível obter o nome da função ao debugar  
     o código 
 
-## ES6(ES2015)
+## ES6(ES2015) e a nomeação de funções 
 - A partir do ES6(ES2015) a **var**, **let** ou **const** a qual a  
 **função anônima** foi atribuída, passa a ser o nome da função 
 - Arrow functions são sempre anônimas 
@@ -73,3 +73,103 @@ funções à variáveis
 ele estar atribuído à uma variável 
 - Ao invocar a função, é possível acessar propriedades  
 e métodos do objeto 
+
+## Retornando funções através de outras funções 
+- Se é possível fazer com que uma função retorne um objeto,  
+é possível que ela retorne outra função 
+
+Exemplo de uma função retornando outra: 
+
+```javascript
+function adder(num1) {
+  return function(num2) {
+    return num1 + num2;
+  };
+}
+
+adder(5)(10);
+// 15
+```
+
+- No exemplo acima, a função externa recebe um parâmetro  
+e retorna uma segunda função, que recebe um parâmetro e  
+retorna a soma dos dois parâmetros passados 
+- Ou seja, é possível fazer duas invocações seguidas, pois  
+ao invocar a função externa, ela retorna a função interna 
+
+Exemplo de uma função criada dentro de outra função: 
+
+```javascript
+function adder(num1) {
+  function addOther(num2) {
+    return num1 + num2;
+  }
+
+  return addOther;
+}
+```
+
+- Nos dois exemplos acima, a função externa, ao ser invocada,  
+retorna a função interna 
+- Com a função interna disponível, posso invocá-la, passando o  
+argumento que ela pede 
+
+Mesmo exemplo, com arrow functions: 
+
+```javascript
+const sum = num1 => num2 => num1 + num2;
+```
+
+- É possível também invocar apenas a função externa e armazenar  
+a função interna em uma variável, fazendo com que essa variável  
+se torne uma função 
+
+Exemplo armazenando a função interna em uma variável: 
+
+```javascript
+function sum(num1) {
+  return function(num2) {
+    return num1 + num2;
+  };
+}
+
+const sumConst = sum(5);
+
+console.log(sumConst(10));
+// 15
+```
+
+## Passando objetos como parâmetros de funções 
+- Ao receber um objeto por argumento, uma função  
+pode, por exemplo, retornar o valor de uma  
+propriedade do objeto 
+
+```javascript
+const car = {
+  color: 'blue',
+  year: 2018
+};
+
+const getCarColor = obj => obj.color;
+
+console.log(getCarColor(car));
+// blue
+```
+
+## Passando uma função como parâmetro de outras funções 
+- Uma função, ao ser invocada, por exemplo, pode retornar  
+a execução da função que foi passada por parâmetro 
+- Pode executar uma função desconhecida, por exemplo 
+
+```javascript
+function func1(param) {
+  return param();
+}
+
+console.log(
+  func1(function() {
+    return 'hi!';
+  })
+);
+// 'hi!'
+```
