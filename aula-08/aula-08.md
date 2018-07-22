@@ -2,6 +2,12 @@
 - Ao atribuir uma função ES5 à uma variável, let ou const,  
 a função pode ser nomeada 
 - O nome da função pode ser o mesmo da variável 
+- É possível apenas passar uma função para uma variável ou  
+fazer com que a variável receba a invocação da função 
+  - No primeiro caso, a função é o valor da variável, ou seja,  
+  é possível utilizar a função a partir do nome da variável 
+- Não é possível invocar diretamente a função que foi  
+atribuída à variável, mesmo nomeada 
 - Evitar atribuir **funções ES5 anônimas** a variáveis 
   - Vantagens 
     - É possível obter o nome da função ao debugar  

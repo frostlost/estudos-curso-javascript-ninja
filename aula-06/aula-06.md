@@ -66,6 +66,7 @@ return (x++, x);
 outro comando abaixo dela. Caso não seja incluída, as outras  
 instruções continuam a ser avaliadas, ainda que uma delas  
 seja verdadeira
+- Pode evitar if's cheios de `||`
 
 Sintaxe: 
 
