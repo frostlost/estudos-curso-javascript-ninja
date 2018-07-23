@@ -22,6 +22,7 @@ func2();
 
 ## Closure 
 - É uma função que consegue acessar parâmetros externos à ela 
+- É uma função que tem acesso às variáveis da função mais externa 
 
 Exemplo: 
 
@@ -147,3 +148,48 @@ Exemplo:
 console.log(`olá`, 'hi');
 // 'olá' 'hi'
 ```
+
+## Invocando uma função dentro dela mesma 
+- É possível invocar uma função dentro dela mesma 
+  - Seja a função literal ou atribuída à uma variável 
+
+Exemplo de uma função logando ela mesma no console: 
+
+```javascript
+function myFunc() {
+  console.log(myFunc);
+}
+
+myFunc();
+// [Function: myFunc]
+```
+
+## IIFE - Immediately-invoked function expression 
+- Uma função auto-executável
+- Uma função que é executada imediatamente 
+- Não é possível executar imadiatamente uma função literal 
+- Para executar uma função, ela precisa ser ou se tornar  
+uma expressão
+  - Isso pode ser feito ao envolver a função em parênteses 
+
+```javascript
+(function myFunction() {
+  console.log(9 * 7);
+});
+
+// agora a função é uma expressão, e não mais um valor literal 
+```
+
+Agora é possível executar essa expressão usando um par de  
+parênteses: 
+
+```javascript
+(function myFunction() {
+  console.log(9 * 7);
+})();
+
+// 63
+```
+
+### Vantagens de se utilizar uma IIFE 
+- É criado um escopo local 

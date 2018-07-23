@@ -77,6 +77,15 @@ console.log(`eu sou ${sexo}`);
 
 ## Escopo global
 - É quando uma variável é declarada **fora** de uma função
+- É ruim, pois permite o compartilhamento de informações  
+com todos os outros arquivos js do projeto
+  - Se uma variável em escopo global, criada no arquivo,  
+  tiver o valor alterado em outro arquivo, o valor dela  
+  irá ser alterado permanentemente em todos os arquivos  
+  em que ela for chamada 
+  - O controle do escopo é perdido 
+  - Quanto menor for o escopo, mais fácil é o gerenciamento  
+  do projeto 
 - É um problema de design do JS
 - Uma variável declarada no escopo global pode ser acessada de qualquer lugar do  
 código, até mesmo dentro de escopos locais

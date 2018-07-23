@@ -151,6 +151,20 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
+## [Aula 09](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-09/aula-09.md)
+
+* ##### Escopo de funções
+* ##### Closure 
+* ##### Posicionamento de variáveis no código 
+* ##### Hoisting e Posicionamento de funções no código 
+* ##### Hoisting e Posicionamento de variáveis no código 
+* ##### `console.log` com parâmetros 
+* ##### Invocando uma função dentro dela mesma 
+* ##### IIFE - Immediately-invoked function expression 
+  * ##### Vantagens de se utilizar uma IIFE 
+
+---
+
 ## Aula 10
 
 4. #### [Wrapper Objects](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-10/04-wrapper-objects.md)
