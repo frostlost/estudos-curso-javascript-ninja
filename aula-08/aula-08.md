@@ -61,6 +61,9 @@ em características que funções possuem
 disponibilizar certos recursos, como objetos de primeira  
 classe 
 - É um tipo de programação com características dinâmicas 
+- Evita o uso de if's, switch's e loops 
+- Faz o resultado esperado depender de uma função 
+- Cria e divide o código em funções menores 
 
 ## Objetos/cidadãos de primeira classe 
 - Funções em JS são objetos de primeira classe  

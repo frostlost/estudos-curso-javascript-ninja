@@ -69,8 +69,9 @@ métodos
 propriedades e métodos 
 - O array é um exemplo de objeto embutido 
 
-## `.length` - Propriedade de array 
+## `.length` - Propriedade de array e String 
 - Retorna a quantidade de itens que um array possui 
+- Retorna a quantidade de caracteres que uma string possui 
 
 ```javascript
 const arr = ['melo', null, () => {}];

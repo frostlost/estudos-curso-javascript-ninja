@@ -130,7 +130,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### `%` o operador módulo 
 * ##### Objetos embutidos no JS 
 * ##### Mais sobre Arrays 
-* ##### `.length` - Propriedade de array 
+* ##### `.length` - Propriedade de array e String 
 * ##### `while()` e `.length` - Iterando por itens de um array 
 * ##### `.push()` - Método de array
 * ##### `for` loop
@@ -165,17 +165,15 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
-## Aula 10
+## [Aula 10](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-10/aula-10.md)
 
-4. #### [Wrapper Objects](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-10/04-wrapper-objects.md)
-
-* ##### Valores primitivos não são objetos
-* ##### Definição de objeto
-* ##### Se valores primitivos não são objetos, por que eles tem propriedades?  
-* ##### Wrapper Objects / Objetos Construtores  
-* ##### Utilizando a palavra-chave `new`
-* ##### `.valueOf()`  
-* ##### Conversores - Wrapper Objects sem o `new`  
+* ##### Funções de callback 
+* ##### Wrapper Objects / Objetos construtores 
+* ##### Wrapper objects criam novos objetos 
+* ##### `name.valueOf()` - Método de objeto 
+* ##### `String(value)`, `Number(value)`, `Boolean(value)` - Conversores de tipo 
+* ##### `typeof` - Verificando tipos de valores primitivos 
+* ##### Verificando se um valor realmente é `null` 
 
 ---
 

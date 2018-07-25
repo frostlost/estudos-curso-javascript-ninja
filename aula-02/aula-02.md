@@ -56,10 +56,13 @@ console.log(x === 3 || y === 3);
 ```
 
 ### `!`
-  - Not
-  - Tradução literal: não
-  - Converte para boolean e 
-  - Inverte um valor
+- Not
+- Tradução literal: não
+- Converte para boolean e 
+- Inverte um valor
+- Pode ser usado para verificar se um valor foi  
+entrado, por exemplo, pois se não foi, o valor  
+será falsy (0, '', NaN, false, undefined, null)
 
 ## Operadores unários
 São operadores usados à frente de um valor.
