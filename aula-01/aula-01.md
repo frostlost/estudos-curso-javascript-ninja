@@ -75,6 +75,8 @@ person;
 
 ### Acessando propriedades de objetos 
 - Para acessar o valor de uma propriedade é usado o `.`:
+- Se é necessário acessar uma de nome ainda desconhecido, uma  
+variável pode ser usada entre colchetes: `obj[variavel];`
 
 ```javascript
 pessoa.altura;

@@ -33,7 +33,7 @@ Combinam ou invertem valores booleanos. Sempre irão retornar `true` or `false`.
 ### `&&`
   - Tradução literal: and
   - Retorna se a combinação de dois valores é true or false
-  - Só retorna `true` quando os dois valores são verdadeiros
+  - Só retorna `true` se **todos os valores** são verdadeiros
 
 ```javascript
 let x = 6;
@@ -44,8 +44,8 @@ console.log(x === 6 && y === 3);
 ```
 
 ### `||`
-  - Tradução literal: ou
-  - Retorna `true` se um dos valores é verdadeiro
+- Tradução literal: ou
+- Retorna `true` se **um dos valores** é verdadeiro
 
 ```javascript
 let x = 6;
@@ -53,6 +53,13 @@ let y = 3;
 
 console.log(x === 3 || y === 3);
 // true
+```
+
+Também pode ser usado em verificação de tipos, por exemplo: 
+
+```javascript
+typeof 3 === 'string' || typeof 'hello' === 'string';
+// true 
 ```
 
 ### `!`
@@ -75,7 +82,7 @@ São operadores usados à frente de um valor.
   variável, o valor dela não será alterado. Não atribui um novo valor à uma  
   variável
   - Pode também concatenar strings
-  - Ao tentar concatenar uma string com um número, o resultado será uma string
+  - **Ao tentar concatenar uma string com um número, o resultado será uma string**
 
 ```javascript
 console.log(+'3');
@@ -86,6 +93,8 @@ console.log(+'roger');
 
 console.log('ro' + 'ger');
 // roger
+
+// Concatenando uma string com um número: 
 
 console.log('8' + 8);
 // '88'
@@ -178,6 +187,9 @@ para nomear variáveis e/ou funções
 - Sempre irá retornar um valor booleano  
 - Testa se uma condição ou valor é verdadeiro
 - if's sem else ficam mais legíveis 
+- Sempre que possível, evitar o uso de `if`'s e `switch`'s
+  - Prejudica a leitura do código 
+- Ou usar o mínimo possível dessas estruturas 
 
 ```javascript
 let x = 7;

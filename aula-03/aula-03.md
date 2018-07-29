@@ -24,7 +24,7 @@ console.log(1 * 1 * 1 + 1);
 ```
 
 ## `return`
-- Só funciona dentro de funções
+- Só pode ser usado dentro de funções
 - Todo o código que vier depois do return será ignorado
 - Faz com que o `else` se torne desnecessário em estruturas condicionais dentro de funções
 

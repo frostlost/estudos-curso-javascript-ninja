@@ -98,13 +98,16 @@ código dentro do bloco serão executadas
 ## `while`
 - Enquanto a expressão passada por parênteses for true, ele executará  
 o código dentro do bloco 
+- Necessita de uma variável contadora 
 - Se a expressão retornar false, o while irá ser finalizado 
 - Um loop infinito é simplesmente um `while(true)`
 - Como `0` é um valor falsy, se ele for testado como expressão no  
 while, o while não será executado 
 - Para fazer um contador decrescente, por exemplo, basta decrementar  
 o valor numérico na expressão entre parênteses 
-- Sintaxe: 
+- Verifica o valor antes de entrar iniciar o loop 
+  - Verifica antes se o valor é verdadeiro 
+  - Se o valor for falso, ele não começa a ser executado 
 
 ```javascript
 let counter = 0;

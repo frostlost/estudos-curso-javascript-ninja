@@ -64,6 +64,7 @@ classe
 - Evita o uso de if's, switch's e loops 
 - Faz o resultado esperado depender de uma função 
 - Cria e divide o código em funções menores 
+  - Cada função possui apenas uma única responsabilidade 
 
 ## Objetos/cidadãos de primeira classe 
 - Funções em JS são objetos de primeira classe  
