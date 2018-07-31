@@ -1,4 +1,4 @@
-# Dica importante ao tentar acessar propriedades de objetos, evitando o uso de if, switch ou ternário 
+# Acessando propriedades de objetos evitando o uso de if, switch ou ternário 
 - É possível obter o valor booleano de uma tentativa  
 de acesso à propriedades de objetos 
 - A pergunta chave é:  
@@ -20,8 +20,8 @@ Como ele não possui a propriedade 4g, retornou undefined.
 Assim, é possível fazer com que o retorno do acesso à  
 propriedade represente true ou false, passando o conversor  
 booleano de valores: 
-*/
 
+*/
 const isValidProperty = prop => Boolean(prop);
 const isValidProperty2 = prop => !!prop;
 
@@ -139,7 +139,7 @@ console.log('brand' in car);
 
 
 
-# Saltos 
+# Saltos - `return`, `break`, `continue`
 - Instruções / statements usados para **pular** algumas partes  
 do código
 - Exemplos 
@@ -152,3 +152,42 @@ do código
     - Pode e deve ser usado no lugar do `else`
   - `break`
     - Pula todas as outras instruções abaixo dele 
+    - Trava a execução de um bloco de instruções 
+    - Joga a leitura do código pra fora da instrução 
+    - Pode ser usado em um loops ou no switch 
+  - `continue`
+    - Ao invés de sair do bloco de instruções, pula / continua  
+    para a **próxima instrução válida**
+      - Dentro de um for, não executa o código abaixo dele,  
+      volta pro início do for com o valor da variável contadora  
+      já incrementada
+
+Break em um loop for: 
+
+```javascript
+for(let i = 0; i <= 20; i++) {
+  if(i > 10) {
+    break;
+  }
+  console.log(i);
+  // 0 até 10
+}
+```
+
+Continue: 
+
+```javascript
+for(let i = 0; i <= 20; i++) {
+  if(i === 10) {
+    continue;
+  }
+  console.log(i);
+  // mostrou de 0 à 9, pulou o 10, e continuou mostrando de 11 à 20
+}
+
+/* 
+- Se 'i' for igual a '10', o console.log não será executado, 
+a leitura do código **volta pro início do for** e incrementa 'i' 
+e, portanto, mostra o valor de 'i' no console.
+*/
+```

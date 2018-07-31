@@ -177,6 +177,20 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
+## [Aula 11](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-11/aula-11.md)
+
+* ##### Acessando propriedades de objetos evitando o uso de if, switch ou ternário 
+* ##### Nomes de funções que retornam um valor boolean
+* ##### Nomes de funções que retornam / mostram uma mensagem 
+* ##### Mais sobre loops
+* ##### `do / while`
+* ##### `for / in`
+* ##### `in`
+* ##### `break`
+* ##### Saltos - `return`, `break`, `continue`
+
+---
+
 ## Aula 12
 
 3. #### [Criação de Objetos](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-12/03-criacao-de-objetos.md)
