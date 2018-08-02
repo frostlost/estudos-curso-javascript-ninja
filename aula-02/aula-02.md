@@ -148,10 +148,11 @@ Não são interpretados pelo JS.
 - `/*  */` comentário de bloco
 
 ## Literais
-- Valores que aparecem diretamente no programa
-- Valores que não mudam
-- Valores que, ao serem colocados no terminal, irão retornar eles mesmos
-- Valor que já existe dentro da linguagem
+- Valores que aparecem diretamente no programa 
+- Valores que não mudam 
+  - Uma string, por exemplo, não é mutável 
+- Valores que, ao serem colocados no terminal, irão retornar eles mesmos 
+- Valor que já existe dentro da linguagem 
 
 Exemplos:
 - 12

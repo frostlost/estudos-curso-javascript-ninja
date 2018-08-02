@@ -83,6 +83,10 @@ variável que representa a propriedade em formato de array:
 executa o bloco de código 
 - É mais lento que o `for`
   - Deve ser usado com muita cautela 
+- Deve ser usado em casos onde não se sabe a quantidade de  
+propriedades que um objeto possui 
+  - Em casos em que a quantidade de propriedades é conhecida,  
+  é recomendado usar o `for`
 
 ```javascript
 const car = {
