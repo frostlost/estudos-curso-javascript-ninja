@@ -57,6 +57,7 @@ se a instrução é ou não verdadeira
 - Necessita de uma variável contadora 
 - É a única instrução dos loops e statements do JS que  
 necessita do `;` 
+- É o loop menos usado, mas é importante entender como ele funciona 
 
 ```javascript
 let counter = 0;
@@ -67,11 +68,11 @@ do {
 // 0 a 10
 ```
 
-## `for / in`
-- Criada para **acessar o nome das propriedades de um objeto** 
+## `for / in` - Percorrendo as propriedades de um objeto 
+- Criado para **acessar o nome das propriedades de um objeto** 
 - Parâmetros separados por espaço 
   1. Variável que representa a propriedade 
-    - Permite o acesso ao nome das propriedades do objeto 
+    1. Permite o acesso ao nome das propriedades do objeto 
   2. in
   3. objectName
 - Para que **o valor da propriedade** seja acessado, é  
