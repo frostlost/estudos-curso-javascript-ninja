@@ -154,7 +154,7 @@ console.log(obj);
 - Cada objeto criado no JS, herda propriedades e métodos do  
 `Object.prototype`. Isso se chama **encadeamento de protótipos**
   - É a herança que acontece dentro do JavaScript 
-  - Essas propriedades podems ser sobrescritas 
+  - Essas propriedades podem ser sobrescritas 
 - Alterações no `Object.prototype` são acessadas por todos os  
 objetos 
 - Objetos internos / padrão do JS herdam métodos e propriedades de  
@@ -200,3 +200,19 @@ console.log(Date());
 - Cada objeto criado no JS, herda propriedades e métodos do  
 `Object.prototype`. Isso se chama **encadeamento de protótipos**
   - É a herança que acontece dentro do JavaScript 
+
+# `Object.create(obj)`
+- Cria um objeto que herda propriedades e métodos do objeto  
+principal, que é o objeto passado por parâmetro (exemplo 1)
+  - Ao logar o objeto no console, será mostrado um objeto vazio  
+- Ao executar propriedade `.prototipe`, do objeto que herdou as  
+propriedades e métodos do objeto principal, 
+
+```javascript
+const obj = {
+  prop1: 1,
+  prop2: 2
+};
+
+const obj2 = Object.create(obj);
+```

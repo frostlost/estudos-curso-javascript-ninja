@@ -1,2 +1,6 @@
-console.log(Date());
-// Fri Aug 03 2018 19:44:00 GMT-0300 (Hora oficial do Brasil)
+const obj = {
+  prop1: 1,
+  prop2: 2
+};
+
+const obj2 = Object.create(obj);
