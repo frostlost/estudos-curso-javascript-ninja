@@ -202,11 +202,39 @@ console.log(Date());
   - É a herança que acontece dentro do JavaScript 
 
 # `Object.create(obj)`
-- Cria um objeto que herda propriedades e métodos do objeto  
-principal, que é o objeto passado por parâmetro (exemplo 1)
-  - Ao logar o objeto no console, será mostrado um objeto vazio  
-- Ao executar propriedade `.prototipe`, do objeto que herdou as  
-propriedades e métodos do objeto principal, 
+- Cria um objeto que herda propriedades e métodos de um outro  
+objeto principal, que é o objeto passado por parâmetro (exemplo 1)
+  - Ao logar o segundo objeto no console, será mostrado um objeto  
+  vazio, simbolizando que o objeto não possui propriedades  
+  **próprias dele**
+  - Mas ele herdou as propriedades e métodos do primeiro objeto 
+- **Não é uma referência para o primeiro objeto**, mas sim, um  
+novo objeto
+  - Porém, se o valor de uma propriedade do primeiro objeto é  
+  alterada, o valor dela no segundo objeto também será alterada,  
+  devido à herança. Mas **não são o memso objeto**. (exemplo 2)
+  - Se o valor de uma propriedade do objeto que herdou do primeiro  
+  objeto for alterada, ela só será alterada no objeto que herdou.  
+  Nenhuma propriedade ou método será alterado no objeto pai  
+  (exemplo 3). **O objeto pai não muda seus valores**.
+  - O objeto filho pode ter as propriedades herdadas sobrescritas 
+- Se um objeto vazio for passado por parâmetro, um objeto vazio  
+será criado. Porém, pormais que ele esteja vazio, ele herdou  
+propriedades e métodos do `Object.prototype`
+  - Esse objeto vazio possui, por exemplo, o método `toString()`,  
+  herdado do `Object.prototype` (exemplo 4)
+  - Se o objeto for criado na forma literal `{}`, ele também herdará  
+  as propriedades e métodos do `Object.prototype`
+    - Se esse objeto ganha propriedades e um objeto vazio 
+- Se um terceiro objeto for criado, herdando propriedades e métodos  
+do segundo objeto (que herdou do 1º objeto), esse terceiro objeto  
+criado também terá as propriedades do segundo objeto. 
+  - Se alguma propriedade ou método do segundo objeto for  
+  sobrescrita, a mesma propriedade será alterada no terceiro  
+  objeto. Já o primeiro objeto, que é pai do segundo objeto,  
+  **não teve sua propriedade alterada** (exemplo 5)
+
+exemplo 1:
 
 ```javascript
 const obj = {
@@ -215,4 +243,68 @@ const obj = {
 };
 
 const obj2 = Object.create(obj);
+// obj2 possui as propriedades do obj
+
+console.log(obj2.prop2);
+// 2
+```
+
+exemplo 2:
+
+```javascript
+const obj = {
+  prop1: 1,
+  prop2: 2
+};
+
+const obj2 = Object.create(obj);
+
+obj.prop1 = 'propriedade alterada!';
+
+console.log(obj2.prop1);
+// 'propriedade alterada!'
+```
+
+exemplo 3: 
+
+```javascript
+const obj = {
+  prop1: 1,
+  prop2: 2
+};
+
+const obj2 = Object.create(obj);
+obj2.prop2 = 'dois';
+
+console.log(obj.prop2);
+// 2
+```
+
+exemplo 4: 
+
+```javascript
+const obj = Object.create({});
+
+console.log(obj.toString());
+// [object Object]
+```
+
+exemplo 5:
+
+```javascript
+const obj = {
+  prop1: 'valor1',
+  prop2: 'valor2'
+};
+
+const obj2 = Object.create(obj);
+// herdou as propriedades de obj
+
+const obj3 = Object.create(obj2);
+// herdou as propriedades de obj2
+
+obj2.prop1 = 'mudou o valor!';
+
+console.log(obj3.prop1);
+// 'mudou o valor!'
 ```
