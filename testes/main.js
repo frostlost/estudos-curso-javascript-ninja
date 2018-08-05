@@ -3,5 +3,8 @@ const obj = {
   prop2: 2
 };
 
-Object.keys(obj).length;
-// 2
+const obj2 = Object.create(obj);
+
+const obj3 = Object.create(obj);
+
+obj.isPrototypeOf(obj3); // true

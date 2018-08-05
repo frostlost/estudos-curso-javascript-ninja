@@ -420,4 +420,36 @@ Object.keys(obj).length;
 ```
 
 # `obj.isPrototypeOf(otherObj)`
-- 
+- Verifica se o objeto é protótipo de algum outro (exemplo 1)
+- Retorna `true` or `false`
+- Se o objeto verificado não foi herdado **diretamente** do  
+objeto principal, o retorno também é `true` (exemplo 2)
+
+exemplo 1: 
+
+```javascript
+const obj = {
+  prop1: 1,
+  prop2: 2
+};
+
+const obj2 = Object.create(obj);
+
+obj.isPrototypeOf(obj2); // true
+```
+
+exemplo 2:
+
+```javascript
+const obj = {
+  prop1: 1,
+  prop2: 2
+};
+
+const obj2 = Object.create(obj);
+
+const obj3 = Object.create(obj);
+
+obj.isPrototypeOf(obj3); // true
+// obj é protótipo dos objetos obj2 e obj3
+```
