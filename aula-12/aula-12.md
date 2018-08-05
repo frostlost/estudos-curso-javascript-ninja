@@ -126,8 +126,10 @@ console.log(Object());
       1. Faz, exatamente, a mesma coisa ao se criar um objeto  
       de forma literal
       2. Ou seja, é sempre mais rápido usar a forma literal 
-  3. com o método `Object.create()` (exemplo 2)
+  3. com o método de objeto `Object.create()` (exemplo 2)
     1. Retorna um erro, que será visto adiante 
+
+exemplo 1:
 
 ```javascript
 let newObj = new Object();
@@ -135,6 +137,8 @@ let newObj = new Object();
 console.log(newObj);
 // {}
 ```
+
+exemplo 2:
 
 ```javascript
 let obj = Object.create();
@@ -144,7 +148,7 @@ console.log(obj);
 ```
 
 # `Object.prototype` Introdução a protótipos de objetos 
-- Propriedade. 
+- Propriedade de objeto 
 - Retorna um objeto vazio
 - É o protótipo do objeto que está sendo criado 
   - Cada objeto criado, herda do protótipo do próprio objeto  
@@ -202,12 +206,16 @@ console.log(Date());
   - É a herança que acontece dentro do JavaScript 
 
 # `Object.create(obj)`
-- Cria um objeto que herda propriedades e métodos de um outro  
-objeto principal, que é o objeto passado por parâmetro (exemplo 1)
+- Método de objeto que cria um objeto que herda propriedades e  
+métodos de um outro objeto principal, que é o objeto passado  
+por parâmetro (exemplo 1)
   - Ao logar o segundo objeto no console, será mostrado um objeto  
   vazio, simbolizando que o objeto não possui propriedades  
   **próprias dele**
   - Mas ele herdou as propriedades e métodos do primeiro objeto 
+    - Tanto é que, se um `for in` for feito nesse objeto, as  
+    propriedades e métodos que ele herdou serão mostrados (título  
+    abaixo)
 - **Não é uma referência para o primeiro objeto**, mas sim, um  
 novo objeto
   - Porém, se o valor de uma propriedade do primeiro objeto é  
@@ -308,3 +316,108 @@ obj2.prop1 = 'mudou o valor!';
 console.log(obj3.prop1);
 // 'mudou o valor!'
 ```
+
+exemplo 6:
+
+```javascript
+const obj = {
+  prop1: 'valor prop1',
+  prop2: 'valor prop2'
+};
+
+const obj2 = Object.create(obj);
+
+console.log(obj2); // {}
+
+for(let prop in obj2) {
+  console.log(obj2[prop]);
+} 
+// 'valor prop1'
+// 'valor prop2'
+```
+
+# `hasOwnProperty('propName')` - Verificando quais propriedades são específicas (não herdadas) de um objeto 
+- Um método de objeto, que verifica se uma propriedade é específica  
+de um objeto (exemplo 1)
+- Retorna `true`, caso a propriedade verificada seja não-herdada 
+- Retorna `false`, caso a propriedade verificada seja herdada
+
+exemplo 1: 
+
+```javascript
+const obj = {
+  prop1: 'valor prop1',
+  prop2: 'valor prop2'
+};
+
+const obj2 = Object.create(obj);
+
+obj.hasOwnProperty('prop1'); // true
+
+obj2.hasOwnProperty('prop1'); // false
+```
+
+# Fazendo um for in em um objeto e mostrando somente propriedades específicas dele 
+- Se um `for in` for feito nesse objeto, as propriedades e métodos que  
+ele herdou serão mostrados (título abaixo)
+  - É possível verificar, com o método `hasOwnProperty()`, se um objeto  
+  possui ou não apenas propriedades específicas dele 
+
+```javascript
+const obj = {
+  prop1: 'valor prop1',
+  prop2: 'valor prop2'
+};
+
+const obj2 = Object.create(obj);
+
+for(let prop in obj2) {
+  if(obj2.hasOwnProperty(prop)) // condição retorna true or false 
+    console.log(prop);
+}
+
+// ''
+
+for(let prop in obj) {
+  if(obj.hasOwnProperty(prop))
+    console.log(prop);
+}
+
+// prop1 prop2
+```
+
+# `Object.keys(obj)` 
+- Método de objeto 
+- Retorna um array com as propriedades do objeto passado por  
+parâmetro (exemplo 1)
+- É interessante em casos onde o retorno pode fazer algo que  
+só um array faz (título abaixo)
+
+exemplo 1: 
+
+```javascript
+const obj = {
+  prop1: 1,
+  prop2: 2
+};
+
+Object.keys(obj);
+// ['prop1', 'prop2]
+```
+
+# Contando o número de propriedades de um objeto 
+- Como o método `Object.keys(obj)` retorna um array, é possível  
+encadear um `length` em seu retorno
+
+```javascript
+const obj = {
+  prop1: 1,
+  prop2: 2
+};
+
+Object.keys(obj).length;
+// 2
+```
+
+# `obj.isPrototypeOf(otherObj)`
+- 
