@@ -191,7 +191,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
-## Aula 12(https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-12/aula-12.md)
+## [Aula 12](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-12/aula-12.md)
 
 * ##### `delete` - Deletando propriedades de um objeto 
 * ##### Mais sobre objetos (Mutabilidade)
