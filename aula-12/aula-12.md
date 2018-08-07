@@ -453,3 +453,84 @@ const obj3 = Object.create(obj);
 obj.isPrototypeOf(obj3); // true
 // obj é protótipo dos objetos obj2 e obj3
 ```
+
+# Introdução a `JSON`
+- Significa JavaScript Object Notation 
+  - É uma notação de objeto do JavaScript
+- É uma string que representa um objeto em JS 
+
+# `JSON.stringify(obj)`
+- Gera o JSON de um objeto (exemplo 1)
+- Transforma um valor em uma string (exemplo 2)
+- Não altera o objeto original 
+
+exemplo 1: 
+
+```javascript
+const obj = {
+  prop1: 1,
+  prop2: 2
+};
+
+JSON.stringify(obj);
+// "{"prop1":1,"prop2":2}"
+```
+
+exemplo 2:
+
+```javascript
+JSON.stringify(true);
+// true
+```
+
+# `JSON.parse(str)`
+- Transforma um JSON em objeto (exemplo 1)
+- Transforma uma string em valor primitivo (exemplo 2)
+
+exemplo 1: 
+
+```javascript
+const obj = {
+  prop1: 1,
+  prop2: 2
+};
+
+const stringfyedObj = JSON.stringify(obj); // converteu o objeto para JSON
+
+console.log(stringfyedObj);
+// "{"prop1":1,"prop2":2}"
+
+const parsedJson = JSON.parse(stringfyedObj); // converteu o JSON para objeto 
+
+console.log(parsedJson);
+// { prop1: 1, prop2: 2 }
+```
+
+exemplo 2:
+
+```javascript
+JSON.parse('true'); 
+// true
+```
+
+# Atribuição manual de itens a um array 
+- Quando os itens são atribuídos manualmente, caso o item inserido  
+esteja em um índice distante dos demais, são atribuídos itens  
+vazios (undefined) ao array (exemplo 1)
+
+exemplo 1: 
+
+```javascript
+const myArr = [];
+
+myArr[0] = 'hi';
+myArr[8] = 'hello';
+
+console.log(myArr);
+// [ 'hi', <7 empty items>, 'hello' ]
+```
+
+# `arr.pop()` - Método de array
+- Remove o último item do array
+- Retorna o item removido 
+  - O item pode ser armazenado em uma variável, por exemplo 

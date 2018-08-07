@@ -1,10 +1,6 @@
-const obj = {
-  prop1: 1,
-  prop2: 2
-};
+const arr = [80, 'hi', 78];
 
-const obj2 = Object.create(obj);
+const removedArrayItem = arr.pop();
 
-const obj3 = Object.create(obj);
-
-obj.isPrototypeOf(obj3); // true
+console.log(removedArrayItem);
+console.log(arr);
