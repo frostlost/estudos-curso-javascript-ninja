@@ -534,3 +534,67 @@ console.log(myArr);
 - Remove o último item do array
 - Retorna o item removido 
   - O item pode ser armazenado em uma variável, por exemplo 
+
+# `arr.join()` / `arr.join(sep)` - Método de array
+- Junta itens do array em uma só string (exemplo 1)
+- Aceita um valor como parâmetro 
+  - O valor será o separador entre os itens do array (exemplo 2)
+- Não altera o array original 
+
+exemplo 1:
+
+```javascript
+const arr = [856, 965, 856];
+
+arr.join();
+// "856,965,856"
+```
+
+exemplo 2:
+
+```javascript
+const arr = [856, 965, 856];
+
+arr.join(' ');
+// "856 965 856"
+
+arr.join('');
+// "856965856"
+
+arr.join(', ');
+// "856, 965, 856"
+```
+
+exemplo 3: 
+
+```javascript
+const cars = ['Bentley', 'Silverado', 'Land Rover'];
+
+console.log(`I have these cars: ${cars.join(', ')}.`);
+// I have these cars: Bentley, Silverado, Land Rover.
+```
+
+# `.reverse()` - Método de array
+- Inverte a ordem dos itens de um array (exemplo 1)
+- Modifica o array original 
+
+exemplo 1: 
+
+```javascript
+const cars = ['Bentley', 'Silverado', 'Land Rover'];
+
+cars.reverse();
+// [ 'Land Rover', 'Silverado', 'Bentley' ]
+```
+
+# `arr.sort()` - Método de array
+- Ordena os itens de um array por ordem alfabética (exemplo 2)
+- Modifica o array original 
+exemplo 2: 
+
+```javascript
+const cars = ['Bentley', 'Silverado', 'Land Rover'];
+
+cars.sort();
+// [ 'Bentley', 'Land Rover', 'Silverado' ]
+```

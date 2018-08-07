@@ -1,6 +1,4 @@
-const arr = [80, 'hi', 78];
+const cars = ['Bentley', 'Silverado', 'Land Rover'];
 
-const removedArrayItem = arr.pop();
-
-console.log(removedArrayItem);
-console.log(arr);
+cars.sort();
+// [ 'Bentley', 'Land Rover', 'Silverado' ]

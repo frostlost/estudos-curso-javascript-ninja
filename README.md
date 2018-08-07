@@ -191,19 +191,31 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
-## Aula 12
+## Aula 12(https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-12/aula-12.md)
 
-3. #### [Criação de Objetos](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-12/03-criacao-de-objetos.md)
-
-* ##### Mutabilidade em objetos  
-  - ###### Modificando o valor de uma propriedade de um objeto
-  - ###### Criando uma nova propriedade para um objeto
-  - ###### Deletando uma propriedade de um objeto com o `delete`
-* ##### Manipulação de objetos por referência
-* ##### Criação de objetos de forma literal
-* ##### Criação de objetos como construtores (`new`)
-* ##### Criação de objetos com o `Object.create()`
-* ##### `Object.prototype`
+* ##### `delete` - Deletando propriedades de um objeto 
+* ##### Mais sobre objetos (Mutabilidade)
+* ##### Manipulação de objetos por referência 
+* ##### `Object` Palavra-chave do objeto interno do JS 
+* ##### Criação de objetos (literais, com `new, método `Object.create()`)
+* ##### `Object.prototype` Introdução a protótipos de objetos 
+* ##### `Array` Palavra-chave do array interno do JS 
+* ##### `Date` Palavra-chave do date interno do JS 
+* ##### Herança através de encadeamento de protótipos 
+* ##### `Object.create(obj)`
+* ##### `hasOwnProperty('propName')` - Verificando quais propriedades são específicas (não herdadas) de 
+* ##### Fazendo um for in em um objeto e mostrando somente propriedades específicas dele 
+* ##### `Object.keys(obj)` 
+* ##### Contando o número de propriedades de um objeto 
+* ##### `obj.isPrototypeOf(otherObj)`
+* ##### Introdução a `JSON`
+* ##### `JSON.stringify(obj)`
+* ##### `JSON.parse(str)`
+* ##### Atribuição manual de itens a um array 
+* ##### `arr.pop()` - Método de array
+* ##### `arr.join()` / `arr.join(sep)` - Método de array
+* ##### `.reverse()` - Método de array
+* ##### `arr.sort()` - Método de array
 
 ---
 
