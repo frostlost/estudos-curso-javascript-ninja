@@ -203,7 +203,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### `Date` Palavra-chave do date interno do JS 
 * ##### Herança através de encadeamento de protótipos 
 * ##### `Object.create(obj)`
-* ##### `hasOwnProperty('propName')` - Verificando quais propriedades são específicas (não herdadas) de 
+* ##### `hasOwnProperty('propName')` - Verificando quais propriedades são específicas (não herdadas) de um objeto
 * ##### Fazendo um for in em um objeto e mostrando somente propriedades específicas dele 
 * ##### `Object.keys(obj)` 
 * ##### Contando o número de propriedades de um objeto 

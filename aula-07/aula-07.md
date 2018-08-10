@@ -126,11 +126,12 @@ while(qtd > 0) {
 }
 ```
 
-## `.push()` - Método de array
+## `.push(item)` - Método de array
 - Adiciona um item **no final** do array 
 - Recebe, por parâmetro, o item a ser adicionado 
 - O item pode ser qualquer tipo de valor 
-- Retorna o length do array 
+- **Retorna o length do array**
+- Modifica o array original 
 - Evita a necessidade de reescrever o array para adicionar um item 
 
 ```javascript

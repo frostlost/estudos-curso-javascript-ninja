@@ -531,12 +531,14 @@ console.log(myArr);
 ```
 
 # `arr.pop()` - Método de array
-- Remove o último item do array
-- Retorna o item removido 
+- Arranca o último item do array
+- **Retorna o item removido** 
   - O item pode ser armazenado em uma variável, por exemplo 
+- Modifica o array original 
 
 # `arr.join()` / `arr.join(sep)` - Método de array
 - Junta itens do array em uma só string (exemplo 1)
+- Por padrão, junta itens do array separados por vírgula 
 - Aceita um valor como parâmetro 
   - O valor será o separador entre os itens do array (exemplo 2)
 - Não altera o array original 
