@@ -212,3 +212,126 @@ arr.splice(1, 3, 2, 3, 4);
 console.log(arr);
 // [ 1, 2, 3, 4, 5 ]
 ```
+
+# `arr.forEach(function(item) {})` - Método de array 
+- **Pode substituir o `for`**
+- Funciona como o `for`, mas de uma forma mais elegante / funcional  
+- Recebe uma `function` por parâmetro  
+  - Recebe 3 parâmetros, no qual os 2 últimos podem ser omitidos: 
+    - `item` - item do array
+    - `index` - índice do item do array
+    - `array` - o próprio array
+  - Irá iterar por cada item do array (exemplo 1)
+- É mais rápido que o `for`
+- Essa função de callback passada pode ser reutilizada em outro  
+local
+- Possibilita fazer coisas que só são possíveis com funções 
+- Pode ser utilizado para somar todos os itens de um array (exemplo 2)
+
+exemplo 1: 
+
+```javascript
+const arr = [1, 2, 3, 4, 5, 6, 7];
+
+arr.forEach((item, index, array) => 
+  console.log(item, index, array));
+/* 
+1 0 [ 1, 2, 3, 4, 5, 6, 7 ]
+2 1 [ 1, 2, 3, 4, 5, 6, 7 ]
+3 2 [ 1, 2, 3, 4, 5, 6, 7 ]
+4 3 [ 1, 2, 3, 4, 5, 6, 7 ]
+5 4 [ 1, 2, 3, 4, 5, 6, 7 ]
+6 5 [ 1, 2, 3, 4, 5, 6, 7 ]
+7 6 [ 1, 2, 3, 4, 5, 6, 7 ]
+*/
+```
+
+exemplo 2:
+
+```javascript
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+
+let sum = 0;
+
+numbers.forEach(function(num) {
+  sum += num;
+});
+
+console.log(sum);
+// 28
+```
+
+# `arr.every(function(item) {})` - Método de array 
+- Verifica se **todos os itens** do array atendam à uma condição 
+- Aplica uma função na qual seu retorno, que será baseado no parâmetro,  
+retorna `true` ou `false`
+  - Verifica todos os itens 
+  - Se pelo menos 1 item for false, já retorna false 
+  - Só retorna `true` se todos os itens forem true
+- A função passada recebe um parâmetro, que é o item do array e retorna  
+um valor boolean baseado na condição especificada dentro da função 
+- Verifica, por exemplo, se **todos os itens** do array são menores  
+que 5 (exemplo 1)
+- Verifica, por exemplo, se **todos os itens** do array são do tipo  
+`number` (exemplo 2)
+
+exemplo 1:
+
+```javascript
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+
+const every = numbers.every(item => item < 5);
+
+console.log(every);
+// false
+```
+
+exemplo 2: 
+
+```javascript
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+
+const every = numbers.every(item => typeof item === 'number');
+
+console.log(every);
+// true 
+```
+
+# `arr.some(function(item) {})` - Método de array 
+- Verifica se **pelo menos um item do array** atende à uma condição 
+- Aplica uma função na qual seu retorno, que será baseado no parâmetro,  
+retorna `true` ou `false`
+  - Verifica todos os itens 
+  - Se pelo menos 1 item for true, já retorna true 
+- A função passada recebe um parâmetro, que é o item do array e retorna  
+um valor boolean baseado na condição especificada dentro da função 
+- Verifica, por exemplo, se **algum item** do array é igual a 7  
+(exemplo 1)
+- Verifica, por exemplo, se **algum item** do array é um número par  
+(exemplo 2)
+
+exemplo 1: 
+
+```javascript
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+
+const some = numbers.some(function(item) {
+  return item === 7;
+});
+
+console.log(some);
+// true
+```
+
+exemplo 2: 
+
+```javascript
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+
+const some = numbers.some(function(item) {
+  return item % 2 === 0;
+});
+
+console.log(some);
+// true
+```

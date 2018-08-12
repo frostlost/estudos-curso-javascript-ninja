@@ -1,6 +1,8 @@
-const arr = [1, 'a', 'b', 'c', 5];
+const numbers = [1, 2, 3, 4, 5, 6, 7];
 
-arr.splice(1, 3, 2, 3, 4);
+const some = numbers.some(function(item) {
+  return item % 2 === 0;
+});
 
-console.log(arr);
-// [ 1, 2, 3, 4, 5 ]
+console.log(some);
+// true
