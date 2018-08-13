@@ -219,6 +219,25 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
+## [Aula 13](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-13/aula-13.md)
+
+* ##### `toString()`
+* ##### Introdução ao `obj.toString()` - Método de objeto 
+* ##### `arr.toString()` - Método de array 
+* ##### `arr.concat(param)` - Método de array 
+* ##### `arr.unshift(item)` - Método de array
+* ##### `arr.shift()` - Método de array
+* ##### `arr.slice(firstItemIndex, +1indexFinalItem)` - Método de array 
+* ##### `arr.splice()` - Método de array
+* ##### `arr.forEach(function(item) {})` - Método de array 
+* ##### `arr.every(function(item) {})` - Método de array 
+* ##### `arr.some(function(item) {})` - Método de array 
+* ##### `arr.map(function(item, index, array) {})` - Método de array 
+* ##### `arr.filter(function(item, index, array) {})` - Método de array 
+* ##### Encadeando os métodos `map()` e `filter()`
+
+---
+
 ## Aula 15
 
 5. #### [O Objeto `this`](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-15/05-this.md)

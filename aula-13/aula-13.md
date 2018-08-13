@@ -227,6 +227,8 @@ console.log(arr);
 local
 - Possibilita fazer coisas que só são possíveis com funções 
 - Pode ser utilizado para somar todos os itens de um array (exemplo 2)
+- Deve ser usado em casos onde é necessário apenas iterar pelo array  
+e fazer qualquer outra ação com esse array 
 
 exemplo 1: 
 
@@ -274,6 +276,8 @@ um valor boolean baseado na condição especificada dentro da função
 que 5 (exemplo 1)
 - Verifica, por exemplo, se **todos os itens** do array são do tipo  
 `number` (exemplo 2)
+- Deve ser usado em casos onde é necessário iterar diretamente dentro  
+do array, mas gerar um novo array 
 
 exemplo 1:
 
@@ -298,7 +302,7 @@ console.log(every);
 ```
 
 # `arr.some(function(item) {})` - Método de array 
-- Verifica se **pelo menos um item do array** atende à uma condição 
+- Verifica se **qualquer item do array** atende à uma condição 
 - Aplica uma função na qual seu retorno, que será baseado no parâmetro,  
 retorna `true` ou `false`
   - Verifica todos os itens 
@@ -334,4 +338,86 @@ const some = numbers.some(function(item) {
 
 console.log(some);
 // true
+```
+
+# `arr.map(function(item, index, array) {})` - Método de array 
+- Transforma ou faz algo com todos os itens do array 
+- Retorna um novo array, do mesmo tamanho do array original 
+  - Exemplos: 
+    - Novo array com cada item somado à 10 (exemplo 1)
+    - Novo array com o índice de cada item (exemplo 2)
+    - Novo array de objetos com itens do array original como valores  
+    de propriedades (exemplo 3)
+- Não altera o array original 
+- Evita o uso do `for` ou o `forEach`
+  - Nenhum dos dois retorna um array
+
+exemplo 1: 
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.map(item => item + 10);
+// [11, 12, 13, 14, 15]
+```
+
+exemplo 2: 
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.map((item, index) => index);
+// [0, 1, 2, 3, 4]
+```
+
+exemplo 3: 
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+const objs = numbers.map((item, index) => ({'item': item, 'index': index}));
+
+objs;
+/*
+[ 
+  { item: 1, index: 0 },
+  { item: 2, index: 1 },
+  { item: 3, index: 2 },
+  { item: 4, index: 3 },
+  { item: 5, index: 4 } 
+]
+*/
+```
+
+# `arr.filter(function(item, index, array) {})` - Método de array 
+- Retorna um novo array com apenas alguns itens do array original,  
+baseados em alguma condição 
+  - Exemplos: 
+    - Novo array com itens maiores que 4 (exemplo 1)
+- Não altera o array original 
+- Evita o uso do `for` ou o `forEach`
+  - Nenhum dos dois retorna um array
+
+exemplo 1: 
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.filter(item => item > 4);
+// [5]
+```
+
+# Encadeando os métodos `map()` e `filter()`
+- Exemplos: 
+  - Gerando, com o map, um array com cada item somado à 10 e encadeando  
+  um filter que gera um array apenas com itens pares (exemplo 1)
+
+exemplo 1: 
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const finalArr = numbers.map(item => item + 10).filter(item => item % 2 === 0);
+
+console.log(finalArr);
+// [12, 14]
 ```
