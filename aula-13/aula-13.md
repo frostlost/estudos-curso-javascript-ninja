@@ -80,8 +80,8 @@ arr.concat({prop1: 'value1', prop2: 'value2'});
 // [ 5, 7, 9, { prop1: 'value1', prop2: 'value2' } ]
 ```
 
-# `arr.unshift(item)` - Método de array
-- Adiciona um item **no início** do array 
+# `arr.unshift(item1, item2...)` - Método de array
+- Adiciona um ou mais itens **no início** do array 
 - Retorna o length do Array 
 - Modifica o array original 
 

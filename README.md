@@ -225,7 +225,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### Introdução ao `obj.toString()` - Método de objeto 
 * ##### `arr.toString()` - Método de array 
 * ##### `arr.concat(param)` - Método de array 
-* ##### `arr.unshift(item)` - Método de array
+* ##### `arr.unshift(item1, item2...)` - Método de array
 * ##### `arr.shift()` - Método de array
 * ##### `arr.slice(firstItemIndex, +1indexFinalItem)` - Método de array 
 * ##### `arr.splice()` - Método de array
