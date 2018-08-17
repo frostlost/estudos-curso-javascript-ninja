@@ -159,8 +159,8 @@ console.log(obj);
 `Object.prototype`. Isso se chama **encadeamento de protótipos**
   - É a herança que acontece dentro do JavaScript 
   - Essas propriedades podem ser sobrescritas 
-- Alterações no `Object.prototype` são acessadas por todos os  
-objetos 
+- Alterações e/ou adições de métodos e propriedades no `Object.prototype`  
+são **acessadas por todos os objetos** 
 - Objetos internos / padrão do JS herdam métodos e propriedades de  
 `Object.prototype`
   - `Array`, `String`, `Date`, `RegExp`

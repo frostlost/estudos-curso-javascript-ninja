@@ -218,12 +218,15 @@ console.log(arr);
 # `arr.forEach(function(item) {})` - Método de array 
 - **Pode substituir o `for`**
 - Funciona como o `for`, mas de uma forma mais elegante / funcional  
-- Recebe uma `function` por parâmetro  
-  - Recebe 3 parâmetros, no qual os 2 últimos podem ser omitidos: 
+- Recebe uma `function` por parâmetro, que é executada em cada item  
+  - Essa function recebe 3 parâmetros, no qual os 2 últimos podem  
+  ser omitidos: 
     - `item` - item do array
     - `index` - índice do item do array
     - `array` - o próprio array
   - Irá iterar por cada item do array (exemplo 1)
+- **Nunca retorna um valor**
+  - Não usar o `return`
 - É mais rápido que o `for`
 - Essa função de callback passada pode ser reutilizada em outro  
 local
@@ -267,8 +270,8 @@ console.log(sum);
 
 # `arr.every(function(item) {})` - Método de array 
 - Verifica se **todos os itens** do array atendem à uma condição 
-- Aplica uma função na qual seu retorno, que será baseado no parâmetro,  
-retorna `true` ou `false`
+- Aplica uma função na qual seu retorno, que será baseado na expressão  
+especificada, **retorna `true` ou `false`**
   - Verifica todos os itens 
   - Se pelo menos 1 item for false, já retorna false 
   - Só retorna `true` se todos os itens forem true
@@ -305,8 +308,8 @@ console.log(every);
 
 # `arr.some(function(item) {})` - Método de array 
 - Verifica se **qualquer item do array** atende à uma condição 
-- Aplica uma função na qual seu retorno, que será baseado no parâmetro,  
-retorna `true` ou `false`
+- Aplica uma função na qual seu retorno, que será baseado na expressão  
+especificada, **retorna `true` ou `false`** 
   - Verifica todos os itens 
   - Se pelo menos 1 item for true, já retorna true 
 - A função passada recebe um parâmetro, que é o item do array e retorna  
@@ -344,7 +347,8 @@ console.log(some);
 
 # `arr.map(function(item, index, array) {})` - Método de array 
 - Transforma ou faz algo com todos os itens do array 
-- Retorna um novo array, do mesmo tamanho do array original 
+- Retorna um novo array, **do mesmo tamanho do array original**, mas  
+com os itens modificados de alguma forma 
   - Exemplos: 
     - Novo array com cada item somado à 10 (exemplo 1)
     - Novo array com o índice de cada item (exemplo 2)
@@ -353,6 +357,9 @@ console.log(some);
 - Não altera o array original 
 - Evita o uso do `for` ou o `forEach`
   - Nenhum dos dois retorna um array
+- Retorna exatamente o que for passado dentro dele. 
+  - Diferentemente do `filter()`, o map precisa que o item seja  
+  especificado dentro dele
 
 exemplo 1: 
 
@@ -399,6 +406,12 @@ baseados em alguma condição
 - Não altera o array original 
 - Evita o uso do `for` ou o `forEach`
   - Nenhum dos dois retorna um array
+- Necessita apenas da expressão a ser avaliada
+  - Assim como os métodos `every()` e `some()` 
+  - Não é necessário que o item seja especificado novamente dentro  
+  dele 
+  - **Já irá retornar o item, caso a expressão seja verdadeira** 
+
 
 exemplo 1: 
 

@@ -173,7 +173,7 @@ variável */
 ### `--`
 Funciona exatamente igual ao `++`
 
-### `+=` Pega todo o valor que uma variável já tem e soma pelo valor que eu especifiquei
+### `+=` Pega todo o valor que uma variável já tem e soma com o valor especificado 
 
 ```javascript
 let soma = 20;
@@ -183,7 +183,7 @@ soma += 20;
 // É o mesmo que soma = soma + 20;
 ```
 
-### `-=` Pega todo o valor que uma variável já tem e diminui pelo valor que eu especifiquei
+### `-=` Pega todo o valor que uma variável já tem e diminui pelo valor especificado
 
 ```javascript
 let soma = 20;
@@ -193,9 +193,9 @@ soma -= 10;
 // É o mesmo que soma = soma - 10;
 ```
 
-### `*=` Pega todo o valor que uma variável já tem e multiplica pelo valor que eu especifiquei
+### `*=` Pega todo o valor que uma variável já tem e multiplica pelo valor especificado
 
-### `/=` Pega todo o valor que uma variável já tem e divide pelo valor que eu especifiquei
+### `/=` Pega todo o valor que uma variável já tem e divide pelo valor especificado
 
 ## Operadores de igualdade
 Irão testar se um valor é igual ou diferente de outro.
