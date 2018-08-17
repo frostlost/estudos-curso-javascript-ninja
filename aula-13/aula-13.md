@@ -91,6 +91,7 @@ arr.concat({prop1: 'value1', prop2: 'value2'});
 - Modifica o array original 
 
 # `arr.slice(firstItemIndex, +1indexFinalItem)` - Método de array 
+- Retorna uma parte do array 
 - Retorna um novo array à partir do item especificado por parâmetro  
 - **Não modifica** o array original 
 - `firstItemIndex`: índice do primeiro item
@@ -99,7 +100,7 @@ do índice especificado, todos os itens do array (exemplo 1)
 - Se especificado sem parâmetro, ou com o parâmetro `0` retorna  
 todos os itens do array  
 - `+1indexFinalItem`: especificação do índice posterior ao índice do  
-item a ser retornado (exemplo 2)
+último item a ser retornado (exemplo 2)
 - É possível também especificar **valores negativos** por parâmetro  
   - Um parâmetro com valor negativo pega os últimos itens do array  
   (exemplo 3)
@@ -135,7 +136,7 @@ numbers.slice(-2);
 
 # `arr.splice()` - Método de array
 - Muito diferente do método `slice`  
-- Pode tanto adicionar como remover itens do array 
+- Pode tanto adicionar como remover itens do array  
 - Parâmetro 1 **removendo itens do array**: 
   - Se apenas o parâmetro 1 for passado, irá retornar um novo  
   array com os itens removidos à partir do índice especificado  
@@ -158,7 +159,8 @@ numbers.slice(-2);
   - Parâmetro 2 - quantidade de itens a serem removidos, contando  
   com o item do parâmetro 1
   - Parâmetro 3 - **itens** a serem adicionados (exemplo 5)
-- Modifica o array principal 
+- Aceita, no parâmetro 3, um **array de itens a serem adicionados** 
+- **Modifica o array original** 
 - Pode ser poderoso ao ser usado em aplicações web 
 
 exemplo 1: 
@@ -264,7 +266,7 @@ console.log(sum);
 ```
 
 # `arr.every(function(item) {})` - Método de array 
-- Verifica se **todos os itens** do array atendam à uma condição 
+- Verifica se **todos os itens** do array atendem à uma condição 
 - Aplica uma função na qual seu retorno, que será baseado no parâmetro,  
 retorna `true` ou `false`
   - Verifica todos os itens 

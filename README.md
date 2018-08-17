@@ -6,7 +6,7 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 ## [Aula 01](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-01/aula-01.md)
 
 * ##### Acessando o console do Node JS
-* ##### Variáveis e tipos de dados 
+* ##### Variáveis e tipos de dados
 * ##### Atribuindo números `float` à variáveis
 * ##### Tipos de Dados
 * ##### number
@@ -16,15 +16,16 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### undefined
 * ##### `{}` Object
 * ##### Acessando propriedades de objetos 
-* ##### `[]` Array
-* ##### Expressões 
-* ##### Operadores aritméticos abreviados 
+* ##### [] Array
+* ##### Expressões
+* ##### Operadores aritméticos
+* ##### Operadores aritméticos abreviados
 * ##### `++`
 * ##### `--`
-* ##### `+=`
-* ##### `-=`
-* ##### `*=`
-* ##### `/=`
+* ##### `+=` Pega todo o valor que uma variável já tem e soma com o valor especificado 
+* ##### `-=` Pega todo o valor que uma variável já tem e diminui pelo valor especificado
+* ##### `*=` Pega todo o valor que uma variável já tem e multiplica pelo valor especificado
+* ##### `/=` Pega todo o valor que uma variável já tem e divide pelo valor especificado
 * ##### Operadores de igualdade
 * ##### `==` igual a
 * ##### `!=` diferente de
@@ -34,7 +35,6 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 * ##### `>` maior que
 * ##### `<` menor que
 * ##### `>=` maior ou igual a
-* ##### `<=` menor ou igual a
 * ##### `<=` menor ou igual a
 * ##### Funções
 * ##### Escopo de funções
