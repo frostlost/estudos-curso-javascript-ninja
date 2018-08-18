@@ -120,6 +120,8 @@ uma função, retorna 'object'
   - number
   - string
   - boolean
+- Para verificar um array, o indicado é o `Array.isArray(arr)`
+  - Mais detalhes na aula 14
 
 ```javascript
 typeof true;

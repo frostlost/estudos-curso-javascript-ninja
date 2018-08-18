@@ -96,3 +96,96 @@ const nameArr = ['R', 'o' , 'g', 'e', 'r'];
 nameArr.reduceRight((acc, act) => acc + act, '');
 // regoR
 ```
+
+# `arr.indexOf(value, index)` - Método de array 
+- Procura se um valor existe no array 
+- Se apenas **um parâmetro** é especificado: 
+  - Verifica se o valor especificado por parâmetro é um item do array  
+    - Se é um item do array, retorna o índice do item no array [1]
+    - Se não é um item do array, retorna `-1` 
+  - Ao contrário dos métodos vistos anteriormente, **não recebe uma função por parâmetro**
+- Se o **segundo parâmetro** é especificado: 
+  - Indica à partir de qual índice o valor do primeiro parâmetro será  
+  buscado no array [2]
+- Ideal para casos em que é necessário verificar se um valor foi encontrado  
+no array e, se confirmado, fazer algo 
+  - Ou seja, é possível verificar se o retorno de `indexOf(value)` é maior  
+  que -1 (true) [3]
+- Uma técnica interessante é **armazenar o retorno do `indexOf()`** (index  
+do item) em uma variável e, através dessa variável, pegar o item através do  
+index, invocando o array com a notação `arr[indexOf(value)]` [4]
+  - É o mesmo que fazer `arr[3]`
+
+[1]
+
+```javascript
+const numbers = [1, 2, 3];
+
+numbers.indexOf(3);
+// 2
+```
+
+[2]
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.indexOf(4, 2); // iniciou a busca pelo valor 4 à partir do índice 2
+// 3
+```
+
+[3]
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+console.log(
+  numbers.indexOf(4) > -1 
+  ? `item encontrado!` 
+  : `valor não encontrado no array`
+);
+```
+
+[4]
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+const index = numbers.indexOf(3);
+
+numbers[index];
+// 3
+```
+
+# `arr.lastIndexOf()` - Método de array 
+- Faz o mesmo que o `indexOf()`, mas, **inicia a busca do final**  
+para o início do array [1]
+  - Lembrando que a contagem de índices do array continua a padrão  
+  (da esquerda para a direita)
+- Assim como o `indexOf()`, aceita receber um segundo parâmetro 
+
+[1]
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.lastIndexOf(1);
+// 0
+```
+
+# `Array.isArray(arr)` - Método de array 
+- Método do construtor do array 
+- Recebe um array por parâmetro e verifica se esse valor é um array [1]
+- Retorna `true` or `false`
+- Deve ser utilizado ao invés do `typeof`
+  - Ao utilizar o `typeof` para verificar se um valor é um array, o  
+  retorno é 'object'
+
+[1]
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+Array.isArray(numbers);
+// true
+```

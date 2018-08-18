@@ -1,3 +1,4 @@
-const numbers = [1, 2, 3];
+const numbers = [1, 2, 3, 4, 5];
 
-console.log(numbers.reduceRight((acc, act) => acc + act));
+console.log(Array.isArray(numbers));
+// true
