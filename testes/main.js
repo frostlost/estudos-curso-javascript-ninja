@@ -1,3 +1,3 @@
-const nameArr = ['R', 'o' , 'g', 'e', 'r'];
+const numbers = [1, 2, 3];
 
-console.log(nameArr.reduceRight((acc, act) => acc + act, ''));
+console.log(numbers.reduceRight((acc, act) => acc + act));

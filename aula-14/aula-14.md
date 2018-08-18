@@ -84,4 +84,15 @@ E assim, sucessivamente, até chegar no valorAcumulado, 15.
 
 # `arr.reduceRight(function() {}, acc)` - Método de array 
 - Faz o mesmo que o `reduce()`, porém, da direita para a esquerda  
-  - Começa com o último item do array e vai até o primeiro 
+  - Começa com o último item do array e vai até o primeiro [1]
+  - No caso de um array de números, a ordem da iteração gera um valor  
+  diferente apenas em casos de exponenciação 
+
+[1]
+
+```javascript
+const nameArr = ['R', 'o' , 'g', 'e', 'r'];
+
+nameArr.reduceRight((acc, act) => acc + act, '');
+// regoR
+```
