@@ -175,11 +175,13 @@ numbers.lastIndexOf(1);
 
 # `Array.isArray(arr)` - Método de array 
 - Método do construtor do array 
-- Recebe um array por parâmetro e verifica se esse valor é um array [1]
+- Recebe um array por parâmetro e verifica se esse valor é, de fato,  
+um array [1]
 - Retorna `true` or `false`
-- Deve ser utilizado ao invés do `typeof`
+- **Deve ser utilizado ao invés do `typeof`**
   - Ao utilizar o `typeof` para verificar se um valor é um array, o  
   retorno é 'object'
+    - O retorno de `typeof arr === 'array'` é `false`
 
 [1]
 
