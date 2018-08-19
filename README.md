@@ -238,6 +238,16 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
+## [Aula 14](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-14/aula-14.md)
+
+* ##### `arr.reduce(function(acc, act, index, array) {}, acc)` - Método de array
+* ##### `arr.reduceRight(function() {}, acc)` - Método de array 
+* ##### `arr.indexOf(value, index)` - Método de array 
+* ##### `arr.lastIndexOf()` - Método de array 
+* ##### `Array.isArray(arr)` - Método de array 
+
+---
+
 ## Aula 15
 
 5. #### [O Objeto `this`](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-15/05-this.md)
