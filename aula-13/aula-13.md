@@ -411,6 +411,7 @@ baseados em alguma condição
   - Não é necessário que o item seja especificado novamente dentro  
   dele 
   - **Já irá retornar o item, caso a expressão seja verdadeira** 
+- Necessita que a função de callback retorne `true` or `false`
 
 
 exemplo 1: 

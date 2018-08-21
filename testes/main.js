@@ -1,4 +1,5 @@
-const numbers = [1, 2, 3, 4, 5];
+const operation = (5 + 5) * 2; 
+// parênteses envolvendo a operação que deve vir primeiro 
 
-console.log(typeof numbers === 'array');
-console.log(Array.isArray(numbers));
+console.log(operation)
+// 20

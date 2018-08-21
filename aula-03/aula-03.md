@@ -15,12 +15,27 @@ function myFunction(x, y) {
 ```
 
 ## Precedência de operadores de multiplicação e divisão
-O operadores `*` e `/` tem uma prioridade maior do que `+` e `-`:
+- O operadores `*` e `/` tem uma prioridade maior do que `+` e `-` [1]
+- Caso seja necessário, em uma expressão, fazer primeiro uma soma e depois  
+a multiplicação, ou divisão, é necessário envolver a operação a ser executada  
+primeiro em parênteses [2]
+
+[1]
 
 ```javascript
 console.log(1 * 1 * 1 + 1);
 // 2
 /* Fez a multiplicação primeiro (1 * 1 * 1) e depois somou o resultado da multiplicação */
+```
+
+[2]
+
+```javascript
+const operation = (5 + 5) * 2; 
+// parênteses envolvendo a operação que deve ser executada primeiro 
+
+console.log(operation)
+// 20
 ```
 
 ## `return`

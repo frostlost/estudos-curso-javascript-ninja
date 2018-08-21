@@ -12,12 +12,12 @@ um array
   - 1º: Uma função anônima (de redução) 
     - Essa função de redução possui os seguintes parâmetros: 
       - 1º: Valor acumulado 
-        - É todo o valor que foi acumulado à cada iteração 
+        - É todo o valor que foi acumulado à cada final de iteração 
           - Na 1ª iteração, o valor acumulado corresponde ao valor  
           passado no segundo parâmetro do reduce 
             - Caso esse valor não tenha sido especificado, o valor  
             acumulado corresponte ao primeiro item do array 
-      - 2º: Item atual 
+      - 2º: item atual 
       - 3º: index 
       - 4º: array 
   - 2º: Um valor inicial [2]
@@ -25,6 +25,8 @@ um array
     **o tipo de dado que o reduce vai retornar no final**  
 - Pode ser utilizado para: 
   - Somar todos os números do array [3]
+  - Reduzir uma fórmula matemática 
+  - Concatenar strings 
 - Não modifica o array original 
 - Com o reduce, é possível abstrair qualquer método citado nas aulas  
 passadas [1] 

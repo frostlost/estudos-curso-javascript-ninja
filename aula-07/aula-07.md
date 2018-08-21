@@ -167,8 +167,11 @@ expressão do `for`
 - Os 3 parâmetros são separados por `;`
 - Lembrando que a variável contadora **já é incrementada** no  
 3º parâmetro
-- É importante utilizar sempre o número do range. `<= 20` ao  
-invés de `< 21`, por exemplo. Isso dá legibilidade ao código 
+- É importante utilizar sempre o número do range. `counter <= 20` ao  
+invés de `counter < 21`, por exemplo. Isso dá legibilidade ao código 
+- Comumente utilizado em casos onde é necessário dar push de items  
+para um **array vazio**
+- Mais lento que os métodos funcionais (map, filter, reduce) 
 
 - Sintaxe: 
 
