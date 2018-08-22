@@ -27,6 +27,8 @@ de valores literais
       propriedades do objeto que a variável está armazenando (exemplo 4)
   - Dois objetos que possuem as mesmas propriedades são objetos diferentes  
   (exemplo 1)
+- Um objeto passado como parâmetro em um `indexOf()`, por exemplo, é um  
+novo objeto 
 
 ```javascript
 const obj = {

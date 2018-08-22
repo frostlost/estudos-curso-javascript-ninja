@@ -117,6 +117,9 @@ no array e, se confirmado, fazer algo
 do item) em uma variável e, através dessa variável, pegar o item através do  
 index, invocando o array com a notação `arr[indexOf(value)]` [4]
   - É o mesmo que fazer `arr[3]`
+- Lembrando que, um objeto passado como parâmetro em um `indexOf()`, por  
+exemplo, é um novo objeto criado na memória. Ou seja, o indexOf não irá  
+comparar o mesmo objeto [challenge-14]
 
 [1]
 
