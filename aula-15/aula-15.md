@@ -185,3 +185,49 @@ obj1
 obj2
 // MyConstructor {prop1 = 'value 1', prop2 = 'value 2'}
 ```
+
+# O objeto `arguments`
+Representa todos os argumentos passados na invocação da função [2]
+
+- Aparece, **implicitamente, dentro de funções**
+
+- É um objeto array-like [1]
+  - Parecido com um array
+  - Funciona como um array
+  - **Não é um array**
+
+- Como é um objeto array-like, através da notação de array, é possível  
+acessar apenas um valor passado por argumento [3]
+
+[1]
+
+```javascript
+function myFunc () {
+  return arguments
+}
+
+myFunc()
+// []
+```
+
+[2]
+
+```javascript
+function myFunc (param1, param2) {
+  return arguments
+}
+
+myFunc(5, 'oi')
+// Arguments(2) [5, "oi", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+```
+
+[3]
+
+```javascript
+function myFunc (param1, param2) {
+  return arguments[1]
+}
+
+myFunc('hello!', 'hi')
+// 'hi'
+```
