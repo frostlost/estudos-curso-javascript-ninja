@@ -1,9 +1,9 @@
-(function () {
-  function myFunction () {
-    return this
-  }
+function MyConstructor () {
+  this.prop1 = 'value 1';
+  this.prop2 = 'value2';
+}
 
-  console.log(this)
+const obj1 = new MyConstructor()
+const obj2 = new MyConstructor()
 
-  console.log(this === window)
-})()
+console.log(obj2.prop2)

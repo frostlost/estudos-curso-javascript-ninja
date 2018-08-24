@@ -132,7 +132,56 @@ console.log(obj.init())
 
 # Construtores em JS
 - O formato de construtor: 
-  - `new Object()`
+  - `new Object()` [1]
   - Criou um novo objeto na memória 
   - Esse é um construtor padrão do JS 
-  - É possível criar construtores personalizados 
+
+[1]
+
+```javascript
+const obj = new Object()
+
+obj
+// {}
+```
+
+## **Criando construtores personalizados** 
+Criam novos objetos construídos com propriedades default. 
+
+- Criar um construtor personalizado
+  - Declarar uma função `MyConstructor`
+    - Geralmente, começam com letras maiúsculas, por convenção 
+  - Declarar um this.prop1, que recebe uma string 
+  - Declarar um this.prop2, que recebe uma string 
+  - A função **retorna nada** 
+  - **Agora, ao declarar a palavra-chave `new` e invocar a função**  
+  construtora, um novo objeto será criado, com as propriedades que  
+  foram definidas dentro da função construtora [1]
+  - À partir de uma função construtora, é possível instanciar  
+  vários objetos que possuam as propriedades que foram declaradas  
+  dentro dela [2]
+
+[1]
+
+```javascript
+function MyConstructor () {
+  this.prop1 = 'value 1';
+  this.prop2 = 'value2';
+}
+
+new MyConstructor()
+// MyConstructor { prop1: 'value 1', prop2: 'value2' }
+```
+
+[2]
+
+```javascript
+const obj1 = new MyConstructor()
+const obj2 = new MyConstructor()
+
+obj1
+// MyConstructor {prop1 = 'value 1', prop2 = 'value 2'}
+
+obj2
+// MyConstructor {prop1 = 'value 1', prop2 = 'value 2'}
+```
