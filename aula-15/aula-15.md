@@ -69,8 +69,8 @@ console.log(window)
 ```
 
 # O objeto `this`
-Referencia/representa coisas diferentes, dependendo de onde ele está  
-ou da forma que for acessado. 
+Objeto implícito que Referencia/representa coisas diferentes,  
+dependendo de onde ele está ou da forma que for acessado. 
 
 Aponta para 'este' objeto em que ele está dentro. 
 
