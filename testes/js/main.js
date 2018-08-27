@@ -1,5 +1,13 @@
-function myFunc (param1, param2) {
-  return arguments[1]
+const obj = {
+  prop1: {
+    prop2: {
+      prop3: {
+        prop31: 'value31',
+        prop32: 'value32',
+        prop33: 'value33'
+      }
+    }
+  }
 }
 
-console.log(myFunc('hello!', 'hi'))
+console.log(obj.prop1.prop2.prop3.prop33)
