@@ -248,17 +248,17 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
-## Aula 15
+## [Aula 15](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-15/aula-15.md)
 
-5. #### [O Objeto `this`](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-15/05-this.md)
-
+* ##### Introdução à JavaScript no browser 
+* ##### `<script>` dentro de `<head>`
+* ##### Por que utilizar script externo 
+* ##### Escopo 
+* ##### `window` - O Objeto global do browser 
 * ##### O objeto `this`
-* ##### `this` em métodos de objetos  
-* ##### O Objeto global `window`  
-* ##### `this` em funções literais  
-* ##### Funções construtoras
-* ##### `this` referenciando um objeto instanciado  
-* ##### Invocando uma função construtora sem o `new`
+* ##### Construtores em JS
+* ##### **Criando construtores personalizados** 
+* ##### O objeto `arguments`
 
 ---
 
