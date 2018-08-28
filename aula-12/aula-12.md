@@ -1,6 +1,11 @@
 # `delete` - Deletando propriedades de um objeto 
 - Palavra-chave que deleta propriedades de um objeto 
+- Sintaxe: 
+  - `delete obj.prop2`
 - Retorna um valor booleano 
+- Não pode ser usado: 
+  - Para deletar variáveis 
+  - Para deletar o objeto
 
 ```javascript
 delete obj.propName;
