@@ -104,7 +104,8 @@ direita para a esquerda
 # `'string'.replace('string', 'newString')` - Método de string
 - Substitui um caractere ou um trecho de uma string por uma nova string [1]
 - Em caso de substituição de caractere, substitui apenas a primeira  
-ocorrência do caractere [2]
+ocorrência do caractere [2]. Para substituir todas as ocorrências do  
+caractere, utilizar o método `split()` (abaixo)
 - Não modifica a string original 
 
 [1]
@@ -143,11 +144,13 @@ ocorrência do caractere [2]
 ```
 
 # `'string'.split(separator, limit)` - Método de string
-- Quebra a string e trasforma-a em um array 
+- Quebra a string e transforma-a em um array 
 - Caso nenhum parâmetro seja passado, retorna um array com a string  
 inteira [1]
-- Caso um parâmetro seja passado, remove a string especificada e  
-retorna o array de strings [2]
+- Caso um parâmetro seja passado, remove todas as ocorrências da string  
+especificada e retorna um array de strings [2]
+- O encadeamento do `split()` com o `join()` é uma técnica que facilita  
+a substituição em massa de uma string [3]
 - Não modifica a string original 
 
 [1]
@@ -162,4 +165,82 @@ retorna o array de strings [2]
 ```javascript
 'Roger Waters Alves de Melo'.split(' ')
 // [ 'Roger', 'Waters', 'Alves', 'de', 'Melo' ]
+```
+
+[3]
+
+```javascript
+' ro ger'.split(' ').join('')
+// 'roger'
+```
+
+# `'string'.substring(startIndex, finalIndex+1)` - Método de string
+- Faz, basicamente, o mesmo que o `slice()`
+  - **A diferença maior é que, se o número do index inicial for maior que o número do index final, a inversão na ordem da busca é feita normalmente** [3]
+- Retorna uma parte da string 
+- Se apenas um parâmetro é passado, retorna desde o index  
+especificado no parâmetro até o final da string [1]
+- Se dois parâmetros forem passados, retorna desde o index  
+especificado no parâmetro até o index do 2º parâmetro [2]
+
+[1]
+
+```javascript
+'Roger Melo'.substring(6)
+// 'Melo'
+```
+
+[2]
+
+```javascript
+'Roger Melo'.substring(6, 9)
+// 'Mel'
+```
+
+[3]
+
+```javascript
+'Atlas gosta de dar a pata'.substring(5, 0)
+// 'Atlas'
+```
+
+# `'string'.toLowerCase()` - Método de string
+- Faz com que todos os caracteres da string fiquem em caixa baixa [1]
+- Não modifica a string original
+
+[1]
+
+```javascript
+'UM TEXTO ESCRITO EM CAIXA ALTA'
+.toLowerCase()
+.replace('alta', 'baixa')
+// 'um texto escrito em caixa baixa'
+```
+
+# `'string'.toUpperCase()` - Método de string
+- Faz com que todos os caracteres da string fiquem em caixa alta [1]
+- Não modifica a string original
+
+[1]
+
+```javascript
+'um texto com todos os caracteres em caixa baixa'
+.replace('baixa', 'alta')
+.toUpperCase()
+// UM TEXTO COM TODOS OS CARACTERES EM CAIXA ALTA
+```
+
+# Encadeando métodos de string para retornar apenas o primeiro caractere de uma string em maiúsculo
+- A string deve estar armazenada em uma variável 
+- Utilizar o `charAt()` encadeado na variável, para pegar o primeiro  
+caractere 
+- Encadear o `toUpperCase()`
+- Concatenar o `slice()` ou o `substring()` encadeado na variável,  
+retornando os caracteres após o index 0 da string armazenada 
+
+```javascript
+const so = 'linux'
+
+so.charAt(0).toUpperCase() + so.substring(1)
+// Linux
 ```
