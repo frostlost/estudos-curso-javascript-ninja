@@ -262,6 +262,25 @@ Documentação dos estudos das aulas do [**curso JavaScript Ninja**](https://www
 
 ---
 
+## [Aula 16](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-16/aula-16.md)
+
+* ##### `'use strict'` - Criação de variáveis sem o `var`
+* ##### Variáveis acessíveis no console do browser
+* ##### `'string'.length` - Propriedade de string
+* ##### `'string'.charAt(index)` - Método de string
+* ##### `'string'.concat(string1, string2)` - Método de string
+* ##### `'string'.indexOf(caracter, indexStart)` - Método de string
+* ##### `'string'.lastIndexOf('string')` - Método de string
+* ##### `'string'.replace('string', 'newString')` - Método de string
+* ##### `'string'.slice(startIndex, finalIndex+1)` - Método de string
+* ##### `'string'.split(separator, limit)` - Método de string
+* ##### `'string'.substring(startIndex, finalIndex+1)` - Método de string
+* ##### `'string'.toLowerCase()` - Método de string
+* ##### `'string'.toUpperCase()` - Método de string
+* ##### Encadeando métodos de string para retornar apenas o primeiro caractere de uma string em maiúsculo
+
+---
+
 ## Aula 20
 
 1. #### [JS no browser - Selecionar elementos do DOM](https://github.com/Roger-Melo/estudos-curso-javascript-ninja/blob/master/aula-20/js-no-browser-01.md)
