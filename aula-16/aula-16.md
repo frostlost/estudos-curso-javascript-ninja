@@ -37,6 +37,8 @@ do browser, está em escopo global
 # `charAt(index)` - Método de string
 - Retorna o caractere do index especificado [1]
 - Também funciona com a notação de array [2]
+- Sempre verificar se é mais viável usá-lo ou utilizar o index, em  
+casos de estar dentro de um `map`, por exemplo
 - Retorna uma string em branco, caso o index especificado não exista 
 
 [1]
@@ -123,7 +125,8 @@ caractere, utilizar o método `split()` (abaixo)
 ```
 
 # `'string'.slice(startIndex, finalIndex+1)` - Método de string
-- Funciona como o método de array 
+- Retorna uma parte da string (funciona basicamente como o método `slice()`  
+de array)
 - Se passado apenas o parâmetro 1, retorna todos os caracteres  
 à partir do índice especificado [1]
 - Lembrando que, o último index não é mostrado [2]

@@ -162,6 +162,21 @@ expressão do `for`
   - Múltiplas variáveis podem ser inicializadas, separadas  
   por vírgula e sem o uso da palavra-chave na inicialização  
   da segunda e seguintes variáveis
+  - Lembrando que essa primeira expressão (`let i = 0;`) será  
+  executada pelo `for` apenas na 1ª vez em que ele a acessá-la.  
+  Após isso, as outras duas expressões serão executadas em  
+  looping. 
+  - Como visto anteriormente, sempre que é necessário utilizar  
+  um valor fixo por várias vezes, ou mais de uma vez, o ideal é  
+  que esse valor seja atribuído à uma variável, para que o JS  
+  não precise ficar repetindo ou lendo aquele valor que ele já  
+  leu uma vez. 
+    - É uma boa prática, em casos em que é utilizado o `length`  
+    de uma string, por exemplo, declarar uma outra variável na 1ª  
+    expressão, utilizando a vírgula. 
+      - Essa variável pode receber o `<value>.length`. Ou seja,  
+      o JS não terá mais que repetir essa expressão à cada iteração  
+      do loop [2]
 - 2º parâmetro: Condição. 
 - 3º parâmetro: Expressão final. 
 - Os 3 parâmetros são separados por `;`
@@ -178,5 +193,14 @@ para um **array vazio**
 ```javascript
 for(let num = 0; num <= 20; num++) { 
   console.log(num);
+}
+```
+
+[2]
+
+```javascript
+let name = 'Melo'
+for(let i = 0, len = name.length; i < len; i++) {
+  
 }
 ```
